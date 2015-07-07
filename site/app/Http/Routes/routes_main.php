@@ -1,0 +1,107 @@
+<?php
+
+
+// Route::get('blog/{params?}','SiteController@blog')->where('params', '.*');
+Route::any('ng-temp/{template}','BaseController@ng_temp')->where('template', '.+');
+
+
+Route::get('blog',function(){
+    if(Dev) return Redirect::to("http://localhost/blog2");
+	return Redirect::to("http://ahmed-badawy.com/blog");
+});
+
+Route::get('/site/{any}',function($any){
+    return Redirect::to(base_url."$any");
+})->where('any', '.+');
+
+Route::get('ecv','BaseController@test_email_view');
+
+
+/********************************************************************************
+  					Pages
+********************************************************************************/
+Route::get('/','PagesController@home');
+Route::get('home','PagesController@home');
+
+Route::get('cv',['as'=>'cv','uses'=>'PagesController@cv']);
+Route::get('cv-brief',['as'=>'cv','uses'=>'PagesController@cv_application']);
+Route::get('cv/download/{type}','PagesController@cv_download');
+Route::post('cv/send','PagesController@send_cv');
+
+Route::get ('contact','PagesController@get_contact');
+Route::post('contact','PagesController@post_contact');
+//*******************************************************************************
+
+/*********************************************************************
+Registration System
+**********************************************************************/
+Route::group(array('prefix' => 'registration'), function(){
+	Route::get('index',['as'=>"regist",'uses'=>'RegistrationController@index']);
+	Route::get('forgot','RegistrationController@forgot');
+	Route::post('signup','RegistrationController@request_control');
+});
+/**********************************************************************/
+
+Route::get('site-report/{operation}/{site_name}','SiteController@site_report');
+Route::get("json-test/{get_what?}",function($get_what=null){
+	$persons = [
+		"persons"=>[
+			["name"=>"ahmed","age"=>12,"height"=>190],
+			["name"=>"mohamed","age"=>40,"height"=>160],
+			["name"=>"ali","age"=>50,"height"=>180],
+		]
+	];
+
+	$employees = '{"employees":[
+	    {"firstName":"John", "lastName":"Doe"},
+	    {"firstName":"Anna", "lastName":"Smith"},
+	    {"firstName":"Peter", "lastName":"Jones"}
+	]}';
+
+	$chaios_data = '
+{
+   "pageInfo": {
+         "pageName": "this is the page name",
+         "pagePic": "http://example.com/content.jpg"
+    }
+    "posts": [
+        {
+              "post_id": "123456789012_123456789012",
+              "actor_id": "1234567890",
+              "picOfPersonWhoPosted": "http://example.com/photo.jpg",
+              "nameOfPersonWhoPosted": "Jane Doe",
+              "message": "Sounds cool. Can\'t wait to see it!",
+              "likesCount": "2",
+              "comments": [],
+              "timeOfPost": "1234567890"
+        },
+		{
+              "post_id": "123456789012_123456789012",
+              "actor_id": "1234567890",
+              "picOfPersonWhoPosted": "http://example.com/photo.jpg",
+              "nameOfPersonWhoPosted": "Jane Doe",
+              "message": "ok this is msg two",
+              "likesCount": "2",
+              "comments": [],
+              "timeOfPost": "1234567890"
+         }
+    ]
+}
+	';
+
+	if($get_what==null){
+		return $persons;
+	}elseif($get_what=="chaos"){
+		return $chaios_data;
+	}elseif($get_what=="employees"){
+		return $employees;
+	}
+
+});
+
+
+
+
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drawing app</title>
+	<style>
+		*{
+			box-sizing : border-box;
+			font-family: "tahoma";
+
+			user-select:none;
+			-webkit-user-select:none;
+			-moz-user-select:none;
+			-ms-user-select:none;
+		}
+		#toolbar{
+			width:100%;
+			height:50px;
+			padding:10px;
+			position: fixed;
+			top:0;
+			background-color:#333;
+			color:white;
+		}
+		#rad { float:left;margin-right: 100px }
+		#inc_rad,#dec_rad{
+			width:30px;
+			height:30px;
+			background-color: #4f4f4f;
+			display:inline-block;
+			text-align: center;
+			padding-top:5px;
+		}
+/********************************Colors**************************************/
+		#colors{
+			float:right;
+		}
+		.swatch{
+			width:30px;
+			height: 30px;
+			border-radius: 15px;
+			box-shadow: inset 0px 1px 0px rgba(255,255,255,.5),0px 2px 2px rgba(0,0,0,.5);
+			display: inline-block;
+			margin-left:10px;
+			background-color:cyan;
+		}
+		.swatch.active{
+			border:2px solid white;
+			box-shadow: inset 0px 1px 2px rgba(0,0,0,.5);
+		}
+/********************************Save Button**************************************/
+		.button{
+			height: 30px;
+			padding: 8px;
+			background-color: #434343;
+			float: left;
+			border-radius: 20px;
+			color:white;
+			font-weight: bold;
+		}
+		.button:hover{
+			background-color: #818181;
+		}
+		/*#save_img{ display:none; }*/
+/**********************************************************************/		
+	</style>
+</head>
+<body style='margin:0'>
+
+
+<div id='toolbar'>
+	<div id="rad">
+		Radius: <span id="radval">10</span>
+		<div id="inc_rad">+</div>
+		<div id="dec_rad">-</div>
+	</div>
+	<div id="colors">
+		<div class="swatch active" style='background-color:black'></div>
+		<div class="swatch" style='background-color:gray'></div>
+		<div class="swatch" style='background-color:white'></div>
+		<div class="swatch" style='background-color:red'></div>
+		<div class="swatch" style='background-color:orange'></div>
+		<div class="swatch" style='background-color:yellow'></div>
+		<div class="swatch" style='background-color:green'></div>
+		<div class="swatch" style='background-color:blue'></div>
+		<div class="swatch" style='background-color:cyan'></div>
+		<div class="swatch" style='background-color:indigo'></div>
+		<div class="swatch" style='background-color:violet'></div>
+	</div>
+	<form action='php_controllers/upload.php' method='POST' enctype='multipart/form-data'>
+		<input type='hidden' id="save_img" name='img_file' value='' />
+		<button class='button' id="save_button" onclick='save();'> Save </button>
+		<button class='button' onclick='clear_canvas();return false;'> Clear Canvas </button>
+	</form>
+</div>
+
+<canvas id='canvas' style='border:4px double black;display:inline'>
+	Sorry, Your Browser Doesn't support this app. Please update your browser.
+</canvas>
+
+<script type="text/javascript">
+	var can_elm = document.getElementById('canvas');
+	var context = can_elm.getContext('2d');
+
+	var radius = 10;
+	var full_circle,x,y;
+
+	// can_elm.width = 800;
+	// can_elm.height = 500;
+	var dragging = false;
+
+
+// on resize define the height & width of the canvas element:-
+	function resize_canvas(){
+		var image = context.getImageData(0,0,canvas.width,canvas.height);
+		can_elm.width = window.innerWidth;
+		can_elm.height = window.innerHeight;
+		// can_elm.width = "800px";
+		// can_elm.height = "800px";		
+		context.putImageData(image,0,0);
+	}
+	window.onresize = function(){ resize_canvas() }
+	resize_canvas();
+
+	function clear_canvas(){
+		this.can_elm.width = this.can_elm.width;
+	}
+
+/*
+		- x & y are the center point of my arc.
+		- radius : r of the circle 
+		- startAngle: the start of the arc.
+		- endAngle: end of the arc.
+		- angiclockwise: move colockwise or reversed.
+		context.arc(x,y, radius , startAngle,endAngel, [antiClockwise])
+*/
+
+	context.lineWidth = radius*2;
+	var putPoint = function(e){
+		if(dragging){
+				// context.fillStyle = "rgba(0,0,255,0.50)";
+				// context.strokeStyle = "rgba(0,0,255,0.50)";
+			context.lineTo(e.clientX,e.clientY);
+			context.stroke();
+			context.beginPath();
+			x = (e.offsetX==undefined) ? e.clientX : e.offsetX;
+			y = (e.offsetY==undefined) ? e.clientY : e.offsetY;
+			full_circle = Math.PI*2; // full 360 degree means full circle
+			context.arc(x , y ,radius,0,Math.PI*2);
+			context.fill();
+			context.beginPath();
+			context.moveTo(x,y);
+		}
+	}
+
+
+	can_elm.addEventListener('mousedown',function(e){ dragging = true;putPoint(e); },false);
+	can_elm.addEventListener('mouseup',function(e){ dragging = false;context.beginPath(); },false);
+	can_elm.addEventListener('mousemove',putPoint,false); //controls what happens when i 
+
+
+
+/********************************Radius Manipulation**************************************/
+var minRad = .25,
+	maxRad = 100,
+	defaultRad = 20,
+	interval = 3,
+	radval = document.getElementById('radval'),
+	dec_rad = document.getElementById('dec_rad'),
+	inc_rad = document.getElementById('inc_rad');
+
+var setRadius = function(new_radius){
+	if(new_radius<1) interval = .25; else interval = 3; 
+	if(new_radius<minRad) new_radius=minRad;
+	if(new_radius>maxRad) new_radius=maxRad;
+	radius = new_radius;
+	context.lineWidth = radius*2;
+	console.log(radius);
+	radval.innerHTML = radius;
+}
+
+dec_rad.addEventListener('click',function(){
+	setRadius(radius-interval);
+});
+inc_rad.addEventListener('click',function(){
+	setRadius(radius+interval);
+});
+/**********************************************************************/
+
+/********************************Color Manipulation**************************************/
+var swatches = document.getElementsByClassName('swatch');
+var active = document.getElementsByClassName('active')[0];
+
+for(var i=0, n=swatches.length; i<n ; i++){
+	swatches[i].addEventListener('click',setSwatch,false);
+}
+
+function setColor(color){
+	// context.fillStyle = "rgba(0,0,255,0.50)";
+	// context.strokeStyle = "rgba(0,0,255,0.50)";
+	context.fillStyle = color;
+	context.strokeStyle = color;
+	active = document.getElementsByClassName('active')[0];
+	active.className = " swatch";
+}
+
+function setSwatch(e){
+	//identify swatch:
+	var swatch = e.target;
+	//set color:
+	setColor(swatch.style.backgroundColor);
+	//give active class:
+	swatch.className += ' active';
+}	
+/**********************************************************************/
+
+/********************************Save Button**************************************/
+var saveButton = document.getElementById('save_button');
+var save_img = document.getElementById('save_img');
+var save = function(){
+	var data = canvas.toDataURL();
+
+	// options = "location=0,menubar=0"; 
+	// window.open(data,"_blank",options);
+	
+	save_img.setAttribute("value",data);
+	console.log(save_img);
+	return true;
+}
+// saveButton.addEventListener('click',save,false);
+/**********************************************************************/
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

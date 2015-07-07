@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	canvas{
+		border:1px double black;
+	}
+	.button{
+		border:1px solid black;
+		border-radius: 10px;
+		padding:2px;
+		text-decoration: none;
+	}
+	</style>
+</head>
+<body>
+
+
+Controllers: 
+<button id='clear_canvas'>Clear Canvas</button>
+<a id='open' class='button' href='' target="_blank">Open it</a>
+<a id='download' class='button' href='' download="new_image_name_here.png" target="_blank">Download</a>
+<br>
+Colors: 
+<!-- <button id='colorPurple' color="rgba(0,0,0,.3)">fuck</button> -->
+<button id='colorPurple' color="#cb3594">color Purple</button>
+<button id='colorGreen' color="#659b41">color Green</button>
+<button id='colorYellow' color="#ffcf33">color Yellow</button>
+<button id='colorBrown' color="#986928">color Brown</button>
+<br>
+Font Sizes: 
+<button id='font_small' radius="4">Small</button>
+<button id='font_normal' radius="8">Normal</button>
+<button id='font_big' radius="15">Big</button>
+<br>
+Tools: 
+<button id='tool_eraser' color="#fff">Eraser</button>
+<button id='tool_marker'>Marker</button>
+<button id='tool_cryton'>Cryton</button>
+<hr>
+
+
+<canvas id="canvas" width="800" height="600"></canvas>
+<div id="canvasDiv"></div>
+<div id="img"></div>
+
+<script type="text/javascript">
+
+	function find(id){
+		elm = document.getElementById(id);
+		return elm;
+	}
+	function multi_event(elms,event,call_back){
+		// console.log(elms);
+		for(i=0;i<elms.length;i++){
+			elms[i].addEventListener(event,call_back,false);
+		}
+	}
+
+/*********************************************************************
+Controllers
+**********************************************************************/
+	find('clear_canvas').addEventListener('click', function(){
+		clear_canvas();
+	} ,false);
+/********************************Colors**************************************/
+	multi_event( [find("colorPurple"),find("colorGreen"),find("colorBrown"),find('colorYellow'),find('tool_eraser')] ,'click',function(){
+		this_color = this.getAttribute('color');
+		curColor = this_color;
+	});
+/********************************Fonts**************************************/	
+	multi_event( [find("font_small"),find("font_normal"),find("font_big")] ,'click',function(){
+		this_size = this.getAttribute('radius');
+		radius = this_size;
+	});			
+/********************************Cryton**************************************/	
+	find('tool_cryton').addEventListener("click",function(){
+		curTool = "cryton";
+		curColor = "#000";
+	},false);
+	find('tool_marker').addEventListener("click",function(){
+		curTool = "marker";
+		curColor = "#000";
+	},false);	
+/**********************************************************************/
+function clear_canvas(){
+	canvas.width = canvas.width;
+	clickX = Array();
+	clickY = Array();
+	clickDrag = Array();
+	clickColor = Array();
+	curColor = curColor;
+}
+
+
+var clickX = new Array();
+var clickY = new Array();
+var clickDrag = new Array();
+var paint;
+
+var mouseX, mouseY;
+
+var curColor = "black";
+var clickColor = new Array();
+
+var clickSize = new Array();
+var radius = 4;
+
+var clickTool = new Array();
+var curTool = "crayon";
+
+canvas_elm = find('canvas');
+context = canvas_elm.getContext("2d");
+
+/*********************************************************************
+Drawing functions
+**********************************************************************/
+
+function start_drawing(e){
+	mouseX = e.pageX - this.offsetLeft;
+	mouseY = e.pageY - this.offsetTop;
+	paint = true;
+	addClick(mouseX,mouseY);
+	redraw();
+	// alert("touchstart");
+}
+function move_drawing(e){
+	if(paint){
+		mouseX = e.pageX - this.offsetLeft;
+		mouseY = e.pageY - this.offsetTop;
+		addClick(mouseX,mouseY,true);
+		redraw();
+	}
+	// alert("touch move");
+}
+function end_drawing(e){
+	paint = false;
+	// alert("touchend");
+}
+
+	find('canvas').addEventListener("mousedown",start_drawing,false);
+	find('canvas').addEventListener("touchstart",start_drawing,false);
+
+	find('canvas').addEventListener("mousemove",move_drawing,false);
+	find('canvas').addEventListener("touchmove",move_drawing,false);
+
+	find('canvas').addEventListener("mouseup",end_drawing,false);
+	find('canvas').addEventListener("touchend",end_drawing,false);
+
+	find('canvas').addEventListener("mouseleave",end_drawing,false);
+
+
+	function addClick(x, y, dragging){
+		clickX.push(x);
+		clickY.push(y);
+		clickDrag.push(dragging);
+		clickColor.push(curColor);
+		clickSize.push(radius);
+  	}	
+function redraw(){
+  context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+  
+  // context.strokeStyle = "#df4b26";
+  context.lineJoin = "round";
+  // context.lineWidth = 5;
+			
+  for(var i=0; i < clickX.length; i++) {		
+    context.beginPath();
+    if(clickDrag[i] && i){
+      context.moveTo(clickX[i-1], clickY[i-1]);
+     }else{
+       context.moveTo(clickX[i]-1, clickY[i]);
+     }
+     context.lineTo(clickX[i], clickY[i]);
+     context.closePath();
+     context.strokeStyle = clickColor[i];
+     context.lineWidth = clickSize[i];
+     context.stroke();
+	// if(curTool == "crayon") {
+	// 	context.globalAlpha = 0.4;
+	// 	context.drawImage(crayonTextureImage, 0, 0, canvasWidth, canvasHeight);
+	// }
+	// context.globalAlpha = 1;
+  }
+
+}
+
+
+
+
+function openit() {
+    var dt = canvas_elm.toDataURL('image/png');
+    this.href = dt;
+} 
+function downloadit() {
+    var dt = canvas_elm.toDataURL('image/png');
+    this.href = dt.replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+};
+document.getElementById('open').addEventListener('click', openit, false);
+document.getElementById('download').addEventListener('click', downloadit, false);
+
+
+
+</script>
+
+</body>
+</html>

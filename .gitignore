@@ -52,13 +52,12 @@ Temporary Items
 
 /site/vendor
 /site/node_modules
-/site
-/site
+
 /site/public/barcodegen-1
 /site/public/pdf
 /site/public/site-docs
 /site/app/_custom/customServices/lists
-/site
+
 /site/config
 /site/backups/db
 /site/backups/files
@@ -67,7 +66,7 @@ Temporary Items
 /site/storage
 /site/bootstrap
 /site/_gsdata_
-/site
+
 /site/.idea
 
 

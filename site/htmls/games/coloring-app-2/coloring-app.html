@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	canvas{
+		border:1px double black;
+	}
+	.button{
+		border:1px solid black;
+		border-radius: 10px;
+		padding:2px;
+		text-decoration: none;
+	}
+	</style>
+</head>
+<body>
+
+
+Controllers: 
+<button id='clear_canvas'>Clear Canvas</button>
+<a id='open' class='button' href='' target="_blank">Open it</a>
+<a id='download' class='button' href='' download="new_image_name_here.png" target="_blank">Download</a>
+<br>
+Colors: 
+<!-- <button id='colorPurple' color="rgba(0,0,0,.3)">fuck</button> -->
+<button id='colorPurple' color="#cb3594">color Purple</button>
+<button id='colorGreen' color="#659b41">color Green</button>
+<button id='colorYellow' color="#ffcf33">color Yellow</button>
+<button id='colorBrown' color="#986928">color Brown</button>
+<br>
+Font Sizes: 
+<button id='font_small' radius="4">Small</button>
+<button id='font_normal' radius="8">Normal</button>
+<button id='font_big' radius="15">Big</button>
+<br>
+Tools: 
+<button id='tool_eraser' color="#fff">Eraser</button>
+<button id='tool_marker'>Marker</button>
+<hr>
+
+
+<canvas id="canvas" width="800" height="600"></canvas>
+<div id="canvasDiv"></div>
+<div id="img"></div>
+
+<script type="text/javascript">
+
+var outlineImage = new Image();
+outlineImage.src = "car.png";
+
+	function find(id){
+		elm = document.getElementById(id);
+		return elm;
+	}
+	function multi_event(elms,event,call_back){
+		// console.log(elms);
+		for(i=0;i<elms.length;i++){
+			elms[i].addEventListener(event,call_back,false);
+		}
+	}
+
+document.addEventListener('DOMContentLoaded', function() {
+	setTimeout(function(){
+		console.log("load done!");
+		init();
+	}, 3000);
+}, false);
+
+
+function init(){
+/*********************************************************************
+Controllers
+**********************************************************************/
+	find('clear_canvas').addEventListener('click', function(){
+		clear_canvas();
+	} ,false);
+/********************************Colors**************************************/
+	multi_event( [find("colorPurple"),find("colorGreen"),find("colorBrown"),find('colorYellow'),find('tool_eraser')] ,'click',function(){
+		this_color = this.getAttribute('color');
+		curColor = this_color;
+	});
+/********************************Fonts**************************************/	
+	multi_event( [find("font_small"),find("font_normal"),find("font_big")] ,'click',function(){
+		this_size = this.getAttribute('radius');
+		radius = this_size;
+	});			
+/********************************Cryton**************************************/	
+	find('tool_marker').addEventListener("click",function(){
+		curTool = "marker";
+		curColor = "#000";
+	},false);	
+/**********************************************************************/
+function clear_canvas(){
+	canvas.width = canvas.width;
+	clickX = Array();
+	clickY = Array();
+	clickDrag = Array();
+	clickColor = Array();
+	curColor = curColor;
+}
+
+
+var clickX = new Array();
+var clickY = new Array();
+var clickDrag = new Array();
+var paint;
+
+var mouseX, mouseY;
+
+var curColor = "orange";
+var clickColor = new Array();
+
+var clickSize = new Array();
+var radius = 15;
+
+var clickTool = new Array();
+var curTool = "crayon";
+
+canvas_elm = find('canvas');
+context = canvas_elm.getContext("2d");
+context.drawImage(outlineImage,0,0,canvas_elm.width,canvas_elm.height);
+
+/*********************************************************************
+Drawing functions
+**********************************************************************/
+	find('canvas').addEventListener("mousedown",function(e){
+		mouseX = e.pageX - this.offsetLeft;
+		mouseY = e.pageY - this.offsetTop;
+		paint = true;
+		addClick(mouseX,mouseY);
+		redraw();
+	},false);
+
+	find('canvas').addEventListener("mousemove",function(e){
+		if(paint){
+			mouseX = e.pageX - this.offsetLeft;
+			mouseY = e.pageY - this.offsetTop;
+			addClick(mouseX,mouseY,true);
+			redraw();
+		}
+	},false);
+
+	find('canvas').addEventListener("mouseup",function(e){
+		paint = false;
+	},false);
+
+	find('canvas').addEventListener("mouseleave",function(e){
+		paint = false;
+	},false);
+
+
+	function addClick(x, y, dragging){
+		clickX.push(x);
+		clickY.push(y);
+		clickDrag.push(dragging);
+		clickColor.push(curColor);
+		clickSize.push(radius);
+  	}	
+function redraw(){
+  context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+  
+  // context.strokeStyle = "#df4b26";
+  context.lineJoin = "round";
+  // context.lineWidth = 5;
+			
+  for(var i=0; i < clickX.length; i++) {		
+    context.beginPath();
+    if(clickDrag[i] && i){
+      context.moveTo(clickX[i-1], clickY[i-1]);
+     }else{
+       context.moveTo(clickX[i]-1, clickY[i]);
+     }
+     context.lineTo(clickX[i], clickY[i]);
+     context.closePath();
+     context.strokeStyle = clickColor[i];
+     context.lineWidth = clickSize[i];
+     context.stroke();
+	// if(curTool == "crayon") {
+	// 	context.globalAlpha = 0.4;
+	// 	context.drawImage(crayonTextureImage, 0, 0, canvasWidth, canvasHeight);
+	// }
+	// context.globalAlpha = 1;
+  }
+  context.drawImage(outlineImage,0,0,canvas_elm.width,canvas_elm.height);
+}
+
+  context.drawImage(outlineImage,0,0,canvas_elm.width,canvas_elm.height);
+
+
+function openit() {
+    var dt = canvas_elm.toDataURL('image/png');
+    this.href = dt;
+} 
+function downloadit() {
+    var dt = canvas_elm.toDataURL('image/png');
+    this.href = dt.replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+};
+document.getElementById('open').addEventListener('click', openit, false);
+document.getElementById('download').addEventListener('click', downloadit, false);
+
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drawing app</title>
+</head>
+<body style='margin:0'>
+
+
+<canvas id='canvas' style='border:4px double black;display:inline'>
+	Sorry, Your Browser Doesn't support this app. Please update your browser.
+</canvas>
+
+<script type="text/javascript">
+	var can_elm = document.getElementById('canvas');
+	var context = can_elm.getContext('2d');
+	var radius = 10;
+	var full_circle,x,y;
+
+	can_elm.width = window.innerWidth;
+	can_elm.height = window.innerHeight;
+	// can_elm.width = 800;
+	// can_elm.height = 500;
+	var dragging = false;
+
+/*
+		- x & y are the center point of my arc.
+		- radius : r of the circle 
+		- startAngle: the start of the arc.
+		- endAngle: end of the arc.
+		- angiclockwise: move colockwise or reversed.
+		context.arc(x,y, radius , startAngle,endAngel, [antiClockwise])
+*/
+	context.lineWidth = radius*2;
+	var putPoint = function(e){
+		if(dragging){
+			context.lineTo(e.clientX,e.clientY);
+			context.stroke();
+			context.beginPath();
+			x = (e.offsetX==undefined) ? e.clientX : e.offsetX;
+			y = (e.offsetY==undefined) ? e.clientY : e.offsetY;
+			full_circle = Math.PI*2; // full 360 degree means full circle
+			context.arc(x , y ,radius,0,Math.PI*2);
+			context.fill();
+			context.beginPath();
+			context.moveTo(x,y);
+		}
+	}
+
+
+	can_elm.addEventListener('mousedown',function(e){ dragging = true;putPoint(e); },false);
+	can_elm.addEventListener('mouseup',function(e){ dragging = false; },false);
+	// can_elm.addEventListener('mousemove',putPoint,false);
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

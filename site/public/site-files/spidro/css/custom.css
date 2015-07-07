@@ -1,0 +1,99 @@
+@import url("http://fonts.googleapis.com/earlyaccess/notokufiarabic.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:600");
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: url('../../../site-imgs/site/covers/img1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+
+
+#page_container{
+    font-family: 'Noto Kufi Arabic', serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-top:4%;
+    margin-bottom: 80%;
+}
+.en{
+    font-family: 'Open Sans';
+    font-size: 110%;
+}
+.ar-sm{
+    font-family: "Georgia", Times, serif;
+}
+
+
+
+
+
+
+.bright{
+  color:#fff;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.6);
+  transition: all .2s linear;
+}
+.bright:hover{
+  text-shadow: 0px 0px 9px rgba(255,255,255,0.9);
+}
+.bright-background{
+    background-color:rgba(0,0,0,.3);
+    padding:5px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+Login Page
+--------------------------------------------------------------*/
+    #center-box{
+        margin:0 auto;
+        margin-top:14%;
+        width:500px;
+    }
+    #center-box a{
+        text-align: center;
+    }
+    .box-elm{
+        border-bottom:1px dashed white;
+        padding:5px;
+        margin:0 auto 0 auto;
+        width:400px;
+    }
+/***************************************************************/
+
+/*--------------------------------------------------------------
+View page
+--------------------------------------------------------------*/
+img.media-object{
+    margin-left:10px;
+}
+.view-item-heading{
+    border-bottom:2px solid rgba(255,255,255,0.3);
+    padding-bottom:5px;
+}
+.view-item-txt{
+    padding:5px;
+    color:#444;
+    height:150px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+.view-item-txt:hover{
+    color:#222;
+    height:400px;
+    overflow:scroll;
+    background-color:rgba(255,255,255,.5);
+    border-radius:10px;
+}
+/**********************************************************************/
