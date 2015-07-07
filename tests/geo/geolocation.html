@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+#map{ height: 100% }
+
+
+</style>
+
+</head>
+<body>
+
+<button id='go'>Get Location</button>
+
+<h1>Your Location</h1>
+<h4 id='info'></h4>
+
+
+<hr>
+
+
+<div id="distance"></div>
+<div id="map"></div>
+
+
+
+
+
+
+<script>
+	var go = document.getElementById('go');  
+	var info = document.getElementById('info');  
+	go.addEventListener('click',get_geolocation,false);
+
+	function get_geolocation() {        
+		//test for pressence of geolocation.        
+		if (navigator && navigator.geolocation) {                
+			navigator.geolocation.getCurrentPosition(geo_success, geo_error);        
+		} else {                
+			alert_it('GeoLocation is not supported.');        
+		    ip_location_detect();
+		}    
+	}; 
+
+
+function geo_success(position){
+	console.log(position);
+	var lat = position.coords.latitude;
+	var lon = position.coords.longitude;
+	alert_it("latitude is: "+lat+" ----- longitude is: "+lon);
+
+	convert_position_to_address(lat,lon);
+	convert_address_to_position("tanta egypt");
+	generate_map(lat,lon);
+	direct_between_two_locations(lat,lon);
+}
+
+
+
+// The PositionError object returned contains the following attributes: 
+// code: a numeric response code. 
+// PERMISSION_DENIED = 1 
+// POSITION_UNAVAILABLE = 2 
+// TIMEOUT = 3 
+//message: Primarily for debugging. It's recommended not to show this error to users. 
+function geo_error(err) {
+	console.log(err);
+    if (err.code == 1) {        
+    	alert_it('The user denied the request for location information.')    
+    } else if (err.code == 2) {
+        alert_it('Your location information is unavailable.')    
+    } else if (err.code == 3) {        
+    	alert_it('The request to get your location timed out.')    
+    } else {        
+    	alert_it('An unknown error occurred while requesting your location.')
+    } 
+     ip_location_detect();
+}
+
+//this is a fallback if geolocation failed. we detect current location from ip detection.
+function ip_location_detect(){
+	alert_it("No Ip Location Detection Implemented");
+}
+
+function alert_it(text){
+	info.innerHTML += "<br>"+text;
+}
+
+
+function convert_position_to_address(lat,lon){ //called reversed geoCoding
+	//setup the Geocoder object.    
+    var geocoder = new google.maps.Geocoder();
+    //turn coordicates into an object.    
+    var yourLocation = new google.maps.LatLng(lat, lon);
+    //find out info about our location.    
+    geocoder.geocode({ 'latLng': yourLocation }, function (results, status) {
+	    if(status == google.maps.GeocoderStatus.OK){
+	        if (results[0]) {
+alert_it("------------------position to address convertion says------------------");
+	        	alert_it('Your Address: ' + results[0].formatted_address);            
+alert_it("-----------------------------------------------------------------------");
+			} else {
+            	alert_it('Google did not return any results.');            
+	        }        
+	    }else{ 
+			alert_it("Reverse Geocoding failed due to: " + status);        
+		}
+	}); 
+}
+
+function convert_address_to_position(address){ //called geoCoding
+	if (address) {
+		////use google maps API to Geocode the address.
+		//setup the Geocoder object.
+		var geocoder = new google.maps.Geocoder();
+		//return the coordinates.
+		geocoder.geocode({ 'address': address }, function (results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+				if (results[0]){
+alert_it("------------------address to position convertion says------------------");
+alert_it( results[0].geometry.location.lat() +"-----"+ results[0].geometry.location.lng() );
+				}else {
+					alert_it('Google did not return any results.');
+				}
+			} else alert_it("Reverse Geocoding failed due to: " + status);
+		});
+	} else alert_it('Please enter an address');
+}
+
+
+
+//---------------------------------------------------------------------------------------
+
+
+var directionRenderer;
+var directionsService = new google.maps.DirectionsService();
+var map;
+
+	function generate_map(latitude,longitude){
+//first we generate the map:
+		////setup map starting point for Google Maps
+		//set initial coords to latitude −92 and longitude 32 which is somewhere around Kansas City in the c
+		// and then set the zoom to 4 so the entire US is visible and centered.
+		var tanta = new google.maps.LatLng(latitude, longitude);
+		var myOptions = {
+			zoom: 10,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			center: tanta
+		};
+		map = new google.maps.Map(document.getElementById("map"), myOptions);
+		directionsRenderer = new google.maps.DirectionsRenderer();
+		directionsRenderer.setMap(map);
+		//----------------------------------------------------------------------
+	}
+
+	function direct_between_two_locations(latitude, longitude) {
+//then we direct between two locations
+		//set the starting & ending point.
+		var start = new google.maps.LatLng(latitude, longitude); //start from here
+		var end = "gamasa egypt";
+		//set the request options:
+		var request = {
+			origin: start,
+			destination: end,
+			travelMode: google.maps.DirectionsTravelMode.DRIVING
+		};
+		//make the directions request.
+		directionsService.route(request, function (result, status) {
+			if (status == google.maps.DirectionsStatus.OK) {
+				//display the directions using Google's Directions Renderer
+				directionsRenderer.setDirections(result);
+				////output total distance seperately.
+				var distance = getTotalDistance(result);
+				alert_it("----------------------------------------------");
+				alert_it("distance in meters: "+distance);
+				alert_it("distance in Kilometers: "+metersToKilometers(distance));
+				alert_it("distance in miles: "+metersToMiles(distance));
+			} else {
+				alert("Directions failed due to: " + status);
+			}
+		});
+	}
+
+
+
+//returns total distance in meters.
+function getTotalDistance(result) {
+	var meters = 0;
+	var route = result.routes[0];
+	for (ii = 0; ii < route.legs.length; ii++) {
+	//google stores distance value in meters.
+	meters += route.legs[ii].distance.value;
+	}
+	return meters;
+}
+
+function metersToKilometers(meters) {
+	return Math.round(meters / 1000);
+}
+function metersToMiles(meters) {
+//1 Mile = 1609.344 Meters
+	return Math.round(meters / 1609.344);
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

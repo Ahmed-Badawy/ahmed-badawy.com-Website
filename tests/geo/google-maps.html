@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Google Maps</title>
+    <style type="text/css">
+
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+
+    </style>
+    <!-- get the key after creating new application in google console & got a client key -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXqYnZrzCPltFIKKV-M1IFubklSY-i-F4"></script>
+
+
+    <div id="map-canvas"></div>
+    
+    <script type="text/javascript">
+
+/*********************************************************************
+All Methods,Functions & events are in this link:
+**********************************************************************
+very very importanta:
+      https://developers.google.com/maps/documentation/javascript/reference
+**********************************************************************/
+
+  (function(window,google){
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 31, lng: 31 },
+          zoom: 10,	
+          maxZoom:11, //controll max zoom level
+          minZoom: 8, //control min zoom level
+          zoomControlOptions: {
+          	position: google.maps.ControlPosition.BOTTOM_LEFT, //
+          	style: google.maps.ZoomControlStyle.DEFAULT, //(DEFAULT: default,SMALL) the size of the zoom controller
+          },
+          panControlOptions:{
+            position: google.maps.ControlPosition.BOTTOM_LEFT, //this is how we control the pan of directions on the map
+          },
+          // disableDefaultUI:true, //hide the controllers on the left of the map
+          scrollwheel: false, //now you can't use the scroll-wheel zooming
+          draggable: false, //now you can't drag the map
+
+/* MapTypes:
+    MapTypeId.ROADMAP displays the default road map view. This is the default map type.
+    MapTypeId.SATELLITE displays Google Earth satellite images
+    MapTypeId.HYBRID displays a mixture of normal and satellite views
+    MapTypeId.TERRAIN displays a physical map based on terrain information. 
+*/
+          // mapTypeId: google.maps.MapTypeId.HYBRID, //map type (ROADMAP: default, HYBRID , SATELLITE,TERRAIN )
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+        };
+        var canvas_elm = window.document.getElementById('map-canvas');
+        var our_map = new google.maps.Map(canvas_elm,mapOptions);
+//you can get & set zoom with getZoom(),setZoom()
+        window.alert(our_map.getZoom());
+
+        var marker_count = 0;
+        var markers_list = [];
+        var info_windows_list = [];
+        google.maps.event.addListener(our_map,'click',function(e){
+            console.log('you clicked the map at: '+e.latLng.A+" --- "+e.latLng.F);
+            console.log(e);
+            console.log(this);
+
+            marker = new google.maps.Marker({
+                position: { lat: e.latLng.A, lng: e.latLng.F },
+                map: our_map,
+                id: marker_count,
+                title: 'Marker 1 man',
+                draggable: true, //now you can drag the marker around.
+                icon: 'http://ahmed-badawy.com/site/public/site-imgs/site/marker-icon.png'            
+            });  
+            //adding event to marker
+            iw = new google.maps.InfoWindow({
+              content: "<h3>This is marker: <b style='color:red'>"+marker_count+"</b></h3>",
+            });
+            google.maps.event.addListener(marker,'click',function(e){
+              alert("Hi! Marker Clicked...");
+              console.log(e);
+              iw.open(our_map,marker);
+            });
+            marker_count++;
+        });
+
+
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    }(window,google));
+
+    </script>
+  </head>
+  <body>
+<div id="map-canvas"></div>
+  </body>
+</html>
