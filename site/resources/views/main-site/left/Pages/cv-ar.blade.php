@@ -158,7 +158,7 @@
                 <div class="btn-group">
 
   <button type="button" class="btn btn-default dropdown-toggle arabic" dir='rtl' data-toggle="dropdown" aria-expanded="false">
-    {!! fa2('download') !!} تحميل الـ C.V &nbsp;&nbsp;<span class="caret"></span>
+    {!! fa2('download') !!} مشاركة الـ C.V &nbsp;&nbsp;<span class="caret"></span>
   </button>
 
 
@@ -282,32 +282,33 @@
 
 
 <!-- *******************************C.V Brief************************************* -->
-<h3 id="brief" dir='rtl'>ملخص الـ C.V بالغة العربية</h3>
+<h3 id="brief" dir='rtl'>ملخص الـ C.V</h3>
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>
 <li>25 سنة  -  غير مدخن  -  أقود و حامل لرخصة قيادة</li>
-<li>خبرة 3 سنوات فى - تطوير المواقع بالـ    PHP , javascript</li>
+<li>خبرة 3 سنوات فى - تطوير المواقع بالـ    <span class='english'>PHP , javascript</span></li>
 <li>مبرمج و مطور - خبرة فى تنفيذ الأفكار الجديدة و أيجاد الحلول المستحدثة.</li>
 
 <br>
 <li>خبرات العمل:  </li>
 <ul>
-    <li> HTML - CSS - JavaScript - jQuery - AngularJS </li>
-    <li> PHP - Wordpress </li>
-    <li> CodeIgniter FrameWork => Zend FrameWork => Laravel FrameWork</li>
-    <li> Gulp - Grunt - SASS - LESS - Bower </li>
-    <li> Git Technology - familiar with cpanel & WHM Resellers panel </li>
+    <li class='english'> HTML - CSS - JavaScript - jQuery - AngularJS </li>
+    <li class='english'> PHP - Wordpress </li>
+    <li class='english'> CodeIgniter FrameWork => Zend FrameWork => Laravel FrameWork</li>
+    <li class='english'> Gulp - Grunt - SASS - LESS - Bower </li>
+    <li class='english'> Git Technology - familiar with cpanel & WHM Resellers panel </li>
+    <li class='english'> Some Java & Android SDK Development</li>
 </ul>
 <br>
 
 <li>القدرة على تنفيذ البرامج الخدمية مثل ( نظم البيع و الشراء - نظم إدارة الصيدليات - نظم إدارة المقاولات - نظم البيع للمطاعم )</li>
 <li>خبرة فى تأسيس أنظمة للإستضافة للشركات و المواقع المختلفة عن طريق خدمة الـ Reseller.</li>
 <li>معرفة جيدة برفع و تأسيس و تشغيل مواقع الويب و إستمرار تطويرها ضمن فريق عمل متكامل.</li>
-<li>خلفية جيدة للتعامل مع الأكواد الخاصة بخدمات الـ API و الـ SDK -- مثل:  Facebook SDK , twitter , dropbox , paypal , stripe ,mailgun</li>
+<li>خلفية جيدة للتعامل مع الأكواد الخاصة بخدمات الـ API و الـ SDK -- مثل:  <span class='english'>Facebook SDK , twitter , dropbox , paypal , stripe ,mailgun</span></li>
     <li>خلفية ممتازة فى تقنيات الـ SEO و معرفة بكيفية الإعلان على المنصات المختلفة مثل الفيسبوك و جوجل - يمكننى وضع موقعك فى أولى صفحات البحث بجوجل (بشرط توفير الموارد المطلوبة)</li>
     <li>لدى خلفية بسيطة فى برمجة تطبيقات الأندرويد و أستطيع أنجاز البرامج البسيطة عليه. (أعمل على إجادته حاليا) </li>
 <li>لدى خلفية بسيطة للتعامل مع لغة الجافا و أستطيع إنجاز البرامج التى تعتمد على الإرتباط بالـ database فيه.</li>
-<li>حصلت على شهادتى الـ CCNA - CCNP منذ أربع سنوات. مما أعطانى فهم جيد جدا للشبكات و طريقة عملها و كيفية التعامل معها.</li>
+<li>حصلت على شهادتى الـ <span class='english'>CCNA - CCNP</span> منذ أربع سنوات. مما أعطانى فهم جيد جدا للشبكات و طريقة عملها و كيفية التعامل معها.</li>
 <li>أعمل دوما لتطوير مستوى خبرتى و أتابع كل ما هو جديد لتطوير عملى و مستوايا.</li>
 
 <br>
@@ -322,7 +323,7 @@
 
 <b class='arabic' style='font-size:1.5em'>تواصل معى: 
  &nbsp; -- &nbsp;
-{!!fa2('phone-square',0)!!} <span class='bright english'>01028999810</span>
+{!!fa2('phone-square',0)!!} <span class='bright english'>01111988246</span>
  &nbsp; -- &nbsp;
 {!!fa2('send',0)!!} <span class='bright english'>admin@ahmed-badawy.com</span>
 </b>
@@ -357,7 +358,7 @@ My objective is to be better programer/developer,  So to achieve that I always t
 <li dir='rtl'><b>التعليم : </b>  باكليريوس فى علوم الحاسبات و المعلومات</li>
 <li dir='rtl'><b>الموقع : </b> <a href='http://ahmed-badawy.com/site' target='_blank' class='english btn btn-xs btn-default '>Ahmed-badawy.com/site</a></li>
 <li dir='rtl'><b>المدونة الشخصية : </b> <a href='http://ahmed-badawy.com/blog' target='_blank' class='english btn btn-xs btn-default'>Ahmed-badawy.com/blog</a></li>
-<li dir='rtl'><b>رقم الهاتف : </b> &nbsp; <span class='bright'>01028999810</span></li>
+<li dir='rtl'><b>رقم الهاتف : </b> &nbsp; <span class='bright'>01111988246</span></li>
 <li dir='rtl'><b>الإيميل  : </b> {{social('admin_email')}} <a href="#sec7" class='btn btn-default btn-xs'>أرسل رسالة إلى</a> </li>
 <li dir='rtl'><b>معلومات إخرى : </b> ( غير مدخن ,&nbsp; أقود و لدى رخصة قيادة ,&nbsp; سريع بالكيبورد )</li>
 </ul>
@@ -662,9 +663,9 @@ $i++;
 <ul id="previous-work" class='text-center list-unstyled'>
   <li><a href="{{ url('selling-manager') }}" target='_blank'>أتممت الكثير من البرامج الخدمية معظمها برامج مطاعم و محلات بيع وحدات مثل الموبيلات</a></li>
 
-  <li><a href="http://ahmed-badawy.com" target='_blank'>Ahmed-Badawy.com</a></li>
-  <li><a href="http://spidro.com" target='_blank'>Spidro.com</a></li>
-  <li><a href="{!! url('blog') !!}" target='_blank'>Personal wordpress blog</a></li>
+  <li><a href="http://ahmed-badawy.com" target='_blank' class='english'>Ahmed-Badawy.com</a></li>
+  <li><a href="http://spidro.com" target='_blank' class='english'>Spidro.com</a></li>
+  <li><a href="{!! url('blog') !!}" target='_blank' class='english'>Personal wordpress blog</a></li>
 
   <li><a href="https://www.egyptcodebase.com" target='_blank'>موقع بيانات كود مصر</a></li>
   <li><a href="http://www.elmasriadecoration.com" target='_blank'>المصرية للديكورات</a></li>
@@ -752,7 +753,7 @@ $i++;
 	<h3 id='sec5' dir='rtl'>Contact Me</h3>
 <ul class='list-group '>
       <li class="col-sm-12 list-group-item">{!! fa2("at") !!} {{social('admin_email')}}</li>
-      <li class="col-sm-12 list-group-item">{!! fa2("mobile") !!} 01028999810</li>
+      <li class="col-sm-12 list-group-item">{!! fa2("mobile") !!} 01111988246</li>
       <li class="col-sm-12 list-group-item">{!! fa2("desktop") !!} <a href='{!! url("/") !!}'>www.Ahmed-Badawy.com</a></li>
 </ul>
 	</div>

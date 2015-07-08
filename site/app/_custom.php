@@ -13,7 +13,7 @@ $allowed_macros = "none";
 
 $libs_path = app_path()."/_custom/libs";
 // $allowed_libs = "none";
-$allowed_libs = ['ZipperClass'];
+$allowed_libs = ['ZipperClass','Mobile_Detect'];
 
 
 
@@ -23,8 +23,8 @@ require("_custom/constants/const.php");
 
 require_things($allowed_helpers,$helpers_path);
 //require_things($allowed_constants,$constants_path);
- require_things($allowed_macros,$macros_path);
- require_things($allowed_libs,$libs_path);
+require_things($allowed_macros,$macros_path);
+require_things($allowed_libs,$libs_path);
 
 
 

@@ -283,7 +283,7 @@ function draw_pepsi(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#333";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -318,7 +318,7 @@ function draw_facebook(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#333";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -352,7 +352,7 @@ function draw_ramadan(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
 
     ctx.closePath();
@@ -392,7 +392,7 @@ function draw_cocacola(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#333";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -427,7 +427,7 @@ function draw_whatsapp(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -461,7 +461,7 @@ function draw_viper(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -498,7 +498,7 @@ function draw_messenger(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -530,7 +530,7 @@ function draw_cisco(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -562,7 +562,7 @@ function draw_cocacola2(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "black";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -594,7 +594,7 @@ function draw_cocacola3(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "white";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -625,7 +625,7 @@ function draw_oracle(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -657,7 +657,7 @@ function draw_microsoft(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -690,7 +690,7 @@ function draw_crysis(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -722,7 +722,7 @@ function draw_game_of_thrones(text1,text2,font1,font2,font_size1,font_size2){
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",530,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",530,306);
 
     ctx.closePath();
 }
@@ -775,7 +775,7 @@ death_cause = death_causes[getRandomInt(0,death_causes.length)];
     ctx.beginPath();
     ctx.font= "10px arial";
     ctx.fillStyle = "#fff";
-    ctx.fillText("برمجة: أحمد بدوى - 01013370988",510,306);
+    ctx.fillText("برمجة: أحمد بدوى - 01111988246",510,306);
 
     ctx.closePath();
 }
