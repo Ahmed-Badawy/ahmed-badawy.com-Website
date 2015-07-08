@@ -61,3 +61,8 @@ a.text-link{
   .widthfix{
     width:100%;
   }
+
+  .arabic{
+    font-family: cursive;
+    font-weight: bolder;
+  }
