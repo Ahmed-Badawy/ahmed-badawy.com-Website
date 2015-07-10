@@ -186,7 +186,7 @@
 <li><a class='english social_share_link' target="_blank" shareType="reddit">{!! fa2('reddit-square',0) !!} Reddit</a></li>
 
 <script type="text/javascript">
-  var share_data = {
+  var shared_data = {
     url         : "http://ahmed-badawy.com/site/cv",
     title       : "Ahmed-Badawy's C.V (Please Read Me)",
     text        : " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
@@ -194,27 +194,27 @@
     phone_num   : "01111988246",
     google_maps : "30,31",
   };
-  share_data.prepared_url = encodeURIComponent(share_data.url);
-  share_data.prepared_img = encodeURIComponent(share_data.img);
+  shared_data.prepared_url = encodeURIComponent(shared_data.url);
+  shared_data.prepared_img = encodeURIComponent(shared_data.img);
 
   function get_share_link(share_type){
       var $link;
-      if(share_type=="facebook") $link = "https://www.facebook.com/sharer/sharer.php?u="+share_data.prepared_url;
-      if(share_type=="twitter") $link = "http://twitter.com/home?status="+share_data.text;
-      if(share_type=="google-plus") $link = "https://plus.google.com/share?url="+share_data.prepared_url+"&gpsrc=frameless";
-      if(share_type=="linked-in") $link = "https://www.linkedin.com/shareArticle?mini=true&url="+share_data.prepared_url+"&title="+share_data.title+"&summary="+share_data.text+"";
-      if(share_type=="pinterest") $link = "https://www.pinterest.com/pin/create/button/?url="+share_data.prepared_url+"&media=$img&description="+share_data.text+"";
-      if(share_type=="stumbleupon") $link = "http://www.stumbleupon.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
-      if(share_type=="vk") $link = "https://vk.com/share.php?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"&image=$img&noparse=true";
-      if(share_type=="xing") $link = "https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="+share_data.prepared_url+"";
-      if(share_type=="tumblr") $link = "http://www.tumblr.com/share/link?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"";
-      if(share_type=="reddit") $link = "http://www.reddit.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
+      if(share_type=="facebook") $link = "https://www.facebook.com/sharer/sharer.php?u="+shared_data.prepared_url;
+      if(share_type=="twitter") $link = "http://twitter.com/home?status="+shared_data.text;
+      if(share_type=="google-plus") $link = "https://plus.google.com/share?url="+shared_data.prepared_url+"&gpsrc=frameless";
+      if(share_type=="linked-in") $link = "https://www.linkedin.com/shareArticle?mini=true&url="+shared_data.prepared_url+"&title="+shared_data.title+"&summary="+shared_data.text+"";
+      if(share_type=="pinterest") $link = "https://www.pinterest.com/pin/create/button/?url="+shared_data.prepared_url+"&media=$img&description="+shared_data.text+"";
+      if(share_type=="stumbleupon") $link = "http://www.stumbleupon.com/submit?url="+shared_data.prepared_url+"&title="+shared_data.title+"";
+      if(share_type=="vk") $link = "https://vk.com/share.php?url="+shared_data.prepared_url+"&title="+shared_data.title+"&description="+shared_data.text+"&image=$img&noparse=true";
+      if(share_type=="xing") $link = "https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="+shared_data.prepared_url+"";
+      if(share_type=="tumblr") $link = "http://www.tumblr.com/share/link?url="+shared_data.prepared_url+"&title="+shared_data.title+"&description="+shared_data.text+"";
+      if(share_type=="reddit") $link = "http://www.reddit.com/submit?url="+shared_data.prepared_url+"&title="+shared_data.title+"";
 
-      if(share_type=="whatsapp") $link = "whatsapp://send?text="+share_data.text+"";
+      if(share_type=="whatsapp") $link = "whatsapp://send?text="+shared_data.text+"";
 
-      if(share_type=="email") $link = "mailto:?subject="+share_data.title+"&body="+share_data.text+"";
-      if(share_type=="call_phone") $link = "tel:"+share_data.phone_num;
-      if(share_type=="google-maps") $link = "geo:"+share_data.google_maps;
+      if(share_type=="email") $link = "mailto:?subject="+shared_data.title+"&body="+shared_data.text+"";
+      if(share_type=="call_phone") $link = "tel:"+shared_data.phone_num;
+      if(share_type=="google-maps") $link = "geo:"+shared_data.google_maps;
       return $link;
   }
 
@@ -231,17 +231,16 @@
     link = get_share_link(share_type);
     console.log(link);
     num = Math.random();
-    if(share_type!="whatsapp" && share_type!="email" &&
-                         share_type!="call_phone" && share_type!="google_maps")
-                                      centeredPopup(link, num+"toString" ,'700','300','yes');return false;
+    centeredPopup(link, num+"toString" ,'700','300','yes');
+    return false;
   });
 </script>
 
 
     <li class="divider"></li>
 <li role="presentation" class="dropdown-header english">Send To</li>
-<li><a target="_blank" class="english" href="{!! get_share_link('whatsapp',$share_data) !!}">{!! fa2('whatsapp') !!} WhatsApp</a></li>
-<li><a target="_blank" class="english" href="{!! get_share_link('email',$share_data) !!}">{!! fa2('send') !!} Email</a></li>
+<li><a target="_blank" class="english" href="whatsapp">{!! fa2('whatsapp') !!} WhatsApp</a></li>
+<li><a target="_blank" class="english" href="email">{!! fa2('send') !!} Email</a></li>
 
     <li class="divider"></li>
 <li><a href="#" class="deny english" data-toggle="modal" data-target=".send-cv-modal">{!! fa2('envelope',0) !!} Send C.V to an Email</a></li>
