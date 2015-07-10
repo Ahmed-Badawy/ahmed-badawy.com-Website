@@ -185,6 +185,14 @@
 <li><a class='english social_share_link' target="_blank" shareType="tumblr">{!! fa2('tumblr-square',0) !!} Tumblr</a></li>
 <li><a class='english social_share_link' target="_blank" shareType="reddit">{!! fa2('reddit-square',0) !!} Reddit</a></li>
 
+    <li class="divider"></li>
+<li role="presentation" class="dropdown-header english">Send To</li>
+<li><a target="_blank" class="english social_share_link" shareType="whatsapp">{!! fa2('whatsapp') !!} WhatsApp</a></li>
+<li><a target="_blank" class="english social_share_link" shareType="email">{!! fa2('send') !!} Email</a></li>
+
+    <li class="divider"></li>
+<li><a href="#" class="deny english" data-toggle="modal" data-target=".send-cv-modal">{!! fa2('envelope',0) !!} Send C.V to an Email</a></li>
+  </ul>
 <script type="text/javascript">
   var shared_data = {
     url         : "http://ahmed-badawy.com/site/cv",
@@ -209,12 +217,11 @@
       if(share_type=="xing") $link = "https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="+shared_data.prepared_url+"";
       if(share_type=="tumblr") $link = "http://www.tumblr.com/share/link?url="+shared_data.prepared_url+"&title="+shared_data.title+"&description="+shared_data.text+"";
       if(share_type=="reddit") $link = "http://www.reddit.com/submit?url="+shared_data.prepared_url+"&title="+shared_data.title+"";
-
       if(share_type=="whatsapp") $link = "whatsapp://send?text="+shared_data.text+"";
-
       if(share_type=="email") $link = "mailto:?subject="+shared_data.title+"&body="+shared_data.text+"";
       if(share_type=="call_phone") $link = "tel:"+shared_data.phone_num;
-      if(share_type=="google-maps") $link = "geo:"+shared_data.google_maps;
+      if(share_type=="internet_call") $link = "callTo:"+shared_data.phone_num;
+      if(share_type=="google_maps") $link = "geo:"+shared_data.google_maps;
       return $link;
   }
 
@@ -237,14 +244,6 @@
 </script>
 
 
-    <li class="divider"></li>
-<li role="presentation" class="dropdown-header english">Send To</li>
-<li><a target="_blank" class="english" href="whatsapp">{!! fa2('whatsapp') !!} WhatsApp</a></li>
-<li><a target="_blank" class="english" href="email">{!! fa2('send') !!} Email</a></li>
-
-    <li class="divider"></li>
-<li><a href="#" class="deny english" data-toggle="modal" data-target=".send-cv-modal">{!! fa2('envelope',0) !!} Send C.V to an Email</a></li>
-  </ul>
 
 
 <div class="modal fade send-cv-modal" tabindex="-1" role="dialog" aria-hidden="true">
