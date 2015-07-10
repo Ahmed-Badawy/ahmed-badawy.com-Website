@@ -76,17 +76,17 @@
 
 <ul>
 
-<li><a class="social_share_link btn btn-inverse" href='' shareType="facebook">Facebook</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="twitter">Twitter</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="google-plus">Google+</a></li>
+<li><a class="social_share_link btn btn-default btn-sm" href='' shareType="facebook">Facebook</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="twitter">Twitter</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="google-plus">Google+</a></li>
 
-<li><a class='social_share_link btn btn-inverse' href='' shareType="linked-in">Linked-In</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="google-plus">Pinterest</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="stumbleupon">stumbleUpon</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="vk">VK</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="xing">Xing</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="tumblr">Tumblr</a></li>
-<li><a class='social_share_link btn btn-inverse' href='' shareType="reddit">Reddit</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="linked-in">Linked-In</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="google-plus">Pinterest</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="stumbleupon">stumbleUpon</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="vk">VK</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="xing">Xing</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="tumblr">Tumblr</a></li>
+<li><a class='social_share_link btn btn-default btn-sm' href='' shareType="reddit">Reddit</a></li>
 
 </ul>
 
