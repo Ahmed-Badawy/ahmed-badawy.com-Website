@@ -231,7 +231,9 @@
     link = get_share_link(share_type);
     console.log(link);
     num = Math.random();
-    centeredPopup(link, num+"toString" ,'700','300','yes');return false;
+    if(share_type!="whatsapp" && share_type!="email" &&
+                         share_type!="call_phone" && share_type!="google_maps")
+                                      centeredPopup(link, num+"toString" ,'700','300','yes');return false;
   });
 </script>
 
