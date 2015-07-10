@@ -22,7 +22,7 @@
 <a href="tel:01028999810">Make a Phone Call to: 01028999810</a></li>
 
 <li>
-<a href="skype://01028999810">Make a SkyBe Call to: 01028999810</a></li>
+<a href="skype:01028999810">Make a SkyBe Call to: 01028999810</a></li>
 <li>
 <a href="skype:abdullah.motawa?call">Make a SkyBe Call to: abdullah.motawa</a></li>
 
