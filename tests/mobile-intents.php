@@ -2,7 +2,17 @@
 <html>
 <head>
 	<meta charset='utf-8'>
-	<title></title>
+	<title>Sharing Buttons</title>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -54,7 +64,6 @@
     <br>
     no autocapitalize<input type="text" autocapitalize="off" placeholder="Tag your sighting"/></li>
 
-
 </ul>
 
 <!-- ************************************************************************ -->
@@ -66,17 +75,17 @@
 
 <ul>
 
-<li><a class="social_share_link" href='' shareType="facebook">Facebook</a></li>
-<li><a class='social_share_link' href='' shareType="twitter">Twitter</a></li>
-<li><a class='social_share_link' href='' shareType="google-plus">Google+</a></li>
+<li><a class="social_share_link btn btn-default" href='' shareType="facebook">Facebook</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="twitter">Twitter</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="google-plus">Google+</a></li>
 
-<li><a class='social_share_link' href='' shareType="linked-in">Linked-In</a></li>
-<li><a class='social_share_link' href='' shareType="google-plus">Pinterest</a></li>
-<li><a class='social_share_link' href='' shareType="stumbleupon">stumbleUpon</a></li>
-<li><a class='social_share_link' href='' shareType="vk">VK</a></li>
-<li><a class='social_share_link' href='' shareType="xing">Xing</a></li>
-<li><a class='social_share_link' href='' shareType="tumblr">Tumblr</a></li>
-<li><a class='social_share_link' href='' shareType="reddit">Reddit</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="linked-in">Linked-In</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="google-plus">Pinterest</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="stumbleupon">stumbleUpon</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="vk">VK</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="xing">Xing</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="tumblr">Tumblr</a></li>
+<li><a class='social_share_link btn btn-default' href='' shareType="reddit">Reddit</a></li>
 
 </ul>
 
