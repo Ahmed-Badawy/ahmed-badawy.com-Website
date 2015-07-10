@@ -16,7 +16,8 @@
 <a href="tel:01028999810">Make a Phone Call to: 01028999810</a>
 <hr>
 
-<a href="callto://+01111988246">Make a SkyBe Call to: 01028999810</a>
+<a href="callto://01111988246">Make a SkyBe Call to: 01028999810</a>
+<br>
 <a href="skype:abdullah.motawa?call">Make a SkyBe Call to: 01028999810</a>
 <hr>
 
