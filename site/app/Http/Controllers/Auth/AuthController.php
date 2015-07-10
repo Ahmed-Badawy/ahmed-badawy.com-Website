@@ -79,9 +79,10 @@ class AuthController extends Controller
         // }elseif($outh_type=="twitter"){
         // }
         $user = \Socialize::with($outh_type)->user();
+        dd($user);
+        
         redirect("spidro/socialite/login")->withInput();//->with(['user',$user]);
 
-        // dd($user);
 
         // OAuth Two Providers
         // $token = $user->token;
@@ -99,5 +100,5 @@ class AuthController extends Controller
     }
 
 
-    
+
 }
