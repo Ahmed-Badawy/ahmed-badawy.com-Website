@@ -80,7 +80,6 @@ class AuthController extends Controller
         // }
         $user = \Socialize::with($outh_type)->user();
         dd($user);
-        
 
         redirect("spidro/socialite/login")->withInput();//->with(['user',$user]);
 
