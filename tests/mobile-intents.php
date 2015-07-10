@@ -46,6 +46,12 @@
 
 
 
+
+<!-- ************************************************************************ -->
+
+
+
+
 <h1>Sharing Buttons</h1>
 
 <?php 
@@ -58,24 +64,27 @@ a new mention: @ahmed_badawy التانى: @ahmed_badawy_x  ده واح كمان
 ?>
 
 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Facebook</a>
-
 <hr>
 
 <a target="_blank" href="http://twitter.com/home?status=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Twitter</a>
-
 <hr>
 
 <a target="_blank" href="https://plus.google.com/share?url=<?php echo $url; ?>&gpsrc=frameless" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Google+</a>
-
 <hr>
 
 <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $url; ?>&title=<?php echo $title; ?>&summary=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Linked-In</a>
-
 <hr>
 
 <a target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo $url; ?>&media=<?php echo $img; ?>&description=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Pinterest</a>
-
 <hr>
+
+<a target="_blank" href="https://vk.com/share.php?url=<?php echo $url; ?>&title=<?php echo $title; ?>&description=<?php echo $text; ?>&image=<?php echo $img; ?>&noparse=true" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in VK.com</a>
+<hr>
+
+<a target="_blank" href="https://api.xing.com/v1/users/me/share/link?uri=http%3A%2F%2Fwww.xing.com&text=join+now" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Xing</a>
+<!-- <a target="_blank" href="https://api.xing.com/v1/users/me/share/link?uri=<?php echo $url; ?>&text=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Xing</a> -->
+<hr>
+
 
 <a target="_blank" href="mailto:?subject=<?php echo $title ?>&body=<?php echo $text ?>">Send Email</a>
 <br>

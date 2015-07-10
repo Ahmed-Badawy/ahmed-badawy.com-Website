@@ -11,9 +11,9 @@
       <form action="{!! url('contact') !!}" method='post' class='form col-md-12 center-block'>
       <div class="modal-body">
 
-<h4>Call me: 01111988246</h4>
-<h4>Or email me: ({{social('admin_email')}}) 
-<a href="mailto:{{social('admin_email')}}?Subject=Contact%20Message">
+<h4>Call me: {{social('my_phone_1')}}</h4>
+<h4>Or email me: ({{social('my_email_1')}}) 
+<a href="mailto:{{social('my_email_1')}}?Subject=Contact%20Message">
 {!! fa2('envelope-square') !!}</a>
 </h4>
 

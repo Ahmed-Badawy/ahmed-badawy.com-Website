@@ -12,27 +12,7 @@
         ";
         return $loader;
     }
-
-
-    function get_share_link($share_type,$share_data){
-        $data = [
-            "title" => rawurlencode($share_data['title']),
-            "url" => $share_data['url'],
-            "send_text" => rawurlencode($share_data['text']), 
-            "img" => $share_data['img'],        
-        ];
-        extract($data);
-        if($share_type==1 || $share_type=="facebook") $link = "https://www.facebook.com/sharer/sharer.php?u=$url";
-        if($share_type==2 || $share_type=="twitter") $link = "http://twitter.com/home?status=$send_text";
-        if($share_type==3 || $share_type=="google-plus") $link = "https://plus.google.com/share?url=$url&gpsrc=frameless";
-        if($share_type==4 || $share_type=="linked-in") $link = "https://www.linkedin.com/shareArticle?mini=true&url=$url&title=$title&summary=$send_text";
-        if($share_type==5 || $share_type=="pinterest") $link = "https://www.pinterest.com/pin/create/button/?url=$url&media=$img&description=$send_text";
-        if($share_type==6 || $share_type=="stumbleupon") $link = "http://www.stumbleupon.com/submit?url=$url&title=$title";
-        if($share_type==7 || $share_type=="whatsapp") $link = "whatsapp://send?text=$send_text";
-        if($share_type==8 || $share_type=="email") $link = "mailto:?subject=$title&body=$send_text";
-        return $link;
-    }
-
+    
     
 if ( ! function_exists('br')){
     function br($int=1){

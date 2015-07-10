@@ -169,6 +169,8 @@
     <li><a href="{!! url('cv/download/rar') !!}" class="deny english">{!! fa2('external-link-square') !!} CV -- win shortcut</a></li>
     <li class="divider"></li>
 
+
+
     <?php
       $share_data = [
           "url" => "http://ahmed-badawy.com/site/cv",
@@ -176,18 +178,56 @@
           "text" => " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
           "img" => "http://ahmed-badawy.com/site/public/site-imgs/site/logo.jpg",        
       ];
-
-      $js_popup = "centeredPopup(this.href,'myWindow','700','300','yes');return false";
     ?>
 <li role="presentation" class="dropdown-header english">Share With</li>
 
-<li><a class="english" target="_blank" href="{!! get_share_link(1,$share_data) !!}" onclick="{{$js_popup}}">{!! fa2('facebook-square') !!} Facebook</a></li>
-<li><a class='english' target="_blank" href="{!! get_share_link(2,$share_data) !!}" onclick="{{$js_popup}}">{!! fa2('twitter-square') !!} Twitter</a></li>
-<li><a class='english' target="_blank" href="{!! get_share_link(3,$share_data) !!}" onclick="{{$js_popup}}">{!! fa2('google-plus-square') !!} Google+</a></li>
+<li><a class="english social_share_link" target="_blank" shareType="facebook">{!! fa2('facebook-square') !!} Facebook</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="twitter">{!! fa2('twitter-square') !!} Twitter</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="google-plus">{!! fa2('google-plus-square') !!} Google+</a></li>
 
-<li><a class='english' target="_blank" href="{!! get_share_link(4,$share_data) !!}" onclick="{{$js_popup}}">{!! fa2('linkedin-square') !!} Linked-In</a></li>
-<li><a class='english' target="_blank" href="{!! get_share_link(5,$share_data) !!}" onclick="{{$js_popup}}">{!! fa2('pinterest-square') !!} Pinterest</a></li>
-<li><a class='english' target="_blank" href="{!! get_share_link(6,$share_data) !!}" onclick="{{$js_popup}}">{!! fa2('stumbleupon',0) !!} stumbleUpon</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="linked-in">{!! fa2('linkedin-square') !!} Linked-In</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="google-plus">{!! fa2('pinterest-square') !!} Pinterest</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="stumbleupon">{!! fa2('stumbleupon',0) !!} stumbleUpon</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="vk">{!! fa2('vk',0) !!} VK</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="xing">{!! fa2('xing-square',0) !!} Xing</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="tumblr">{!! fa2('tumblr-square',0) !!} Tumblr</a></li>
+<li><a class='english social_share_link' target="_blank" shareType="reddit">{!! fa2('reddit-square',0) !!} Reddit</a></li>
+
+<script type="text/javascript">
+  var share_data = {
+    url       : "http://ahmed-badawy.com/site/cv",
+    title     : "Ahmed-Badawy's C.V (Please Read Me)",
+    text      : " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
+    img       : "http://ahmed-badawy.com/site/public/site-imgs/site/logo.jpg",        
+  };
+  share_data.prepared_url = encodeURIComponent(share_data.url);
+  share_data.prepared_img = encodeURIComponent(share_data.img);
+
+  function get_share_link(share_type){
+      var $link;
+      if(share_type=="facebook") $link = "https://www.facebook.com/sharer/sharer.php?u="+share_data.prepared_url;
+      if(share_type=="twitter") $link = "http://twitter.com/home?status="+share_data.text;
+      if(share_type=="google-plus") $link = "https://plus.google.com/share?url="+share_data.prepared_url+"&gpsrc=frameless";
+      if(share_type=="linked-in") $link = "https://www.linkedin.com/shareArticle?mini=true&url="+share_data.prepared_url+"&title="+share_data.title+"&summary="+share_data.text+"";
+      if(share_type=="pinterest") $link = "https://www.pinterest.com/pin/create/button/?url="+share_data.prepared_url+"&media=$img&description="+share_data.text+"";
+      if(share_type=="stumbleupon") $link = "http://www.stumbleupon.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
+      if(share_type=="vk") $link = "https://vk.com/share.php?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"&image=$img&noparse=true";
+      if(share_type=="xing") $link = "https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="+share_data.prepared_url+"";
+      if(share_type=="tumblr") $link = "http://www.tumblr.com/share/link?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"";
+      if(share_type=="reddit") $link = "http://www.reddit.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
+      if(share_type=="whatsapp") $link = "whatsapp://send?text="+share_data.text+"";
+      if(share_type=="email") $link = "mailto:?subject="+share_data.title+"&body="+share_data.text+"";
+      return $link;
+  }
+  $('.social_share_link').on('click',function(){
+    share_type = this.getAttribute('shareType');
+    link = get_share_link(share_type);
+    console.log(link);
+    num = Math.random();
+    centeredPopup(link, num+"toString" ,'700','300','yes');return false;
+  });
+</script>
+
 
     <li class="divider"></li>
 <li role="presentation" class="dropdown-header english">Send To</li>
@@ -285,6 +325,7 @@
 <h3 id="brief" dir='rtl'>ملخص الـ C.V</h3>
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>
+<!-- <li>مصرى مستقر بمصر أبحث عن عمل بالخليج</li> -->
 <li>25 سنة  -  غير مدخن  -  أقود و حامل لرخصة قيادة</li>
 <li>خبرة 3 سنوات فى - تطوير المواقع بالـ    <span class='english'>PHP , javascript</span></li>
 <li>مبرمج و مطور - خبرة فى تنفيذ الأفكار الجديدة و أيجاد الحلول المستحدثة.</li>
@@ -323,9 +364,9 @@
 
 <b class='arabic' style='font-size:1.5em'>تواصل معى: 
  &nbsp; -- &nbsp;
-{!!fa2('phone-square',0)!!} <span class='bright english'>01111988246</span>
+{!!fa2('phone-square',0)!!} <span class='bright english'>{{social('my_phone_1')}}</span>
  &nbsp; -- &nbsp;
-{!!fa2('send',0)!!} <span class='bright english'>admin@ahmed-badawy.com</span>
+{!!fa2('send',0)!!} <span class='bright english'>{{social('my_email_1')}}</span>
 </b>
 
 </ul>
@@ -358,8 +399,8 @@ My objective is to be better programer/developer,  So to achieve that I always t
 <li dir='rtl'><b>التعليم : </b>  باكليريوس فى علوم الحاسبات و المعلومات</li>
 <li dir='rtl'><b>الموقع : </b> <a href='http://ahmed-badawy.com/site' target='_blank' class='english btn btn-xs btn-default '>Ahmed-badawy.com/site</a></li>
 <li dir='rtl'><b>المدونة الشخصية : </b> <a href='http://ahmed-badawy.com/blog' target='_blank' class='english btn btn-xs btn-default'>Ahmed-badawy.com/blog</a></li>
-<li dir='rtl'><b>رقم الهاتف : </b> &nbsp; <span class='bright'>01111988246</span></li>
-<li dir='rtl'><b>الإيميل  : </b> {{social('admin_email')}} <a href="#sec7" class='btn btn-default btn-xs'>أرسل رسالة إلى</a> </li>
+<li dir='rtl'><b>رقم الهاتف : </b> &nbsp; <span class='bright'>{{social('my_phone_1')}}</span></li>
+<li dir='rtl'><b>الإيميل  : </b> {{social('my_email_1')}} <a href="#sec7" class='btn btn-default btn-xs'>أرسل رسالة إلى</a> </li>
 <li dir='rtl'><b>معلومات إخرى : </b> ( غير مدخن ,&nbsp; أقود و لدى رخصة قيادة ,&nbsp; سريع بالكيبورد )</li>
 </ul>
 <!-- ******************************************************************** -->
@@ -752,8 +793,8 @@ $i++;
 	<div class='col-sm-6'>
 	<h3 id='sec5' dir='rtl'>Contact Me</h3>
 <ul class='list-group '>
-      <li class="col-sm-12 list-group-item">{!! fa2("at") !!} {{social('admin_email')}}</li>
-      <li class="col-sm-12 list-group-item">{!! fa2("mobile") !!} 01111988246</li>
+      <li class="col-sm-12 list-group-item">{!! fa2("at") !!} {{social('my_email_1')}}</li>
+      <li class="col-sm-12 list-group-item">{!! fa2("mobile") !!} {{social('my_phone_1')}}</li>
       <li class="col-sm-12 list-group-item">{!! fa2("desktop") !!} <a href='{!! url("/") !!}'>www.Ahmed-Badawy.com</a></li>
 </ul>
 	</div>

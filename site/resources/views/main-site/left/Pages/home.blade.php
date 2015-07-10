@@ -84,7 +84,7 @@
       <div class="row">
        
 <div class="col-sm-12 text-center space-above" id='social' style="font-size:35pt;">
-        <a href="mailto:{{social('admin_email')}}?Subject=Contact%20Message" target="_top">{!! fa2("envelope-square") !!}</a>
+        <a href="mailto:{{social('my_email_1')}}?Subject=Contact%20Message" target="_top">{!! fa2("envelope-square") !!}</a>
         <a href="{{social('facebook')}}" target="_blank">{!! fa2("facebook-square") !!}</a>
         <a href="{{social('twitter')}}" target="_blank">{!! fa2("twitter-square") !!}</a>
         <a href="{{social('google-plus')}}" target="_blank">{!! fa2("google-plus-square") !!}</a>

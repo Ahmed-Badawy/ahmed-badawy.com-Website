@@ -40,6 +40,7 @@
 
 <script type="text/javascript">
     var layout = "{{$layout}}";
+    var my_underline_text = "برمجة أحمد بدوى - {{social('my_phone_1')}}";
 </script>
 {!! get_angular("text-image","games") !!}
 
@@ -49,7 +50,7 @@
 
 
 <h4 class="bright bright-background arabic" dir='rtl'>
-    لعمل برنامج مثل هذا بشعار موقعك أو شعار شركتك وعرضه على الأنترنت لعملائك - 300 جنيه بس - أتصل على 01111988246
+    لعمل برنامج مثل هذا بشعار موقعك أو شعار شركتك وعرضه على الأنترنت لعملائك - 300 جنيه بس - أتصل على {{social('my_phone_1')}}
 </h4>
 
 

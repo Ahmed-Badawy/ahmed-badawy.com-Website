@@ -63,8 +63,11 @@ if(false){												//Force Mode
 
 	function social($key){
 		$social_const = [
-			"admin_email"	=>	"admin@site.ahmed-badawy.com",
-			"admin_email_2"	=>	"admin@ahmed-badawy.com",
+			"my_phone_1" 	=>	"01111988246",
+			"my_phone_2" 	=>	"01028999810",
+			"my_email_1"	=>	"info@ahmed-badawy.com",
+			"my_email_2"	=>	"admin@ahmed-badawy.com",
+			"my_email_3"	=>	"admin@site.ahmed-badawy.com",
 
 			"facebook" 		=>	"https://www.facebook.com/Ahmed.Badawy.Elsaid",
 			"twitter" 		=>	"https://twitter.com/ahmed_badawy_x",
@@ -72,7 +75,12 @@ if(false){												//Force Mode
 			"github"		=>	"https://github.com/courtaks",
 			"pinterest"		=>	"http://www.pinterest.com/ahmedbadawyelsa/",
 			"linkedin"		=>	"https://www.linkedin.com/profile/view?id=317402952",
-			"instagram"		=>	"http://instagram.com/a7med.badawy"
+			"instagram"		=>	"http://instagram.com/a7med.badawy",
+			"xing"			=>	"https://www.xing.com/profile/ahmed_badawy7",
+			"vk"			=>	"http://vk.com/id312885906",
+			"reddit"		=>	"https://www.reddit.com/user/courtaks",
+			"tumblr"		=>	"http://courtaks.tumblr.com",
+			"youtube"		=>	"",
 		];
 		return $social_const[$key];
 	}

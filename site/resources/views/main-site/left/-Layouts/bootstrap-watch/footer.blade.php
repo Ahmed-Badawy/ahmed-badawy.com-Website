@@ -16,14 +16,20 @@
 @section('social_media')
 <h6>
 	<div class="col-sm-4">
-<a href="mailto:{{social('admin_email')}}?Subject=Contact%20Message" target="_top">{!! fa2('envelope-square') !!}</a>
-<a href="{{social('facebook')}}" target="_blank">{!! fa2('facebook-square') !!}</a>
-<a href="{{social('twitter')}}" target="_blank">{!! fa2('twitter-square') !!}</a>
-<a href="{{social('google-plus')}}" target="_blank">{!! fa2('google-plus-square') !!}</a>
-<a href="{{social('github')}}" target="_blank">{!! fa2('github-square') !!}</a>
-<a href="{{social('pinterest')}}" target="_blank">{!! fa2('pinterest-square') !!}</a>
-<a href="{{social('linkedin')}}" target="_blank">{!! fa2('linkedin-square') !!}</a>
+<a href="mailto:{{social('my_email_1')}}?Subject=Contact%20Message" target="_top">{!! fa2('envelope') !!}</a>
+<!-- <a href="mailto:{{social('my_email_1')}}?Subject=Contact%20Message" target="_top">{!! fa2('phone') !!}</a>
+<a href="mailto:{{social('my_email_1')}}?Subject=Contact%20Message" target="_top">{!! fa2('whatsapp') !!}</a>
+<a href="mailto:{{social('my_email_1')}}?Subject=Contact%20Message" target="_top">{!! fa2('map-marker') !!}</a> -->
+<a href="{{social('facebook')}}" target="_blank">{!! fa2('facebook') !!}</a>
+<a href="{{social('twitter')}}" target="_blank">{!! fa2('twitter') !!}</a>
+<a href="{{social('google-plus')}}" target="_blank">{!! fa2('google-plus') !!}</a>
+<a href="{{social('github')}}" target="_blank">{!! fa2('github') !!}</a>
+<!-- <a href="{{social('pinterest')}}" target="_blank">{!! fa2('pinterest') !!}</a>
+<a href="{{social('linkedin')}}" target="_blank">{!! fa2('linkedin') !!}</a>
 <a href="{{social('instagram')}}" target="_blank">{!! fa2('instagram') !!}</a>
+<a href="{{social('xing')}}" target="_blank">{!! fa2('xing') !!}</a>
+<a href="{{social('vk')}}" target="_blank">{!! fa2('vk') !!}</a>
+<a href="{{social('vk')}}" target="_blank">{!! fa2('youtube') !!}</a> -->
 	</div>
 </h6>
 @show	
