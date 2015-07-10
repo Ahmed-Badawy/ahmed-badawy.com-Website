@@ -8,49 +8,54 @@
 
 <h1>Mobile Intents</h1>
 
+
+
+<ul>
+
+
+<li>
 <a href="mailto:admin@ahmed-badawy.com?subject=this is the subject">
   أرسل رسالة ميل
-</a>
-<hr>
+</a></li>
 
-<a href="tel:01028999810">Make a Phone Call to: 01028999810</a>
-<hr>
+<li>
+<a href="tel:01028999810">Make a Phone Call to: 01028999810</a></li>
 
-<a href="callto://01111988246">Make a SkyBe Call to: 01028999810</a>
-<br>
-<a href="skype:abdullah.motawa?call">Make a SkyBe Call to: 01028999810</a>
-<hr>
+<li>
+<a href="callto://+0201028999810">Make a SkyBe Call to: 01028999810</a></li>
+<li>
+<a href="skype:abdullah.motawa?call">Make a SkyBe Call to: abdullah.motawa</a></li>
 
-<a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share a text via Whatsapp</a>
-<hr>
+<li>
+<a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share a text via Whatsapp</a></li>
 
-<a href="geo:30,31">Open Location on Google Maps</a>
-<hr>
+<li>
+<a href="geo:30,31">Open Location on Google Maps</a></li>
 
+<li>
 <label>take img & upload</label>
-<input type="file" accept="image/*;capture=camera">
-<hr>
+<input type="file" accept="image/*;capture=camera"></li>
 
+<li>
 <label>take a video & upload</label>
-<input type="file" accept="video/*;capture=camcorder">
-<hr>
+<input type="file" accept="video/*;capture=camcorder"></li>
 
+<li>
 <label>take a Sound & upload</label>
-<input type="file" accept="audio/*;capture=microphone">
-<hr>
+<input type="file" accept="audio/*;capture=microphone"></li>
 
 
+<li>
     autocorrect<input type="text" placeholder="Star's name"/>
     <br>
-    no autocorrect<input type="text" autocorrect="off" placeholder="Star's name"/>
-<hr>
+    no autocorrect<input type="text" autocorrect="off" placeholder="Star's name"/></li>
+<li>
     autocapitalize<input type="text" placeholder="Tag your sighting"/>
     <br>
-    no autocapitalize<input type="text" autocapitalize="off" placeholder="Tag your sighting"/>
-<hr>
+    no autocapitalize<input type="text" autocapitalize="off" placeholder="Tag your sighting"/></li>
 
 
-
+</ul>
 
 <!-- ************************************************************************ -->
 
