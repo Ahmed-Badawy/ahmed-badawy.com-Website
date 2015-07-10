@@ -16,6 +16,9 @@
 <a href="tel:01028999810">Make a Phone Call to: 01028999810</a>
 <hr>
 
+<a href="callto:01028999810">Make a SkyBe Call to: 01028999810</a>
+<hr>
+
 <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share a text via Whatsapp</a>
 <hr>
 
@@ -54,51 +57,56 @@
 
 <h1>Sharing Buttons</h1>
 
-<?php 
-  $url = rawurlencode("http://ahmed-badawy.com/site/projects/quran");
-  $title = rawurlencode("this is the title");
-  $img = "http://ahmed-badawy.com/site/public/site-imgs/met/1.jpg";
-  $text = rawurlencode("body - hello! my website: http://ahmed-badawy.com/site
-<br>br
-a new mention: @ahmed_badawy التانى: @ahmed_badawy_x  ده واح كمان #هشخ_يعنى_هشخ");
-?>
+<ul>
 
-<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Facebook</a>
-<hr>
+<li><a class="social_share_link" href='' shareType="facebook">Facebook</a></li>
+<li><a class='social_share_link' href='' shareType="twitter">Twitter</a></li>
+<li><a class='social_share_link' href='' shareType="google-plus">Google+</a></li>
 
-<a target="_blank" href="http://twitter.com/home?status=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Twitter</a>
-<hr>
+<li><a class='social_share_link' href='' shareType="linked-in">Linked-In</a></li>
+<li><a class='social_share_link' href='' shareType="google-plus">Pinterest</a></li>
+<li><a class='social_share_link' href='' shareType="stumbleupon">stumbleUpon</a></li>
+<li><a class='social_share_link' href='' shareType="vk">VK</a></li>
+<li><a class='social_share_link' href='' shareType="xing">Xing</a></li>
+<li><a class='social_share_link' href='' shareType="tumblr">Tumblr</a></li>
+<li><a class='social_share_link' href='' shareType="reddit">Reddit</a></li>
 
-<a target="_blank" href="https://plus.google.com/share?url=<?php echo $url; ?>&gpsrc=frameless" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Google+</a>
-<hr>
-
-<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $url; ?>&title=<?php echo $title; ?>&summary=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Linked-In</a>
-<hr>
-
-<a target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo $url; ?>&media=<?php echo $img; ?>&description=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Pinterest</a>
-<hr>
-
-<a target="_blank" href="https://vk.com/share.php?url=<?php echo $url; ?>&title=<?php echo $title; ?>&description=<?php echo $text; ?>&image=<?php echo $img; ?>&noparse=true" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in VK.com</a>
-<hr>
-
-<a target="_blank" href="https://api.xing.com/v1/users/me/share/link?uri=http%3A%2F%2Fwww.xing.com&text=join+now" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Xing</a>
-<!-- <a target="_blank" href="https://api.xing.com/v1/users/me/share/link?uri=<?php echo $url; ?>&text=<?php echo $text; ?>" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Share in Xing</a> -->
-<hr>
+</ul>
 
 
-<a target="_blank" href="mailto:?subject=<?php echo $title ?>&body=<?php echo $text ?>">Send Email</a>
-<br>
-<a target="_blank" href="whatsapp://send?text=<?php echo $text; ?>">Share in whatsApp</a>
+<script type="text/javascript">
+  var share_data = {
+    url         : "http://ahmed-badawy.com/site/cv",
+    title       : "Ahmed-Badawy's C.V (Please Read Me)",
+    text        : " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
+    img         : "http://ahmed-badawy.com/site/public/site-imgs/site/logo.jpg",  
+    phone_num   : "01111988246",
+    google_maps : "30,31",
+  };
+  share_data.prepared_url = encodeURIComponent(share_data.url);
+  share_data.prepared_img = encodeURIComponent(share_data.img);
 
+  function get_share_link(share_type){
+      var $link;
+      if(share_type=="facebook") $link = "https://www.facebook.com/sharer/sharer.php?u="+share_data.prepared_url;
+      if(share_type=="twitter") $link = "http://twitter.com/home?status="+share_data.text;
+      if(share_type=="google-plus") $link = "https://plus.google.com/share?url="+share_data.prepared_url+"&gpsrc=frameless";
+      if(share_type=="linked-in") $link = "https://www.linkedin.com/shareArticle?mini=true&url="+share_data.prepared_url+"&title="+share_data.title+"&summary="+share_data.text+"";
+      if(share_type=="pinterest") $link = "https://www.pinterest.com/pin/create/button/?url="+share_data.prepared_url+"&media=$img&description="+share_data.text+"";
+      if(share_type=="stumbleupon") $link = "http://www.stumbleupon.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
+      if(share_type=="vk") $link = "https://vk.com/share.php?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"&image=$img&noparse=true";
+      if(share_type=="xing") $link = "https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="+share_data.prepared_url+"";
+      if(share_type=="tumblr") $link = "http://www.tumblr.com/share/link?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"";
+      if(share_type=="reddit") $link = "http://www.reddit.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
 
-  </p>
+      if(share_type=="whatsapp") $link = "whatsapp://send?text="+share_data.text+"";
 
+      if(share_type=="email") $link = "mailto:?subject="+share_data.title+"&body="+share_data.text+"";
+      if(share_type=="call_phone") $link = "tel:"+share_data.phone_num;
+      if(share_type=="google-maps") $link = "geo:"+share_data.google_maps;
+      return $link;
+  }
 
-
-
-  <script language="javascript">
-  //to use this function just call it on click: onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false"
-    var popupWindow = null;
     function centeredPopup(url,winName,w,h,scroll){
       LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
       TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
@@ -107,8 +115,20 @@ a new mention: @ahmed_badawy التانى: @ahmed_badawy_x  ده واح كمان
       popupWindow = window.open(url,winName,settings);
     }
 
-  </script>
-  <!-- <p><a href="http://www.quackit.com/common/link_builder.cfm" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">Centered Popup</a></p> -->
+    var tags = document.getElementsByClassName('social_share_link');
+    for(var i=0, n=tags.length; i<n ; i++){
+      tags[i].addEventListener('click',function(evt){
+            evt.preventDefault();
+            share_type = this.getAttribute('shareType');
+            link = get_share_link(share_type);
+            console.log(link);
+            num = Math.random();
+            centeredPopup(link, num+"toString" ,'700','300','yes');
+      },false);
+    }
+
+</script>
+
 
 
 </body>

@@ -171,14 +171,6 @@
 
 
 
-    <?php
-      $share_data = [
-          "url" => "http://ahmed-badawy.com/site/cv",
-          "title" => "Ahmed-Badawy's C.V (Please Read Me)",
-          "text" => " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
-          "img" => "http://ahmed-badawy.com/site/public/site-imgs/site/logo.jpg",        
-      ];
-    ?>
 <li role="presentation" class="dropdown-header english">Share With</li>
 
 <li><a class="english social_share_link" target="_blank" shareType="facebook">{!! fa2('facebook-square') !!} Facebook</a></li>
@@ -195,10 +187,12 @@
 
 <script type="text/javascript">
   var share_data = {
-    url       : "http://ahmed-badawy.com/site/cv",
-    title     : "Ahmed-Badawy's C.V (Please Read Me)",
-    text      : " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
-    img       : "http://ahmed-badawy.com/site/public/site-imgs/site/logo.jpg",        
+    url         : "http://ahmed-badawy.com/site/cv",
+    title       : "Ahmed-Badawy's C.V (Please Read Me)",
+    text        : " -!--Ahmed Badawy - أحمد بدوى--!- Hello! This is My C.V : http://ahmed-badawy.com/site/cv", 
+    img         : "http://ahmed-badawy.com/site/public/site-imgs/site/logo.jpg",  
+    phone_num   : "01111988246",
+    google_maps : "30,31",
   };
   share_data.prepared_url = encodeURIComponent(share_data.url);
   share_data.prepared_img = encodeURIComponent(share_data.img);
@@ -215,10 +209,23 @@
       if(share_type=="xing") $link = "https://www.xing-share.com/app/user?op=share;sc_p=xing-share;url="+share_data.prepared_url+"";
       if(share_type=="tumblr") $link = "http://www.tumblr.com/share/link?url="+share_data.prepared_url+"&title="+share_data.title+"&description="+share_data.text+"";
       if(share_type=="reddit") $link = "http://www.reddit.com/submit?url="+share_data.prepared_url+"&title="+share_data.title+"";
+
       if(share_type=="whatsapp") $link = "whatsapp://send?text="+share_data.text+"";
+
       if(share_type=="email") $link = "mailto:?subject="+share_data.title+"&body="+share_data.text+"";
+      if(share_type=="call_phone") $link = "tel:"+share_data.phone_num;
+      if(share_type=="google-maps") $link = "geo:"+share_data.google_maps;
       return $link;
   }
+
+    function centeredPopup(url,winName,w,h,scroll){
+      LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+      TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+      settings =
+      'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+      popupWindow = window.open(url,winName,settings);
+    }
+
   $('.social_share_link').on('click',function(){
     share_type = this.getAttribute('shareType');
     link = get_share_link(share_type);
@@ -867,18 +874,7 @@ $body.scrollspy({
 </script>
    
 
-  <script language="javascript">
-  //to use this function just call it on click: onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false"
-    var popupWindow = null;
-    function centeredPopup(url,winName,w,h,scroll){
-      LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
-      TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
-      settings =
-      'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
-      popupWindow = window.open(url,winName,settings);
-    }
 
-  </script>
 
 
 @section('share')

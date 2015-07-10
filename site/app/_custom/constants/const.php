@@ -72,7 +72,7 @@ if(false){												//Force Mode
 			"facebook" 		=>	"https://www.facebook.com/Ahmed.Badawy.Elsaid",
 			"twitter" 		=>	"https://twitter.com/ahmed_badawy_x",
 			"google-plus"	=>	"https://plus.google.com/u/0/112617558420458089489/about",
-			"github"		=>	"https://github.com/courtaks",
+			"github"		=>	"https://github.com/ahmed-badawy",
 			"pinterest"		=>	"http://www.pinterest.com/ahmedbadawyelsa/",
 			"linkedin"		=>	"https://www.linkedin.com/profile/view?id=317402952",
 			"instagram"		=>	"http://instagram.com/a7med.badawy",
