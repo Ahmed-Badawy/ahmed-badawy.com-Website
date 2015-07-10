@@ -362,7 +362,7 @@
   </ul> 
 </br>
 
-<b class='arabic' style='font-size:1.5em'>تواصل معى: 
+<b class='arabic' style='font-size:1.5em;color:#111;'>تواصل معى: 
  &nbsp; -- &nbsp;
 {!!fa2('phone-square',0)!!} <span class='bright english'>{{social('my_phone_1')}}</span>
  &nbsp; -- &nbsp;
