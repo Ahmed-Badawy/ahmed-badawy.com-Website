@@ -79,7 +79,7 @@ if(false){												//Force Mode
 			"xing"			=>	"https://www.xing.com/profile/ahmed_badawy7",
 			"vk"			=>	"http://vk.com/id312885906",
 			"reddit"		=>	"https://www.reddit.com/user/courtaks",
-			"tumblr"		=>	"http://courtaks.tumblr.com",
+			"tumblr"		=>	"http://ahmed-badawy-personal.tumblr.com",
 			"youtube"		=>	"",
 		];
 		return $social_const[$key];

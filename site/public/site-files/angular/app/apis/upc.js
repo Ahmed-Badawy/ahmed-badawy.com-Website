@@ -14,19 +14,13 @@ myapp.controller('main',function($scope){
 	$scope.link = "";
 
 	$scope.render_img = function(){
-
-		console.log($scope.dpi);
-
 		$scope.link = base_url+"public/barcodegen-1d/html/image.php?filetype="+$scope.file_type+
 		"&dpi="+$scope.dpi+"&scale="+$scope.scale+"&rotation="+$scope.rotation+"&font_family="+$scope.font+
 		"&font_size="+$scope.font_size+"&text="+$scope.text+"&thickness="+$scope.thickness+"&code=BCGcode39extended";
+		console.log($scope.myform);
 		return false;
 	}
 	$scope.render_img();
 
-	// $scope.$watchGroup(["file_type","text","dpi",""],function(){
-	// 	console.log("hello");
-	// 	$scope.construct_img();
-	// })
 
 });
