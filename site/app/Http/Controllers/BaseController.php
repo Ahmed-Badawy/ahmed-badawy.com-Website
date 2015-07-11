@@ -86,10 +86,13 @@ public $layouts = [
 			// \Cache::forget("last_db_backup");
 			if(!\Cache::has('last_db_backup')){
 				// $dir  = "D:/xampp/htdocs/ahmed-badawy.com/backups/db"; // directory files
-				$dir  = base_path("backups/db"); // directory files
+				$dir  = base_path("backups"); // directory files
 				$db_name = "courtaks_maindb";
-				$name = time()."-".$db_name; // name sql backup
-				backup_database($dir, $name, 'localhost','root','',$db_name); // execute
+				$output_name = time()."-".$db_name; // output name sql backup
+				$db_user_name 		= 	"root";
+				$db_user_pass 	= 	"";
+				$db_host = "localhost";
+				backup_database($dir, $output_name,$db_host,$db_user_name,$db_user_pass,$db_name); // execute
 				\Cache::put('last_db_backup', time() , 5000); // 3.5 days
 			}
 	}
