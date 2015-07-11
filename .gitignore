@@ -49,6 +49,9 @@ Temporary Items
 
 
 
+/tests/Sharing-Buttons
+/tests/RW-DBs-with-compression-in-PHP
+
 
 /site/vendor
 /site/node_modules
