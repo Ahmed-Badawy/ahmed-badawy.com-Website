@@ -95,7 +95,7 @@ Route::get("json-test/{get_what?}",function($get_what=null){
 }
 	';
 
-	if($get_what==null){
+	if($get_what==null || $get_what=="persons"){
 		return $persons;
 	}elseif($get_what=="chaos"){
 		return $chaios_data;
