@@ -64,7 +64,7 @@ Route::get("json-test/{get_what?}",function($get_what=null){
    "pageInfo": {
          "pageName": "this is the page name",
          "pagePic": "http://example.com/content.jpg"
-    }
+    },
     "posts": [
         {
               "post_id": "123456789012_123456789012",
