@@ -65,7 +65,7 @@ Route::get("json-test/{get_what?}",function($get_what=null){
           "id"=>3,
           "name"=>"ali",      
           "age"=>50,
-          "height"=>180  
+          "height"=>180,  
           "phone"=>8080,
           "img"=>"" 
       ],
