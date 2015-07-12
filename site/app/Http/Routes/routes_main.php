@@ -60,6 +60,7 @@ Route::get("json-test/{get_what?}",function($get_what=null){
 
 	$chaios_data = '
 {
+    "pageName" : "page name is here",
    "pageInfo": {
          "pageName": "this is the page name",
          "pagePic": "http://example.com/content.jpg"
