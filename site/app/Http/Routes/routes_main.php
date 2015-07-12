@@ -53,21 +53,21 @@ Route::get("json-test/{get_what?}",function($get_what=null){
           "age"=>12,
           "height"=>190,
           "phone"=>01111988246,
-          "img"=>""
+          "img"=>"1.png"
       ],[
           "id"=>2,
           "name"=>"mohamed",  
           "age"=>40,
           "height"=>160,
           "phone"=>3040,
-          "img"=>""
+          "img"=>"2.png"
       ],[
           "id"=>3,
           "name"=>"ali",      
           "age"=>50,
           "height"=>180,  
           "phone"=>8080,
-          "img"=>"" 
+          "img"=>"3.png" 
       ],
     ],
     "company" => ["name"=>"spidro",'working_age'=>2],
