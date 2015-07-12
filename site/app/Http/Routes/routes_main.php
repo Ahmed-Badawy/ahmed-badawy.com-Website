@@ -43,16 +43,21 @@ Route::group(array('prefix' => 'registration'), function(){
 /**********************************************************************/
 
 Route::get('site-report/{operation}/{site_name}','SiteController@site_report');
+
 Route::get("json-test/{get_what?}",function($get_what=null){
 	$persons = [
 		"persons"=>[
 			["name"=>"ahmed","age"=>12,"height"=>190],
 			["name"=>"mohamed","age"=>40,"height"=>160],
 			["name"=>"ali","age"=>50,"height"=>180],
-		]
+		],
+    "company" => ["name"=>"spidro",'working_age'=>2],
+    "layout"  => "normal"
 	];
 
-	$employees = '{"employees":[
+
+	$employees = '{
+    "employees":[
 	    {"firstName":"John", "lastName":"Doe"},
 	    {"firstName":"Anna", "lastName":"Smith"},
 	    {"firstName":"Peter", "lastName":"Jones"}
