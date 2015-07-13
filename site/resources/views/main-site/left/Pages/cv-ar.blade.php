@@ -310,7 +310,7 @@
                   <!-- <li><a href="#sec10">Work History</a></li> -->
 <?php } ?>
 <?php if(!$fake){ ?>
-                  <!-- <li><a href="#sec1" dir='rtl'>التعليم</a></li> -->
+                  <li><a href="#sec1" dir='rtl'>التعليم</a></li>
 <?php } ?>
                   <li><a href="#sec6" dir='rtl'>اللغات</a></li>
                   <li><a href="#sec5" dir='rtl'>تواصل معى</a></li>
@@ -332,7 +332,6 @@
 <h3 id="brief" dir='rtl'>ملخص الـ C.V</h3>
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>
-<!-- <li>مصرى مستقر بمصر أبحث عن عمل بالخليج</li> -->
 <li>25 سنة  -  غير مدخن  -  أقود و حامل لرخصة قيادة</li>
 <li>خبرة 3 سنوات فى - تطوير المواقع بالـ    <span class='english'>PHP , javascript</span></li>
 <li>مبرمج و مطور - خبرة فى تنفيذ الأفكار الجديدة و أيجاد الحلول المستحدثة.</li>
@@ -403,7 +402,7 @@ My objective is to be better programer/developer,  So to achieve that I always t
 <li dir='rtl'><b>الحالة الإجتماعية : </b> أعزب</li>
 <li dir='rtl'><b>موقف التجنيد : </b> إعفاء نهائى</li>
 <!-- <li dir='rtl'><b>Date of birth : </b>11 August, 1990 </li> -->
-<!-- <li dir='rtl'><b>التعليم : </b>  باكليريوس فى علوم الحاسبات و المعلومات</li> -->
+<li dir='rtl'><b>التعليم : </b>  باكليريوس فى علوم الحاسبات و المعلومات</li>
 <li dir='rtl'><b>الموقع : </b> <a href='http://ahmed-badawy.com/site' target='_blank' class='english btn btn-xs btn-default '>Ahmed-badawy.com/site</a></li>
 <li dir='rtl'><b>المدونة الشخصية : </b> <a href='http://ahmed-badawy.com/blog' target='_blank' class='english btn btn-xs btn-default'>Ahmed-badawy.com/blog</a></li>
 <li dir='rtl'><b>رقم الهاتف : </b> &nbsp; <span class='bright'>{{social('my_phone_1')}}</span></li>
@@ -753,10 +752,10 @@ $i++;
 
 
 <?php if(!$fake){ ?>
-              	<!-- <h3 id="sec1" dir='rtl'>التعليم</h3> -->
+              	<h3 id="sec1" dir='rtl'>التعليم</h3>
 <!-- <p dir='rtl'> -->
 <!-- 2010   =>  2014   :  -->
-<!-- درجة الباكليريوس فى علوم الحاسبات المعلومات بتقدير عام جيد جدا و <span class='bright'>ترتيب السادس على الدفعة</span> -->
+درجة الباكليريوس فى علوم الحاسبات المعلومات بتقدير عام جيد جدا و <span class='bright'>ترتيب السادس على الدفعة</span>
 <!-- - Misr Academy for Engineering and Technology in Mansoura city. -->
 <!-- <br> -->
 <!-- معادلة موثقة لبكليريوس الحاسبات و المعلومات -->
@@ -784,7 +783,8 @@ $i++;
                   </div>  
               	</div>  -->
 
- <!-- <hr> -->
+ <hr>
+
 <?php } ?>
 
 
