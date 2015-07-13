@@ -89,8 +89,16 @@
     color:#ccc;
     background-color:rgba(0,0,0,.5);
     padding:2px;
+    border:2px solid #333;
     border-radius:10px;
     margin-bottom:10px;
+    transition:all .3s ease-out; 
+  }
+  #previous-work li:hover{
+    color:#fff;
+    background-color:rgba(0,0,0,.8);
+    border:2px solid white;
+    cursor:pointer;
   }
 
   #previous-work a{
@@ -333,7 +341,7 @@
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>
 <li>25 سنة  -  غير مدخن  -  أقود و حامل لرخصة قيادة</li>
-<li>خبرة 3 سنوات فى - تطوير المواقع بالـ    <span class='english'>PHP , javascript</span></li>
+<li>خبرة 5 سنوات فى - برمجة البرمجيات و تطوير مواقع الويب بالـ <span class='english'>PHP , javascript</span></li>
 <li>مبرمج و مطور - خبرة فى تنفيذ الأفكار الجديدة و أيجاد الحلول المستحدثة.</li>
 
 <br>
@@ -707,7 +715,8 @@ $i++;
 
         <br/>
           	<h3 dir='rtl'>أعمال سابقة</h3>
-<ul id="previous-work" class='text-center list-unstyled'>
+          <div id="previous-work">
+<ul class='text-center list-unstyled'>
   <li><a href="{{ url('selling-manager') }}" target='_blank'>أتممت الكثير من البرامج الخدمية معظمها برامج مطاعم و محلات بيع وحدات مثل الموبيلات</a></li>
 
   <li><a href="http://ahmed-badawy.com" target='_blank' class='english'>Ahmed-Badawy.com</a></li>
@@ -726,9 +735,20 @@ $i++;
   <li><a href="http://matgar.weebly.com/" target='_blank'>متجر نورا</a></li>
   <li><a href="http://ar.esis.com.tr/" target='_blank'>ESIS Power</a></li>
   <li><a href="http://www.colub.be/" target='_blank'>Colub</a></li>
+</ul>
 
-  <ul class='list-unstyled english' style='border:2px solid white;padding:7px;border-radius:10px'>
-    <h4 class='arabic'>أفكارى و مشاريعى الخاصة</h4>
+<ul class='list-unstyled english text-center' style='border:2px solid white;padding:7px;border-radius:10px'>
+    <h4 class='arabic text-center'>أفكارى و مشاريعى الخاصة</h4>
+    @foreach(\sr::projects() as $project)
+<li class='col-sm-4'><a href="{{$project['link']}}" title='{{$project["page_desc"]}}' dir='rtl' target='_blank'>{{$project['page_name']}}</a></li>
+    @endforeach
+    <div class="clearfix"></div>
+</ul>
+
+
+<div class="clearfix"></div>
+<ul>
+
   <li><a href="{!! route('projects') !!}" target='_blank' class='arabic'>العديد من الأفكار و المشاريع نفذتها بشكل مبدئى فى أوقات الفراغ</a></li>
   <li><a href="{!! route('games') !!}" target='_blank' class='arabic'>ألعاب بسيطة نفذتها</a></li>
   <li><a href="{!! route('apis') !!}" target='_blank' class='arabic'>خدمات للمواقع الخارجية</a></li>
@@ -739,6 +759,14 @@ $i++;
     <div class="clearfix"></div>
 	</ul>
 </ul> 
+
+
+</div>
+
+
+
+
+
 
 <div class="clearfix"></div>  
 <hr>
@@ -753,13 +781,13 @@ $i++;
 
 <?php if(!$fake){ ?>
               	<h3 id="sec1" dir='rtl'>التعليم</h3>
-<!-- <p dir='rtl'> -->
+<p dir='rtl'>
 <!-- 2010   =>  2014   :  -->
 درجة الباكليريوس فى علوم الحاسبات المعلومات بتقدير عام جيد جدا و <span class='bright'>ترتيب السادس على الدفعة</span>
 <!-- - Misr Academy for Engineering and Technology in Mansoura city. -->
 <!-- <br> -->
 <!-- معادلة موثقة لبكليريوس الحاسبات و المعلومات -->
-<!-- </p> -->
+</p>
 <!-- <br> -->
 
 <!--                	<div class="row">
