@@ -578,6 +578,34 @@ Dynamic Page
 	}	
 /**********************************************************************/	
 
+/*********************************************************************
+Dynamic Page 2
+**********************************************************************/
+	public function dynamic2(){
+		$text = \Cache::get('dynamic_text_2',"");
+		$data = [
+			'route_info'=>\sr::projects("dynamic_text"),
+			"ng_app"=>"myApp",
+			'theme'=>$this->themes[0],
+			'text'=>$text,
+		];
+		return $this->get_view("Projects/dynamic_text_2/index",$data); 
+	}
+	// public function dynamic_get(){
+	// 	$data = [
+	// 		'dynamic_text'=> \Cache::get('dynamic_text')
+	// 	];
+	// 	return view(get_location("Projects/dynamic_text/normal"),$data); 
+	// }	
+	public function dynamic2_save(){
+		$input = \Request::all();
+		// dd($input);
+		$text = $input['editor'];
+		\Cache::put('dynamic_text_2',$text,600000);
+		return redirect("projects/dynamic2");
+	}	
+/**********************************************************************/	
+
 
 
 

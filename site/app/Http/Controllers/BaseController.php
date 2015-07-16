@@ -84,29 +84,29 @@ public $layouts = [
 
 	public function backup_db(){
 			// \Cache::forget("last_db_backup");
-			if(!\Cache::has('last_db_backup')){
+			if(!\Cache::has('last_db_backup')){				
+				\Cache::put('last_db_backup', time() , 5000); // 3.5 days
 				// $dir  = "D:/xampp/htdocs/ahmed-badawy.com/backups/db"; // directory files
-				$dir  = base_path("backups"); // directory files
+				$dir  = base_path("backups/db"); // directory files
 				$db_name = "courtaks_maindb";
 				$output_name = time()."-".$db_name; // output name sql backup
 				$db_user_name 		= 	"root";
 				$db_user_pass 	= 	"";
 				$db_host = "localhost";
 				backup_database($dir, $output_name,$db_host,$db_user_name,$db_user_pass,$db_name); // execute
-				\Cache::put('last_db_backup', time() , 5000); // 3.5 days
 			}
 	}
 
 	public function backup_files(){
 		// \Cache::forget("last_files_backup");
 		if(!\Cache::has('last_files_backup')){
+			\Cache::put('last_files_backup', time() , 14400); // 10 days
 			$zipper = new \ZipperClass;
 			$zipper->add_dir(base_path("app"));
 			$zipper->add_dir(base_path("resources"));
 			$zipper->add_dir(base_path("database"));
 			$zipper->add_dir(base_path("public/site-files"));
 			$zipper->store("backups/files/".time()."-files.zip");
-			\Cache::put('last_files_backup', time() , 14400); // 10 days
 		}
 	}	
 

@@ -1,11 +1,16 @@
 
 <!-- *******************************C.V Brief************************************* -->
 <h3 id="brief" dir='rtl'>ملخص الـ C.V</h3>
+
 <script type="text/javascript">
       $("#brief").on("click",function(){
+        $("#brief").addClass("acc_head_selected");
         $("#brief_accordion").slideToggle();
       })
 </script>
+
+
+
 <div id="brief_accordion">
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>

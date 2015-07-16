@@ -153,6 +153,12 @@
      height:100%;   
   }
 
+
+  .acc_head_selected{
+    background:#333;
+    color:red;
+  }
+
 @stop
 
 

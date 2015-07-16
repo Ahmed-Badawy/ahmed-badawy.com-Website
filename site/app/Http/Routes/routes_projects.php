@@ -32,6 +32,9 @@ Route::group(array('prefix' => 'projects'), function(){
 	Route::get('dynamic',['as'=>'dynamic','uses'=>'ProjectsController@dynamic']);
 	Route::get('dynamic/get',['as'=>'dynamic/get','uses'=>'ProjectsController@dynamic_get']);
 	Route::post('dynamic/save',['as'=>'dynamic/save','uses'=>'ProjectsController@dynamic_save']);
+	/********************************Dynamic Text 2**************************************/
+	Route::get('dynamic2',['as'=>'dynamic2','uses'=>'ProjectsController@dynamic2']);
+	Route::post('dynamic2/save',['uses'=>'ProjectsController@dynamic2_save']);
 	/********************************Domain Search**************************************/
 	Route::get('domain',['as'=>'domain','uses'=>'ProjectsController@domain']);
 	Route::post('domain/search','ProjectsController@domain_search');
