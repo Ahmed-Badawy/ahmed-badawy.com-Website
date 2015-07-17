@@ -14,7 +14,7 @@ function out($var){ echo "<hr><pre>".var_export($var,true)."</pre><hr>"; }
 $dropbox_key = "n8jrvnyo92v9k07";
 $dropbox_secret = "u8hwenkfefb6wp3";
 $app_name = "ahmedBadawyApp/1.0";
-$redirect_uri = "http://ahmed-badawy.com/dropbox/redirect-back.php";
+$redirect_uri = "https://ahmed-badawy.com/tests/dropbox-api/redirect-back.php";
 
 
 
