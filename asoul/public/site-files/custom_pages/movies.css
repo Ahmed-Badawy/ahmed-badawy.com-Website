@@ -1,0 +1,112 @@
+body{
+  font-family: 'arial';
+}
+      .media img{
+          width:180px;
+          padding:2px;
+          border:solid #d0d0d0 1px;
+          border-radius: 10px;
+          transition : all 0.3s ease-out;
+      }
+      .media-open img:hover{
+          width:230px;
+          border:solid #333 2px;
+      }
+
+      .media{
+          height: 35px;
+          transition : all 0.3s ease-out;
+          margin:0 ;
+          cursor:pointer;
+      }
+    .media-hover{ 
+            /*background-color:#e8e8e8;*/
+            background-color:#FCE3D2;
+            margin:5px 0 5px 0;
+            border:gray 1px solid;
+            padding:2px 0 4px 0;
+    }
+     .media-open{
+          height:350px;
+          background-color: rgba(255,255,255,.5);
+          border:solid #a0a0a0 2px;
+          padding:8px 6px 8px 6px;
+          border-radius:20px;
+          margin:3px 0 5px 0;
+          animation : myanim 1s;
+      }
+      @keyframes myanim{
+          0% {opacity:0.3;}
+          100% {opacity:1.0;}
+      }   
+
+@media screen and (max-width:770px){
+    .media-open {
+      overflow: scroll;
+    }
+}
+
+
+      .movie-title{
+          color:#333;
+          font-size:115%;
+          font-weight:bold;
+          font-family: "georgia";
+          display:inline;
+          line-height:2.2em;
+      }
+
+
+.label-base{
+  background-color:#f0f0f0;
+  cursor:pointer;
+}
+.player{
+  cursor:pointer;
+  font-size:95%;
+  background-color:#fff;
+  font-weight:bolder;
+  border-radius:10px;
+  padding:3px;
+  white-space: nowrap;
+  transition : all 0.3s ease-out;
+  text-decoration: none;
+}
+.player:hover{
+  text-decoration: none;
+  background-color:#e0e0e0;
+  color:black;
+  font-size: 96%;
+}
+.list-group-item{
+  font-size:100%;
+  font-weight:bolder;
+}
+.pagination a{
+  cursor:pointer;
+}
+.bigger-labels{
+  font-size:100%;
+  padding:7px;
+}
+.slight-big{
+  font-size:90%;
+  line-height: 200%;
+  margin-bottom:1px;
+}
+._icon{
+  font-size: 70%;
+  background-color:#DE5500;
+  color:white;
+  padding:2px;
+  border-radius:3px;
+  margin-right:1px;
+}
+
+.thumbnail{
+  width:190px;
+}
+.thumbnail:hover{
+  width:210px;
+}
+

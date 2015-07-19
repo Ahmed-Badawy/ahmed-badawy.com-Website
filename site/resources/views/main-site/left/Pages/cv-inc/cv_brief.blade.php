@@ -1,17 +1,8 @@
 
 <!-- *******************************C.V Brief************************************* -->
-<h3 id="brief" dir='rtl'>ملخص الـ C.V</h3>
+<h3 id="brief" class="acc_header" dir='rtl'>ملخص الـ C.V</h3>
 
-<script type="text/javascript">
-      $("#brief").on("click",function(){
-        $("#brief").addClass("acc_head_selected");
-        $("#brief_accordion").slideToggle();
-      })
-</script>
-
-
-
-<div id="brief_accordion">
+<div id="brief_accordion" class='custom_accordion'>
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>
 <li>25 سنة  -  غير مدخن  -  أقود و حامل لرخصة قيادة</li>
@@ -50,7 +41,7 @@
   </ul> 
 </br>
 
-<b class='arabic' style='font-size:1.5em;color:#111;'>تواصل معى: 
+<b style='font-size:1.5em;color:#111;'>تواصل معى: 
  &nbsp; -- &nbsp;
 {!!fa2('phone-square',0)!!} <span class='bright english'>{{social('my_phone_1')}}</span>
  &nbsp; -- &nbsp;
@@ -59,7 +50,8 @@
 
 </ul>
 <div class="clearfix"></div>
+
+
 </div>
 
-<hr>
 <!-- ******************************************************************** -->

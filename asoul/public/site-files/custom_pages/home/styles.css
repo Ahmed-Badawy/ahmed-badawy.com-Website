@@ -1,0 +1,68 @@
+html,body {
+  height:100%;
+  font-family: 'PT Sans', sans-serif;
+  background-color:#110022;
+  z-index: -100;
+}
+
+#main-hello-world{
+  font-size:80px;
+  font-weight: bolder;
+  display:inline;
+}
+
+/* Custom container */
+.container-full {
+  font-size: 12px;
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  /*background-color:#110022;*/
+  color:#fff;
+  overflow:hidden;
+}
+
+.container-full #social a{
+  color:#fff;
+  text-decoration:none;
+}
+
+a.text-link{
+  color:#FFABAB;
+}
+
+.v-center {
+  margin-top:7%;
+}
+
+.main-word{
+  font-size:115%;
+}
+
+.space-above{
+  margin-top:3%
+}
+
+
+
+  .bgvideo{
+    position: fixed;
+    right:0;
+    bottom:0;
+    min-height: 100%;
+    min-width: 100%;
+    width:auto;
+    height:auto;
+    z-index: 0;
+    /*filter:grayscale(100%);*/
+    filter:sepia(100%);
+  }
+
+  .widthfix{
+    width:100%;
+  }
+
+  .arabic{
+    font-family: cursive;
+    font-weight: bolder;
+  }

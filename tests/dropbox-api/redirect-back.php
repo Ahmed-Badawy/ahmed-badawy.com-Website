@@ -9,7 +9,12 @@ var_dump($accessToken);
 
 
 $client = new \Dropbox\Client($accessToken,$app_name,'UTF-8');
-$user_info = $client->getAccountInfo();
+try{
+	$user_info = $client->getAccountInfo();
+	var_dump( $client->getAccountInfo() );
+} catch(Dropbox\Exception_InvalidAcessToken $e){
+	die("not Authenticated");
+}	
 
 out($user_info);
 

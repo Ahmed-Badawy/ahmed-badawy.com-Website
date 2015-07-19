@@ -1,0 +1,322 @@
+#document{
+/*    margin-top:100px; i will put that in the html file... */
+    border-top:solid 2px #2a9fd6;
+    border-bottom:solid 2px #2a9fd6;
+    background-color:rgba(0,0,0,0.02);
+    border-radius: 20px;
+    padding:10px;
+}
+
+body{
+
+    font-family: 'Open Sans','Lato', Helvetica, sans-serif;
+    color:#222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: url('../../../site-imgs/site/covers/Elegant_Background-3.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+/*    background: #444 url('../../../site-imgs/site/covers/Elegant_Background-5.jpg') repeat fixed;
+    background-size: 100% 100%;*/
+    cursor: url('../../../site-imgs/site/arrow.png'), default;
+}
+a:hover{
+    cursor: url('../../../site-imgs/site/hand.png'), default;
+}
+
+.side-bar-container{
+    min-height: 200px;
+}
+
+.form-control{
+    width:150px;
+}
+
+.align-right{
+    text-align:right;
+}
+
+.box{
+    border:solid 1px black;
+    border-radius: 15px;
+    padding:20px;
+    margin-top:10px;
+    background-color: #f9f9f9;
+}
+
+hr{
+    border:1px solid #c0c0c0;
+}
+
+.white-it{
+    color:white;
+    text-decoration: none;
+}
+
+
+/********************************************************************************
+                      Jumbotron img background
+********************************************************************************/
+.jumbotron{
+    margin-top:-10px;
+}
+.jumbotron p{
+    color:#aaa;
+}
+.jumbotron h1{
+    color:#fff;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.9);
+    /*background-color:rgba(0,0,0,.3);*/
+    padding:5px;
+}
+.page_head{
+    /*background: url('../../../site-imgs/site/covers/cover_4.jpg') no-repeat center center;*/
+    /*opacity:50%;*/
+    margin-top:-10px;
+    background-color:rgba(255,255,255,0.6);
+    background-size: 100% 100%;
+    font-family:georgia;
+}
+
+.jumbotron_page_header{
+    background-color:#333;
+    text-align:center;
+}
+
+
+
+
+.page_head p{
+    color:#555;
+}
+.grid-elm{
+    height:290px;
+    overflow:hidden;
+    margin-bottom: 1px;
+}
+.grid-elm h4{
+    color: transparent;
+    font-size: 180%;
+    text-shadow: rgba(250,250,250,0.6) 1px 1px 8px;
+    width: 100%;
+    color:#fff;
+    margin-bottom: 4px;
+    padding:2px;
+    background-color:rgba(0,0,0,.2);
+    transition:all .3s ease;
+}
+.grid-elm p{
+    color:#000;
+    font-size:102%;
+    margin-bottom:2px;
+    transition:all .3s ease;
+}
+.grid-elm p:hover,.grid-elm h4:hover{
+    border-radius: 10px;
+    color:#fff;
+    background-color:rgba(0,0,0,.6);
+    padding:6px;
+    margin-bottom:10px;
+}
+.img-circle{
+    border:2px solid white;
+    padding:4px;
+    border-radius: 50%;
+    transition:all .1s ease-in;
+}
+.img-circle:hover{
+    border:9px solid #2a9fd6;
+    padding:5px;
+}
+
+/*******************************************************************************/
+
+.bordered-box{
+    border:2px solid #191919;
+    border-radius:30px;
+    padding:20px;
+    /*background-color:#191919;*/
+}
+.img-thumbnail{
+    border-color: white;
+}
+
+
+#page_container{
+    /*margin-top:4%;*/
+    /*margin-top:60px;*/
+    margin-bottom:3%;
+    min-height: 300px;
+}
+
+
+
+
+.footer-icons{
+        transition:all .2s ease-in;
+}
+.footer-icons:hover{
+        color:white;
+        font-size:110%;
+}
+
+.site-footer{
+    background-color:#222;
+    border-top:2px solid white;
+    color:white;
+    position:fixed;
+    bottom:0;
+    z-index:999;
+}
+.highlight{
+    color:white;
+    font-size:1.1em;
+}
+
+
+.arabic{
+    /*font-family:"tahoma";*/
+    font-family: 'Noto Kufi Arabic', serif;
+    line-height: 1.5em;
+    /*font-size:90%;*/
+}
+
+
+.navbar{
+    background-color: #222;
+}
+
+/*Center the brand name*/
+    @media screen and (min-width:900px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        background-color: #252525;
+        font-size:130%;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------
+White DropDown Menus in Cyborg
+--------------------------------------------------------------*/
+.dropdown-menu{
+    background-color:white;
+    color:black;
+}
+.dropdown-menu > li > a{
+    clear: both;
+    color: #333;
+    display: block;
+    font-weight: 400;
+    line-height: 1.42857;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+.dropdown-menu .divider {
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+}
+/**********************************************************************/
+
+
+
+.widthfix{
+    width:100%;
+}
+.space_above{
+    margin-top:1%;
+}
+
+
+
+/*********************************************************************
+Angular Show/Hide Css:-
+**********************************************************************/
+.animate-show {
+  line-height:20px;
+  opacity:1;
+  padding:10px;
+  border:1px solid black;
+  background:white;
+}
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+.animate-show.ng-hide {
+  line-height:0;
+  opacity:0;
+  padding:0 10px;
+}
+/**********************************************************************/
+
+
+/*********************************************************************
+loader
+**********************************************************************/
+#loader .loader-text{
+    font-size: 170%;
+    color:#444;
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    font-weight:bold;
+    z-index:999;
+    background-color:rgba(255,255,255,.5);
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding:10px;
+}
+/**********************************************************************/
+
+
+
+.bright{
+  color:#fff;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.9);
+}
+.bright-background{
+    background-color:rgba(0,0,0,.3);
+    padding:5px;
+}
+
+
+
+
+.ng-hide{
+    height: 0%;
+    transition:all 1s linear;
+}
+.ng-show{
+    height: 100%;
+    transition:all 1s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
