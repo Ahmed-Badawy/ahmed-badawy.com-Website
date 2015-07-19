@@ -6,11 +6,17 @@
 
 @foreach($products as $con)
 	<div class="contr">
-		<img src="{{get_it("site-imgs/asol/products/".$con->img)}}" width="100" height="100" />
-		<b class='text-center'>{{$con->name}}</b>
-		--------
-		<p style='display:inline'>{{$con->desc}}</p>
-		<span><a href="{{url('admin/delete-product/'.$con->id)}}" class='btn btn-xs btn-danger'>{!! fa2('remove',0) !!} أحذف</a></span>
+
+		<div class="col-sm-10">
+			<form method='post' action="{{url('admin/modify-id/product/'.$con->id)}}">
+				<input type='text' class='form-control widthfix' name="item_name" value="{{$con->name}}">
+				<textarea class='form-control widthfix hidden' name='item_desc'>{{$con->desc}}</textarea>
+				<button type='submit' class='btn btn-sm btn-primary'>{!! fa2('save') !!} عدل البيانات</button>
+				<a myhref="{{url('admin/delete-id/product/'.$con->id)}}" class='btn btn-sm btn-danger delete_button'>{!! fa2('remove') !!} أحذف</a>
+			</form>
+		</div>
+		<img src="{{get_it("site-imgs/asol/products/".$con->img)}}" class='col-sm-2' />
+
 	</div>
 	<div class="clearfix"></div>
 	<br>
@@ -22,3 +28,27 @@
 
 
   </div>
+
+
+  <script type="text/javascript">
+  		$(".delete_button").on('click',function(e){
+  			var href = this.getAttribute("myhref");
+			swal({
+				title: "هل أنت متأكد من الإلغاء ؟",
+				text: "هل توكد عملية الإلغاء!",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#DD6B55",
+				confirmButtonText: "نعم أحذفها!",
+				cancelButtonText: "لا تحذف شىء",
+				closeOnConfirm: false
+			},
+			function(){
+				swal("تم الحذف!", "تم الإنتاء من حذف المنتج بقاعدة البيانات.", "success");
+				setTimeout(function(){
+					window.location.assign(href)
+				}, 1000);
+			});
+  			return false;
+  		});
+  </script>

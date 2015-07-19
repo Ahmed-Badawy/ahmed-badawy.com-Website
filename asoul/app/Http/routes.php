@@ -54,9 +54,11 @@ Route::post('admin/login',"AsolController@admin_login_do");
 
 Route::get('admin/{type}',"AsolController@admin_panel");
 Route::post('admin/add-contributer',"AsolController@add_contributer");
-Route::get('admin/delete-contributer/{id}',"AsolController@delete_contributer");
+
+Route::get('admin/delete-id/{type}/{id}',"AsolController@delete_id");
+Route::post('admin/modify-id/{type}/{id}',"AsolController@modify_id");
+
 Route::post('admin/add-product',"AsolController@add_product");
-Route::get('admin/delete-product/{id}',"AsolController@delete_product");
 Route::post('admin/add-structure',"AsolController@add_structure");
 Route::post('admin/add-contact',"AsolController@add_contact");
 Route::post('admin/add-career',"AsolController@add_career");

@@ -1,7 +1,3 @@
-@section('head_add')
-  {!! get_it("plugins/sweetAlert/sweetalert-ar.css") !!}
-  {!! get_it("plugins/sweetAlert/sweet-alert.min.js") !!}
-@overwrite
 
 
 <form method='post' action='{{url("admin/login")}}'>

@@ -248,9 +248,21 @@ class AsolController extends BaseController {
 		$obj->create($new_array);
 		return \Redirect::back();
 	}
-	public function delete_contributer($id){
-		$obj = new \contributor_model();
+	public function delete_id($type,$id){
+		if($type=="contributer") $obj = new \contributor_model();
+		elseif($type=="product") $obj = new \products_model();
 		$obj->find($id)->delete();
+		return \Redirect::back();
+	}
+	public function modify_id($type,$id){
+		if($type=="contributer") $obj = new \contributor_model();
+		elseif($type=="product") $obj = new \products_model();
+		$input = \Request::all();
+		$update_array = [
+			"name"=>$input['item_name'],
+			"desc"=>$input['item_desc']
+		];
+		$obj->find($id)->update($update_array);
 		return \Redirect::back();
 	}
 
@@ -268,11 +280,6 @@ class AsolController extends BaseController {
 		];
 		$obj = new \products_model();
 		$obj->create($new_array);
-		return \Redirect::back();
-	}
-	public function delete_product($id){
-		$obj = new \products_model();
-		$obj->find($id)->delete();
 		return \Redirect::back();
 	}
 

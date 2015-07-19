@@ -6,11 +6,17 @@
 
 @foreach($contributors as $con)
 	<div class="contr">
-		<img src="{{get_it("site-imgs/asol/contributors/".$con->img)}}" width="100" height="100" />
-		<b class='text-center'>{{$con->name}}</b>
-		--------
-		<p style='display:inline'>{{$con->desc}}</p>
-		<span><a href="{{url('admin/delete-contributer/'.$con->id)}}" class='btn btn-xs btn-danger'>{!! fa2('remove',0) !!} أحذف</a></span>
+
+		<div class="col-sm-10">
+			<form method='post' action="{{url('admin/modify-id/contributer/'.$con->id)}}">
+				<input type='text' class='form-control widthfix' name="item_name" value="{{$con->name}}">
+				<textarea class='form-control widthfix' name='item_desc'>{{$con->desc}}</textarea>
+				<button type='submit' class='btn btn-sm btn-primary'>{!! fa2('save') !!} عدل البيانات</button>
+				<a href="{{url('admin/delete-id/contributer/'.$con->id)}}" class='btn btn-sm btn-danger'>{!! fa2('remove') !!} أحذف</a>
+			</form>
+		</div>
+		<img src="{{get_it("site-imgs/asol/contributors/".$con->img)}}" class='col-sm-2' />
+
 	</div>
 	<div class="clearfix"></div>
 	<br>

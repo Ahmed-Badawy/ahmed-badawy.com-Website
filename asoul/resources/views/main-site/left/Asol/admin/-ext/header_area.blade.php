@@ -1,7 +1,8 @@
 
 @section('head_add')
-	{!! get_it("plugins/sweetAlert/sweet-alert.min.css") !!}
-	{!! get_it("plugins/sweetAlert/sweet-alert.min.js") !!}
+  {!! get_it("plugins/sweetAlert/sweetalert.css") !!}
+  {!! get_it("plugins/sweetAlert/sweetalert-arabic.css") !!}
+  {!! get_it("plugins/sweetAlert/sweetalert.min.js") !!}
 
 
 	{!! get_it("plugins/wysiwyg.js/src/wysiwyg-editor.css") !!}
