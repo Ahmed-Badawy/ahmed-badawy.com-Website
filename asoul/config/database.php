@@ -65,9 +65,11 @@ return [
             // 'username'  => DB_USER,
             // 'password'  => DB_PASS,
 
+
              'database'  => "courtaks_asoul",
              'username'  => "courtaks_admin" ,
              'password'  => "159357Bad",
+            
             
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
