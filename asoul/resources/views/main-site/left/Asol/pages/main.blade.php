@@ -337,12 +337,13 @@
 
 
 <footer id="footer">
-	<div class="container">
-		<a href="http://erest.sa/" target="blank">تصميم وتطوير شركة إنجاز لتقنية المعلومات</a>
-	</div>
-	<a href="#" id="btn_up">top</a>
+    <div class="container">
+        <a href="http://erest.sa/" target="blank">تصميم وتطوير شركة إنجاز لتقنية المعلومات</a>
+        -
+        <a href="{{url('admin/login')}}">لوحة التحكم</a>
+    </div>
+    <a href="#" id="btn_up">top</a>
 </footer>
-
 
 
 

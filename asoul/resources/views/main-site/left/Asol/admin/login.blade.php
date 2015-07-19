@@ -1,3 +1,8 @@
+@section('head_add')
+  {!! get_it("plugins/sweetAlert/sweetalert.css") !!}
+  {!! get_it("plugins/sweetAlert/sweetalert-arabic.css") !!}
+  {!! get_it("plugins/sweetAlert/sweetalert.min.js") !!}
+@overwrite
 
 
 <form method='post' action='{{url("admin/login")}}'>
@@ -50,7 +55,7 @@
 
       swal("باسورد صحيح!", "تم الدخول بنجاح" , "success");
         setTimeout(function(){
-          window.location.assign("{{url('admin')}}")
+          window.location.assign("{{url('admin/tutorial')}}")
         }, 2000);
       ;
     });    

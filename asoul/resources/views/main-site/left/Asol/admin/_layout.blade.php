@@ -40,6 +40,7 @@
 <div class="col-sm-3">
 	<h3 class='text-center well-sm box'>روابط لوحة التحكم</h3>
 	<div class="btn-group-vertical widthfix col-sm-12">
+      <a class='btn btn-default widthfix' href="{{url('admin/tutorial')}}">توضيح لوحة التحكم</a>
 	    <a class='btn btn-default widthfix' href="{{url('admin/contributors')}}">المساهمون</a>
 	    <a class='btn btn-default widthfix' href="{{url('admin/products')}}">المنتجات</a>
 	    <!-- <a class='btn btn-default widthfix' href="one">من نحن</a> -->

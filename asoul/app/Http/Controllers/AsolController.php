@@ -208,7 +208,7 @@ class AsolController extends BaseController {
 		}	
 	}
 
-	public function admin_panel($page='contributors'){
+	public function admin_panel($page='tutorial'){
 		$pages_data = $this->get_pages_data();
 		$data = [
 			"route_info"=>[
