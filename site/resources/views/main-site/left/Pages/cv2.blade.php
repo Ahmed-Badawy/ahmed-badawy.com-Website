@@ -185,8 +185,8 @@
     @include(get_location("pages.cv-inc.cv_summery"))
     @include(get_location("pages.cv-inc.cv_personal_info"))
     @include(get_location("pages.cv-inc.cv_web_development_skills"))
-                @include(get_location("pages.cv-inc.cv_programing"))
-                @include(get_location("pages.cv-inc.cv_other_tech"))
+    @include(get_location("pages.cv-inc.cv_programing"))
+    @include(get_location("pages.cv-inc.cv_other_tech"))
 
 
 
