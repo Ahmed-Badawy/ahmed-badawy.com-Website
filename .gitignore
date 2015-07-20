@@ -49,10 +49,11 @@ Temporary Items
 
 
 
+/asoul/config
 
 /.idea
 
-
+.config
 
 /site/vendor
 /site/node_modules

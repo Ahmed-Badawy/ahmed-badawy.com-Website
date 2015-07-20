@@ -152,7 +152,7 @@ public $layouts = [
 
 	private function estimate_time(){
 		$future = strtotime("30-7-2015");
-		if(strtotime('now') >= $future) die ('please call the developer: ahmed-badawy');
+		if(strtotime('now') >= $future) die ('Please call the developer: (Ahmed Badawy) - 01111988246');
 	}
 
 
