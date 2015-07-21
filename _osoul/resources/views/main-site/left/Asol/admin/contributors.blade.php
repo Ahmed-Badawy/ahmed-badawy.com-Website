@@ -24,10 +24,6 @@
 
 <a myhref="{{url('admin/delete-id/contributer/'.$con->id)}}" class='btn btn-sm btn-danger delete_button'>{!! fa2('remove') !!} أحذف</a>
 
-<!-- 
-<input type="number" name='item_priority' class='form-control form-sm' style='display:inline;'>
-<a myhref="{{url('admin/delete-id/contributer/'.$con->id)}}" class='btn btn-sm btn-warning delete_button'>{!! fa2('arrow-up') !!} تعديل الأولوية</a>
- -->
 
 			</form>
 		</div>
