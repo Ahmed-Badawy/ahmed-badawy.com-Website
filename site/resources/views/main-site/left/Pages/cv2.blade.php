@@ -167,7 +167,10 @@
 
 
 
-@include(get_location("pages.cv-inc.cv_header"))
+
+
+
+@include(get_location("pages.cv_header"))
 
 
 
