@@ -51,7 +51,24 @@
 </div></div>
 </p>
 
+
+
+<?php 
+	$google_maps_embed_api=[
+			'api_key' => "AIzaSyB16FdzcPqrhkXcHOHnVutQFuoDFBDILpU",
+	];
+	$api_key = "AIzaSyB16FdzcPqrhkXcHOHnVutQFuoDFBDILpU";
+?>
+
+
+<iframe src="https://www.google.com/maps/embed/v1/view?key=<?php echo $api_key; ?>&center=24.751291,46.895147&zoom=10&maptype=satellite" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+
+<?php 
+/*
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118731.80779984624!2d39.3510145541476!3d21.571515173420067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b118db!2z2KzYr9ip!5e0!3m2!1sar!2ssa!4v1431582972633" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+*/
+?>
+
 
 </div><!-- .entry-content -->
 

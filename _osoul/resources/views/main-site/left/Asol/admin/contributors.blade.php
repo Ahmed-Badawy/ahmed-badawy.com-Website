@@ -12,8 +12,23 @@
 			<form method='post' action="{{url('admin/modify-id/contributer/'.$con->id)}}">
 				<input type='text' class='form-control widthfix' name="item_name" value="{{$con->name}}">
 				<textarea rows='4' class='form-control widthfix' name='item_desc'>{{$con->desc}}</textarea>
-				<button type='submit' class='btn btn-sm btn-primary'>{!! fa2('save') !!} عدل البيانات</button>
-				<a myhref="{{url('admin/delete-id/contributer/'.$con->id)}}" class='btn btn-sm btn-danger delete_button'>{!! fa2('remove') !!} أحذف</a>
+
+<div class="fileUpload btn btn-primary btn-sm">
+    <span>{!! fa2('image') !!} تعديل الصورة</span>
+    <input type="file" class="upload" />
+</div>
+
+<button type='submit' class='btn btn-sm btn-primary'>{!! fa2('save') !!} تعديل البيانات</button>
+<a id='contributers_createModalButton' class='btn btn-default btn-sm' href="#contributers_create" data-toggle='modal' role='button'>{!! fa2('plus-square',['size'=>0]) !!} أضف مساهم جديد</a>
+<a id='contributers_priorityModalButton' class='btn btn-default btn-sm' href="#contributers_priority" data-toggle='modal' role='button'>{!! fa2('arrow-up',['size'=>0]) !!} تعديل ترتيب العرض</a>
+
+<a myhref="{{url('admin/delete-id/contributer/'.$con->id)}}" class='btn btn-sm btn-danger delete_button'>{!! fa2('remove') !!} أحذف</a>
+
+<!-- 
+<input type="number" name='item_priority' class='form-control form-sm' style='display:inline;'>
+<a myhref="{{url('admin/delete-id/contributer/'.$con->id)}}" class='btn btn-sm btn-warning delete_button'>{!! fa2('arrow-up') !!} تعديل الأولوية</a>
+ -->
+
 			</form>
 		</div>
 		<img src="{{get_it("site-imgs/asol/contributors/".$con->img)}}" class='col-sm-2' />
@@ -27,7 +42,8 @@
 
 <hr>
 
-@include(get_location('Asol.admin.contributer_modal'))
+@include(get_location('Asol.admin.modals.contributer_priority_modal'))
+@include(get_location('Asol.admin.modals.contributer_create_modal'))
 
 
   </div>

@@ -1,8 +1,8 @@
-<a id='ContactModalButton' class='btn btn-primary btn-lg btn-block' href="#contributers" data-toggle='modal' role='button'>{!! fa2('users',['size'=>0]) !!} أضف مساهم جديد</a>
+<a id='contributers_createModalButton' class='btn btn-default btn-lg col-sm-6' href="#contributers_create" data-toggle='modal' role='button'>{!! fa2('plus-square',['size'=>0]) !!} أضف مساهم جديد</a>
 
 
 <!--login modal-->
-<div id="contributers" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+<div id="contributers_create" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
 
