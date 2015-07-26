@@ -236,6 +236,7 @@
 
 							<?php $i=1; ?>
 							@for($i=0; $i<8; $i++)
+								@if(isset($products[i]))
 							<li class="item block-pro">
 							     <img src="{{get_it("site-imgs/_CMS/products/".$products[i]->img)}}" class="attachment-brick_thumb wp-post-image" alt="" />
 							     <div class="hover">
@@ -243,6 +244,7 @@
 								      <h4>{{$products[i]->name}}</h4>
 								 </div>
 							</li>
+								@endif
 							@endfor
 							
 						</ul>
