@@ -15,7 +15,7 @@ class CMSViewsController extends CMSProviderController {
             $imgs_list[] = $val->img;
         }
         $data['products_imgs_list'] = $imgs_list;
-        return view(get_location("_CMS_Views.Pages.main_page"),$data)->with($data);
+        return view(get_location("_CMS_Views.pages.main_page"),$data)->with($data);
     }
     public function getAboutUs(){
         $data = \sr::common('empty');
