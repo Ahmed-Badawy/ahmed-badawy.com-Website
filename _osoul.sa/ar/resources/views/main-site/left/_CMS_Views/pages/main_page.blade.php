@@ -233,17 +233,17 @@
 					<div class="portfolio">
 						
 						<ul class="isotope clearfix">
-							
-							@foreach($products as $con)
+
+							<?php $i=1; ?>
+							@for($i=0; $i<8; $i++)
 							<li class="item block-pro">
-							     <img src="{{get_it("site-imgs/_CMS/products/".$con->img)}}" class="attachment-brick_thumb wp-post-image" alt="" />
+							     <img src="{{get_it("site-imgs/_CMS/products/".$products[i]->img)}}" class="attachment-brick_thumb wp-post-image" alt="" />
 							     <div class="hover">
 								      <img src="{{get_it("site-files/_CMS/img/ico_search.png")}}" alt="">
-								      <h4>{{$con->name}}</h4>
-								      
+								      <h4>{{$products[i]->name}}</h4>
 								 </div>
 							</li>
-							@endforeach
+							@endfor
 							
 						</ul>
 						
