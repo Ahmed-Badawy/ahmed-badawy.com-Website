@@ -18,16 +18,18 @@
 						</h3>
 					</div>
 
-					@foreach($projects as $project)
+						@for($i=0; $i<8; $i++)
+							@if(isset($products[$i]))
 						<div class="col-md-4">
 							<div class="holder smooth">
-								<img src="{!! get_it('site-imgs/_CMS/projects/'.$project->img) !!}" alt="Web Tutorial Plus - Demo" />
+								<img src="{!! get_it('site-imgs/_CMS/projects/'.$projects[$i]->img) !!}" alt="Web Tutorial Plus - Demo" />
 								<div class="go-left">
-									{{$project->name}}
+									{{$projects[i]->name}}
 								</div>
 							</div>
 						</div>
-					@endforeach
+							@endif
+						@endfor
 
 
 				</div>
