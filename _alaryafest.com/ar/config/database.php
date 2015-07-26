@@ -61,14 +61,15 @@ return [
             // 'database'  => env('DB_DATABASE', 'forge'),
             // 'username'  => env('DB_USERNAME', 'forge'),
             // 'password'  => env('DB_PASSWORD', ''),
-            'database'  => DB,
-            'username'  => DB_USER,
-            'password'  => DB_PASS,
 
+//            'database'  => DB,
+//            'username'  => DB_USER,
+//            'password'  => DB_PASS,
+//
 
-             // 'database'  => "courtaks_asoul",
-             // 'username'  => "courtaks_admin" ,
-             // 'password'  => "159357Bad",
+              'database'  => "courtaks_alaryafest",
+              'username'  => "courtaks_admin" ,
+              'password'  => "159357Bad",
             
             
             'charset'   => 'utf8',
