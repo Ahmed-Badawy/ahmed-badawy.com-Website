@@ -83,7 +83,7 @@ class CMSAdminController extends CMSProviderController {
             "img"			=>			$img_name,
             "priority"		=>			50,
         ];
-        $this->recipes_obj->create($new_array);
+        $this->products_obj->create($new_array);
         return \Redirect::back();
     }
 //------------------------------------------------------------------------------------------
