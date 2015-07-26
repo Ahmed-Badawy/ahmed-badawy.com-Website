@@ -67,7 +67,7 @@ return [
 //            'password'  => DB_PASS,
 //
 
-              'database'  => "courtaks_alaryafest",
+              'database'  => "courtaks_alaryafest_ar",
               'username'  => "courtaks_admin" ,
               'password'  => "159357Bad",
             
