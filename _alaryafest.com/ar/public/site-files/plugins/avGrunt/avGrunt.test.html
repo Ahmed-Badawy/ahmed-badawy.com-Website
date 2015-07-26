@@ -1,0 +1,25 @@
+<article class="avgrund-contents">
+  <h1>Avgrund</h1>
+  <p>
+        A modal concept with a visible level of depth between the page and modal layers. Click a button below to give it a try.
+    </p>
+    <button onclick="avgrund.activate( 'stack' );">Stack it</button>
+    <button onclick="avgrund.activate();">Grow it</button>
+    <p>
+        Uses CSS transforms to scale components and CSS filters to blur the page.
+    </p>
+    <p>
+        <em>Avgrund</em> is Swedish for abyss.
+    </p>
+</article>
+
+<div class="avgrund-cover"></div>
+
+
+<aside class="avgrund-popup">
+    <h2>That's all, folks</h2>
+    <p>
+        You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.
+    </p>
+    <button onclick="avgrund.deactivate();">Close</button>
+</aside>

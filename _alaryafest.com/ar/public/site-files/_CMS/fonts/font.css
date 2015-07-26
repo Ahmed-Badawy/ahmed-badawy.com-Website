@@ -1,0 +1,18 @@
+
+@font-face{
+font-family:"HelveticaNeue";
+	src:url("HelveticaNeueW23forSKY-Reg.eot");
+	src:url("HelveticaNeueW23forSKY-Reg.woff") format("woff"),
+	url("HelveticaNeueW23forSKY-Reg.ttf") format("truetype"),
+	url("http://asset1.skynewsarabia.com/web/asset/7.7/fonts/v23/HelveticaNeueW23forSKY-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
+	font-weight:normal;
+	font-style:normal;}
+	
+	/**@font-face{font-family:"HelveticaNeueBold";
+		src:url("http://asset1.skynewsarabia.com/web/asset/7.7/fonts/v23/HelveticaNeueW23forSKY-Bd.eot");
+		src:url("http://asset1.skynewsarabia.com/web/asset/7.7/fonts/v23/HelveticaNeueW23forSKY-Bd.eot?#iefix") format("embedded-opentype"),
+		url("http://asset1.skynewsarabia.com/web/asset/7.7/fonts/v23/HelveticaNeueW23forSKY-Bd.woff") format("woff"),
+		url("http://asset1.skynewsarabia.com/web/asset/7.7/fonts/v23/HelveticaNeueW23forSKY-Bd.ttf") format("truetype"),
+		url("http://asset1.skynewsarabia.com/web/asset/7.7/fonts/v23/HelveticaNeueW23forSKY-Bd.svg#HelveticaNeueLTArabic55Roman") format("svg");
+		font-weight:bold;
+		}**/
