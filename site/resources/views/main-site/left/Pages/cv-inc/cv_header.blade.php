@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h1 id='page_header'>أحمد بدوى
-                    <p class="lead">مطور و مبرمج</p>
+                <h1 id='page_header text-center'>Ahmed Badawy 
+                    <p class="lead">مطور و مبرمج محترف</p>
                 </h1>
             </div>
             <div class="col-md-5">

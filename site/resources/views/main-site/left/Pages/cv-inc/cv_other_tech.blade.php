@@ -4,7 +4,7 @@
 <div id="other_tech_accordion" class='custom_accordion'>
 
     <div class='col-sm-12 english'>
-        <h3 class="text-center english">Other Programing/Development Skills</h3>
+        <h3 class="text-center english">Other Technical Skills</h3>
         <ul style="font-size:90%">
                 <li>Very Good understanding of <span class="highlight">Networks</span> & how to manage them.</li>
                 <li>Studied & passed the exams of Cisco <span class="highlight">CCNA</span> Certification</li>
