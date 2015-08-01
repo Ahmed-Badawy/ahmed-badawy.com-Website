@@ -2,14 +2,14 @@
 <!-- ******************************************************************** -->
 
 
-<div class="row">
+<div class="row english" style="color:white">
 	<div class='col-sm-6'>
-	<h3 id='sec5' dir='rtl'>Contact Me</h3>
-<ul class='list-group '>
-      <li class="col-sm-12 list-group-item">{!! fa2("at") !!} {{social('my_email_1')}}</li>
-      <li class="col-sm-12 list-group-item">{!! fa2("mobile") !!} {{social('my_phone_1')}}</li>
-      <li class="col-sm-12 list-group-item">{!! fa2("desktop") !!} <a href='{!! url("/") !!}'>www.Ahmed-Badawy.com</a></li>
-</ul>
+	<h3 class="english">Contact Me</h3>
+	<ul class='list-group '>
+	  <li class="col-sm-12 list-group-item">{!! fa2("at") !!} {{social('my_email_1')}}</li>
+	  <li class="col-sm-12 list-group-item">{!! fa2("mobile") !!} {{social('my_phone_1')}}</li>
+	  <li class="col-sm-12 list-group-item">{!! fa2("desktop") !!} <a href='{!! url("/") !!}'>www.Ahmed-Badawy.com</a></li>
+	</ul>
 	</div>
 
 <div class="col-sm-6">

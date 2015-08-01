@@ -32,6 +32,7 @@ public $layouts = [
 		$this->backup_db();
 		$this->backup_files();
 //		$this->build_site_map();
+//		$this->send_mail();
 	}
 
 	public function test_email_view(){
@@ -149,6 +150,17 @@ public $layouts = [
 		file_put_contents($file,$view);
 	}
 
+
+	private function send_mail(){
+		$data = [
+			"passed_data" => "this is passed data from the controller",
+		];
+		\Mail::send('emails.testing_email', $data, function($message){
+			$message->from('admin@ahmed-badawy.com', 'ahmed badawy');
+			$message->to('couratks@gmail.com')->cc('courtaks@yahoo.com');
+			// $message->attach($pathToFile);
+		});
+	}
 
 
 

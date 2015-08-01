@@ -1,9 +1,15 @@
-<div id="masthead">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h1 id='page_header text-center'>Ahmed Badawy 
+                <h1 class='text-center' id="page_header">Ahmed Badawy
                     <p class="lead">مطور و مبرمج محترف</p>
+
+                    <div class="text-center">
+                        <a href="{{social("github")}}" target="_blank" class="professional_link">{!! fa2('github-square') !!}</a>
+                        <a href="{{social("linkedin")}}" target="_blank" class="professional_link">{!! fa2('linkedin-square') !!}</a>
+                    </div>
+                    <div class="clearfix"></div>
+
                 </h1>
             </div>
             <div class="col-md-5">
@@ -138,4 +144,4 @@
             </div>
         </div>
     </div><!-- /cont -->
-</div>
+

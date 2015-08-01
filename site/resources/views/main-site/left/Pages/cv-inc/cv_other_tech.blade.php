@@ -5,7 +5,7 @@
 
     <div class='col-sm-12 english'>
         <h3 class="text-center english">Other Technical Skills</h3>
-        <ul style="font-size:90%">
+        <ul>
                 <li>Very Good understanding of <span class="highlight">Networks</span> & how to manage them.</li>
                 <li>Studied & passed the exams of Cisco <span class="highlight">CCNA</span> Certification</li>
                 <li>Studied & passed the exams of Cisco <span class="highlight">CCNP</span> Certification <small> (didn't take the TSHOOT EXAM yet) </small></li>

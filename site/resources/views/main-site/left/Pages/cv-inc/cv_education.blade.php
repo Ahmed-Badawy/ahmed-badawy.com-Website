@@ -36,7 +36,7 @@
                   </div>  
               	</div> -->
 
- <hr>
+
 
 <div class='clearfix'></div>
 

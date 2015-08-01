@@ -5,7 +5,7 @@
 
     <div class='col-sm-12 english'>
         <h3 class="text-center english">Other Programing/Development Skills</h3>
-        <ul style="font-size:90%">
+        <ul>
             <li>Good <span class="highlight">Java</span> Programing Language knowledge.</li>
             <li>Good <span class="highlight">android</span> SDK Programing knowledge. (currently learning)</li>
             <li>Basic <span class="highlight">C#</span> knowledge. (still working on it)</li>

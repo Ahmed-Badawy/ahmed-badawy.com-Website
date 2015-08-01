@@ -8,7 +8,7 @@
 
     <div class='col-sm-6 english'>
             <h3 class="text-center english">Front-End</h3>
-            <ul style="font-size:90%">
+            <ul>
                 <li><span class="highlight">XHTML - HTML 5</span></li>
                 <li><span class="highlight">CSS 2 - CSS 3</span></li>
                 <li><span class="highlight">Twitter BootStrap</span> Front-end Framework</li>
@@ -27,7 +27,7 @@
 
     <div class='col-sm-6 english'>
         <h3 class="text-center english">Back-End</h3>
-        <ul style="font-size:90%">
+        <ul>
             <li><span class="highlight">PHP</span> (server-side)</li>
             <li>Excellent understanding of OOP(Object Oriented Programing) & dealing with it in multiple languages (PHP - javaScript - java - C#)</li>
             <li><span class="highlight">MVC</span> OOP Structure & Organizing</li>
@@ -47,7 +47,7 @@
 
     <div class='col-sm-12 english'>
         <h3 class="text-center english">General Web Development Skills</h3>
-        <ul style="font-size:90%">
+        <ul>
             <li>Great knowledge of <span class="highlight">WordPress</span> CMS System & how to manipulate it to my benefits.</li>
             <li>Great Understanding of <span class="highlight">GIT & Github</span> Systems</li>
             <li>Some knowlege of task-runners like <span class="highlight">Grunt & Gulp</span> : Node.js Task Runners</li>

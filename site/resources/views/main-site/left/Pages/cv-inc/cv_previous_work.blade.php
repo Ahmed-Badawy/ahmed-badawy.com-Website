@@ -12,6 +12,11 @@
   <li><a href="http://spidro.com" target='_blank' class='english'>Spidro.com</a></li>
   <li><a href="{!! url('blog') !!}" target='_blank' class='english'>Personal wordpress blog</a></li>
 
+  <li><a href="http://www.alaryafest.com" target='_blank'>موقع الأرياف للمظلات بالسعودية</a></li>
+  <li><a href="http://www.osoul.sa" target='_blank'>موقع شركة أصول للدواجن و اللحوم بالسعودية</a></li>
+  <li><a href="http://www.ahmed-badawy.com/-websites/alabdaa-almaky.com/" target='_blank'>موقع الإبداع المكى للعقارات بالسعودية</a></li>
+  <li><a href="http://erest.sa/demo/enjaz/" target='_blank'>موقع شركة إنجاز للتطوير و البرمجيات بالسعودية</a></li>
+
   <li><a href="https://www.egyptcodebase.com" target='_blank'>موقع بيانات كود مصر</a></li>
   <li><a href="http://www.elmasriadecoration.com" target='_blank'>المصرية للديكورات</a></li>
   <li><a href="http://alnourfemtolasercenter.com" target='_blank'>مركز النور لعمليات للفيمتو ليزيك و الفيمتو سميل</a></li>
@@ -34,17 +39,12 @@
     <div class="clearfix"></div>
 </ul>
 
-
-<div class="clearfix"></div>
-<ul>
-
+<ul class='list-unstyled text-center'>
   <li><a href="{!! route('projects') !!}" target='_blank' class='arabic'>العديد من الأفكار و المشاريع نفذتها بشكل مبدئى فى أوقات الفراغ</a></li>
   <li><a href="{!! route('games') !!}" target='_blank' class='arabic'>ألعاب بسيطة نفذتها</a></li>
   <li><a href="{!! route('apis') !!}" target='_blank' class='arabic'>خدمات للمواقع الخارجية</a></li>
-	<li><a href="{!! url('blog') !!}" target='_blank' class='arabic'>البلوج التقنية الخاصة بى</a></li>
-	<!-- 	@foreach(sr::projects() as $project)
-		<li class='col-sm-4'><a href='{!! $project["link"] !!}' target='_blank'><small class='arabic' dir='rtl'>{!! $project['page_name'] !!}</small></a></li>
-		@endforeach -->
+  <li><a href="{!! url('blog') !!}" target='_blank' class='arabic'>البلوج التقنية الخاصة بى</a></li>
+</ul>
 
 
 <div class='clearfix'></div>
