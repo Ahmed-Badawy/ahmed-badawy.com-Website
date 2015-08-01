@@ -14,7 +14,7 @@
 
   <li><a href="http://www.alaryafest.com" target='_blank'>موقع الأرياف للمظلات بالسعودية</a></li>
   <li><a href="http://www.osoul.sa" target='_blank'>موقع شركة أصول للدواجن و اللحوم بالسعودية</a></li>
-  <li><a href="http://www.ahmed-badawy.com/-websites/alabdaa-almaky.com/" target='_blank'>موقع الإبداع المكى للعقارات بالسعودية</a></li>
+  <li><a href="http://www.ahmed-badawy.com/websites/alabdaa-almaky.com/" target='_blank'>موقع الإبداع المكى للعقارات بالسعودية</a></li>
   <li><a href="http://erest.sa/demo/enjaz/" target='_blank'>موقع شركة إنجاز للتطوير و البرمجيات بالسعودية</a></li>
 
   <li><a href="https://www.egyptcodebase.com" target='_blank'>موقع بيانات كود مصر</a></li>
