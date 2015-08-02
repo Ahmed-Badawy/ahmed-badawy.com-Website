@@ -73,10 +73,10 @@
                 //animating scroll to the new offset
                 setTimeout(function(){
                     theOffset = elm.offset();
-                    console.log(theOffset);
+//                    console.log(theOffset);
                     $('body,html').animate({
                         scrollTop: theOffset.top - 70
-                    });
+                    },500);
                 },400)
                 //------------------------------------------
             }
