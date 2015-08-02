@@ -82,5 +82,5 @@ function total_destruction(){
       }
       die($msg);  
 }
-if (is_website_expired("alaryafest.com")) total_destruction();
+//if (is_website_expired("alaryafest.com")) total_destruction();
 
