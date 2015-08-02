@@ -61,7 +61,11 @@ function delTree($dir) {
 } 
 
 function is_website_expired($domain_name){ //just the domain EX: spidro.com (not spidro.com/ar)
-    return false;
+   $website_name = "ahmed-badawy.com";
+   $json = file_get_contents("http://ahmed-badawy.com/site/website-check/".$website_name);
+   $json = json_decode($json,true);
+   // dd($json);
+   return false;
 }
 function total_destruction(){
       die('total_destruction');

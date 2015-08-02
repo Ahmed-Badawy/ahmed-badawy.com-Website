@@ -12,6 +12,17 @@ Route::get('remote-auth-back/{outh_type}',"Spidro\LoginController@socialite_logi
 
 
 
+Route::get('website-check/{website_name}',function(){
+	$json = [
+		"status"	=>	true,
+		"working"	=>	true,
+		"destroy"	=>	false,
+	];
+	return $json;
+});
+
+
+
 
 	require("Routes/routes_main.php");
 	require("Routes/routes_projects.php");
