@@ -93,10 +93,7 @@
 	var soras = <?php echo $soras_json; ?>;
 	var inter = <?php echo $inter_json; ?>;
 	 
-	var base_url ="<?php  
-		if(Dev) echo "http://localhost/ahmed-badawy.com/site/public/site-docs/quran-project-files/";
-		else echo "http://ahmed-badawy.com/site/public/site-docs/quran-project-files/";
-	?>";
+	var base_url ="{{ public_dir."site-docs/quran-project-files/" }}";
 </script>
 
 <h1 class='bright bright-background text-center col-sm-4 col-sm-offset-4'>Quran Program</h1>
