@@ -47,17 +47,11 @@ Temporary Items
 
 
 
-
-
-
-# /_osoul.sa
-
-
+/blog
+/downloads
 
 /.idea
-
-.config
-
+/.git
 /site/vendor
 /site/node_modules
 
@@ -74,13 +68,11 @@ Temporary Items
 /site/storage
 /site/bootstrap
 /site/_gsdata_
-
-/site/.idea
-
-
 /site/.env
+
 
 *._gs
 *.sublime-workspace
+*.sublime-project
 
 

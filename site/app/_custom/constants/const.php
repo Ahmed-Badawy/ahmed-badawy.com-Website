@@ -21,7 +21,7 @@ if(false){												//Force Mode
 	define('Dev', false);
 	define('DB', "courtaks_mainDB");
 	define('DB_USER', "courtaks_admin");
-	define('DB_PASS', "159357Bad");
+	define('DB_PASS', "ahmedBadawy_com123");
 }
 
 

@@ -1,0 +1,5 @@
+DirectorySlash On
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/(site|blog|tests) [NC]
+RewriteRule ^(.*)$ /site/$1 [L,NC,R=302]
