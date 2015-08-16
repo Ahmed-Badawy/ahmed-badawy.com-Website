@@ -1,0 +1,25 @@
+
+
+/* Bootstrap 5 columns */
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {    position: relative;    min-height: 1px;    padding-right: 10px;    padding-left: 10px;}
+
+/* Forms */
+input[type="text"].form-control, input[type="password"].form-control, input[type="date"].form-control, input[type="datetime"].form-control, input[type="email"].form-control, input[type="number"].form-control, input[type="search"].form-control, input[type="tel"].form-control, input[type="time"].form-control, input[type="url"].form-control { font-size: 18px; height: 55px; padding: 5px 15px; width: 100%; }
+textarea.form-control { font-size: 18px;padding: 15px; width: 100%; }
+select.form-control { font-size: 18px; height: 55px; padding: 5px 15px; width: 100%; }
+button[type="submit"] { background: #515151; border: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 5px; border-radius: 4px; border-top-left-radius: 0; border-top-right-radius: 5px; color: #fff; cursor: pointer; float: left; font-size: 16px; font-weight: 900; height: 55px; padding: 8px 6px 6px; text-transform: uppercase; width: 100%; }
+button[type="submit"]:hover { background: #646464; }
+input[type="text"].form-control:focus, input[type="password"].form-control:focus, input[type="date"].form-control:focus, input[type="datetime"].form-control:focus, input[type="email"].form-control:focus, input[type="number"].form-control:focus, input[type="search"].form-control:focus, input[type="tel"].form-control:focus, input[type="time"].form-control:focus, input[type="url"].form-control:focus, textarea.form-control:focus, select:focus { box-shadow: none; }
+
+/* Breadcrumbs */
+.breadcrumbs { background: #84c7a6; box-shadow: inset 4px 104px 93px -18px rgba(76, 116, 110, 0.34); moz-box-shadow: inset 4px 104px 93px -18px rgba(76, 116, 110, 0.34); padding: 22px 0; webkit-box-shadow: inset 4px 104px 93px -18px rgba(76, 116, 110, 0.34); }
+.breadcrumbs h1 { color: #fff; font-size: 23px; margin: 0; padding: 0; }
+ol.breadcrumb { background: transparent; border-radius: 0; color: #fff; float: right; margin: 0; padding: 6px 0 0; }
+ol.breadcrumb li:first-child { color: #fff; font-size: 15px; font-weight: normal; }
+ol.breadcrumb li.active { color: #fff; font-size: 15px; }
+ol.breadcrumb li a { color: #fff; font-size: 15px; }
+ol.breadcrumb li a:hover { color: #4c746e; }
+ol.breadcrumb > li + li:before { color: #fff; content: "\"; font-family: "fontawesome"; font-weight: normal; padding: 0 5px;float: right; }
+ol.breadcrumb > li:first-child + li:before { content: ""; padding: 0 3px 0 0; }
+/* End of Breadcrumbs */
+

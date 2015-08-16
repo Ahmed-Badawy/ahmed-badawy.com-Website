@@ -1,0 +1,3 @@
+To remove public:-
+	1- copied the .htaccess from the root/public/ directory to the root/ directory
+	2- copied the root/server.php and pasted it as root/index.php

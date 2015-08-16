@@ -1,0 +1,11 @@
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=VLzI8M4nyBA4slieWl1zAp8tXwnLSaeA
+
+DB_HOST=localhost
+DB_DATABASE=erests8_ar
+DB_USERNAME=erests8_sadmin
+DB_PASSWORD=ahmedBadawy_com123
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
