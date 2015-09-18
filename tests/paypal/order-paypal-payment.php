@@ -8,7 +8,7 @@
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class='container'>
 
 <h1>Paypal Payments Test</h1>
 
@@ -17,7 +17,8 @@
 
 
 <!-- *************************************************************************** -->
-	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N4TGAGYT9MBZQ"><h3>Pay with Paypal</h3></a>
+	<h3>IT's all in <a href="https://developer.paypal.com/docs/integration/web/" class='btn btn-danger' target='_blank'>This Link</a></h3>
+	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N4TGAGYT9MBZQ" class='btn btn-primary btn-lg'>Pay me Bitch</a>
 	<hr>
 <!-- *************************************************************************** -->
 
