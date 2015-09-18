@@ -1,6 +1,8 @@
 <?php 
 
 
+phpinfo();
+
 echo "hello";
 
 

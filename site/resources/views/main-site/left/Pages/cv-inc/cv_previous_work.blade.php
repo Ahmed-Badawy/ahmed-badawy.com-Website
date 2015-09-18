@@ -1,4 +1,41 @@
 
+
+
+<?php
+
+$previous_projects = [
+        "websites"  =>  [
+
+                "ahmed-badawy.com"  =>  [
+                        "title"  =>  "Ahmed-Badawy.com",
+                        "link"   =>  "ahmmed-badawy.com",
+                        "short_desc"  =>  "موقعى و معرض أعمالى",
+                        "name"  =>  "ahmed-badawy",
+                        "skill" =>  "html,css,php,js,jquery,angular",
+                        "date"  =>  "july 2012",
+                        "client"    =>  "none",
+                        "desc"  =>  "Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy",
+                ],
+                "spidro.com"  =>  [
+                        "title"  =>  "Spidro",
+                        "link"   =>  "spidro.com",
+                        "short_desc"  =>  "شركة إستضافة و برمجيات",
+                        "name"  =>  "spidro.com",
+                        "skill" =>  "html,css,js,jquery",
+                        "date"  =>  "december 2014",
+                        "client"    =>  "spidro",
+                        "desc"  =>  "",
+                ],
+
+        ],
+];
+
+
+?>
+
+
+
+
 <!-- ******************************************************************** -->
 <h3 id="previous_work" class='acc_header' dir='rtl'>أعمال سابقة</h3>
 
