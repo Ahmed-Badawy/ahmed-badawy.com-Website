@@ -1,8 +1,11 @@
 <?php 
 
 
-phpinfo();
+require('vendor/autoload.php');
 
+
+
+phpinfo();
 echo "hello";
 
 
