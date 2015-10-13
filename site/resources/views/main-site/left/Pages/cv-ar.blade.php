@@ -14,6 +14,18 @@
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
 
+    body{
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        background: url('{{public_dir}}site-imgs/site/covers/cover_4.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
 
   #page_container {
       font-family: 'Droid Arabic Kufi', serif;
