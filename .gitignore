@@ -52,7 +52,7 @@ Temporary Items
 
 /.idea
 /.git
-# /site/vendor
+
 /site/node_modules
 
 /site/public/barcodegen-1
