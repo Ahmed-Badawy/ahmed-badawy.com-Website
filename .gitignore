@@ -54,7 +54,7 @@ Temporary Items
 /.git
 
 /site/node_modules
-
+/site/vendor
 /site/public/barcodegen-1
 /site/public/pdf
 /site/public/site-docs
