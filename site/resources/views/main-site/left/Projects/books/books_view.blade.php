@@ -23,7 +23,7 @@
 </div>
       <h3>{!!fa2('book')!!}Book Sharing System !</h3>
 <div class="">
-      <p class='white-link'>Read books online. Aslo you can download them.</p>
+      <p class='white-link' style='color:white;'>Read books online. Aslo you can download them.</p>
 <p class='arabic' style='color:white;' dir='rtl'>ﻫﻮ ﻋﺒﺎﺭﺓ ﻋﻦ ﻧﻈﺎﻡ ﻟﻤﺸﺎﺭﻛﺔ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ. ﻭ ﻳﻤﻜﻨﻚ ﻗﺮاءﺓ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ ﻣﺒﺎﺷﺮﺓ ﻋﻠﻰ اﻷﻧﺘﺮﻧﺖ ﺃﻭ ﺗﻨﺰﻳﻠﻬﺎ ﻋﻠﻰ ﺟﻬﺎﺯﻙ.</p>
 
 <button class="btn btn-info" data-toggle="modal" data-target="#book_info">
@@ -206,7 +206,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="book_info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>

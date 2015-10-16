@@ -1,7 +1,4 @@
 
-
-
-
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h1 class="panel-title h1"><h1>Dynamic Text - التحكم النصى للمواقع</h1></h1>

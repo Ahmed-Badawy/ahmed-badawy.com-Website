@@ -61,6 +61,27 @@ hr{
 /********************************************************************************
                       Jumbotron img background
 ********************************************************************************/
+#project_desc{
+
+}
+#project_desc img{
+    max-height: 150px;
+    border-color:#555;
+    border-radius:15px;
+    background-color: #777;
+    float:left;
+    margin-right:3%
+}
+/********************************************************************************/
+
+
+
+
+
+
+/********************************************************************************
+                      Jumbotron img background
+********************************************************************************/
 .jumbotron{
     margin-top:-10px;
 }
@@ -73,6 +94,7 @@ hr{
     /*background-color:rgba(0,0,0,.3);*/
     padding:5px;
 }
+
 .page_head{
     /*background: url('../../../site-imgs/site/covers/cover_4.jpg') no-repeat center center;*/
     /*opacity:50%;*/
@@ -308,6 +330,8 @@ loader
     height: 100%;
     transition:all 1s linear;
 }
+
+
 
 
 
