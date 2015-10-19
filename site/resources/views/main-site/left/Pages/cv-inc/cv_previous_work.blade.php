@@ -77,7 +77,7 @@ $previous_projects = [
 <ul class='list-unstyled english text-center' style='border:2px solid white;padding:7px;border-radius:10px'>
     <h4 class='arabic text-center'>أفكارى و مشاريعى الخاصة</h4>
     @foreach(\sr::projects() as $project)
-	<li class='col-sm-4'><a href="{{$project['link']}}" title='{{$project["page_desc"]}}' dir='rtl' target='_blank'>{{$project['page_name']}}</a></li>
+	<li class='col-sm-6'><a href="{{$project['link']}}" title='{{$project["page_desc"]}}' dir='rtl' target='_blank'>{{$project['page_name']}}</a></li>
     @endforeach
     <div class="clearfix"></div>
 </ul>
