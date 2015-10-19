@@ -49,23 +49,29 @@ $previous_projects = [
   <li><a href="http://spidro.com" target='_blank' class='english'>Spidro.com</a></li>
   <li><a href="{!! url('blog') !!}" target='_blank' class='english'>Personal wordpress blog</a></li>
 
-  <li><a href="http://www.alaryafest.com" target='_blank'>موقع الأرياف للمظلات بالسعودية</a></li>
-  <li><a href="http://www.osoul.sa" target='_blank'>موقع شركة أصول للدواجن و اللحوم بالسعودية</a></li>
-  <li><a href="http://www.ahmed-badawy.com/websites/alabdaa-almaky.com/" target='_blank'>موقع الإبداع المكى للعقارات بالسعودية</a></li>
-  <li><a href="http://erest.sa/demo/enjaz/" target='_blank'>موقع شركة إنجاز للتطوير و البرمجيات بالسعودية</a></li>
+    <li><a href="http://erest.sa" target='_blank' dir='rtl'>موقع شركة إنجاز للتطوير و البرمجيات بالسعودية</a></li>
+    <li><a href="http://drk.com.sa" target='_blank' dir='rtl'>دار البحث و المعرفة للنشر</a></li>
+    <li><a href="http://www.alaryafest.com" target='_blank' dir='rtl'>موقع الأرياف للمظلات بالسعودية</a></li>
+    <li><a href="http://www.osoul.sa" target='_blank' dir='rtl'>موقع شركة أصول للدواجن و اللحوم بالسعودية</a></li>
+    <li><a href="http://www.ahmed-badawy.com/websites/alabdaa-almaky.com/" target='_blank' dir='rtl'>موقع الإبداع المكى للعقارات بالسعودية</a></li>
+    <li><a href="http://basaffar-gp.com" target='_blank' dir='rtl'>مجموعة باصفار الطبية</a></li>
+    <li><a href="http://mostasharak.co" target='_blank' dir='rtl'>موقع شركة مستشارك من مجموعة المتكامل للمقاولات</a></li>
+    <li><a href="http://derbycof.com" target='_blank' dir='rtl'>أنظمة مجموعة دربى كافيه</a></li>
+    <li><a href="http://ramaint.net" target='_blank' dir='rtl'>موقع Rama للمقاولات و العقارات</a></li>
+    <li><a href="http://time-choice.com" target='_blank' dir='rtl'> متجر time-choice.com للساعات</a></li>
 
-  <li><a href="https://www.egyptcodebase.com" target='_blank'>موقع بيانات كود مصر</a></li>
-  <li><a href="http://www.elmasriadecoration.com" target='_blank'>المصرية للديكورات</a></li>
-  <li><a href="http://alnourfemtolasercenter.com" target='_blank'>مركز النور لعمليات للفيمتو ليزيك و الفيمتو سميل</a></li>
-  <li><a href="http://guryildiz.com.tr/ar/" target='_blank'>شركة ملابس غوريلدز</a></li>
-  <li><a href="http://www.gfi-am.ch/ar" target='_blank'>شركة جريس للإستثمارات المالية</a></li>
-  <li><a href="http://www.al-shia.org" target='_blank'>موقع مركز آل البيت العالمى للمعلومات</a></li>
-  <li><a href="http://www.inaba-petfood.co.jp/ar/" target='_blank'>Inaba Petfood</a></li>
-  <li><a href="http://fatn.net/" target='_blank'>فاتن مول</a></li>
-  <li><a href="http://www.trade-ksa.com" target='_blank'>سوق شيهانة الخير</a></li>
-  <li><a href="http://matgar.weebly.com/" target='_blank'>متجر نورا</a></li>
-  <li><a href="http://ar.esis.com.tr/" target='_blank'>ESIS Power</a></li>
-  <li><a href="http://www.colub.be/" target='_blank'>Colub</a></li>
+  <li><a href="https://www.egyptcodebase.com" target='_blank' dir='rtl'>موقع بيانات كود مصر</a></li>
+  <li><a href="http://www.elmasriadecoration.com" target='_blank' dir='rtl'>المصرية للديكورات</a></li>
+  <li><a href="http://alnourfemtolasercenter.com" target='_blank' dir='rtl'>مركز النور لعمليات للفيمتو ليزيك و الفيمتو سميل</a></li>
+  <li><a href="http://guryildiz.com.tr/ar/" target='_blank' dir='rtl'>شركة ملابس غوريلدز</a></li>
+  <li><a href="http://www.gfi-am.ch/ar" target='_blank' dir='rtl'>شركة جريس للإستثمارات المالية</a></li>
+  <li><a href="http://www.al-shia.org" target='_blank' dir='rtl'>موقع مركز آل البيت العالمى للمعلومات</a></li>
+  <li><a href="http://www.inaba-petfood.co.jp/ar/" target='_blank' dir='rtl'>Inaba Petfood</a></li>
+  <li><a href="http://fatn.net/" target='_blank' dir='rtl'>فاتن مول</a></li>
+  <li><a href="http://www.trade-ksa.com" target='_blank' dir='rtl'>سوق شيهانة الخير</a></li>
+  <li><a href="http://matgar.weebly.com/" target='_blank' dir='rtl'>متجر نورا</a></li>
+  <li><a href="http://ar.esis.com.tr/" target='_blank' dir='rtl'>ESIS Power</a></li>
+  <li><a href="http://www.colub.be/" target='_blank' dir='rtl'>Colub</a></li>
 </ul>
 
 <ul class='list-unstyled english text-center' style='border:2px solid white;padding:7px;border-radius:10px'>
