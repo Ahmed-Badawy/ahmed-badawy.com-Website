@@ -74,15 +74,21 @@ public $layouts = [
  * $send_info['subject']
  * $send_info['msg']
  */
+//	public function send_msg($info_array){
+//		$this->send_info = $info_array;
+//		\Mail::send('emails.send_me_msg',$info_array,function($message){
+//			$message->to($this->send_info['to'] , $this->send_info['to_name']);
+//			$message->from($this->send_info['from'] , $this->send_info['from_name']);
+//			$message->subject($this->send_info['subject']);
+//		});
+//		echo "<script>alert('Your Message Was Sent Successfully !')</script>";
+//	}
+
 	public function send_msg($info_array){
-		$this->send_info = $info_array;
-		\Mail::send('emails.send_me_msg',$info_array,function($message){
-			$message->to($this->send_info['to'] , $this->send_info['to_name']);
-			$message->from($this->send_info['from'] , $this->send_info['from_name']);
-			$message->subject($this->send_info['subject']);
-		});
+		$res = mass_mail($info_array["to"],$info_array['subject'],$info_array['msg'],null, $info_array['from']);
 		echo "<script>alert('Your Message Was Sent Successfully !')</script>";
 	}
+
 
 	public function backup_db(){
 			// \Cache::forget("last_db_backup");

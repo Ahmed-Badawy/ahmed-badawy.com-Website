@@ -43,6 +43,7 @@ $previous_projects = [
 
 
 <ul class='text-center list-unstyled'>
+
   <li><a href="{{ url('selling-manager') }}" target='_blank'>أتممت الكثير من البرامج الخدمية معظمها برامج مطاعم و محلات بيع وحدات مثل الموبيلات</a></li>
 
   <li><a href="http://ahmed-badawy.com" target='_blank' class='english'>Ahmed-Badawy.com</a></li>
@@ -72,7 +73,7 @@ $previous_projects = [
   <li><a href="http://matgar.weebly.com/" target='_blank' dir='rtl'>متجر نورا</a></li>
   <li><a href="http://ar.esis.com.tr/" target='_blank' dir='rtl'>ESIS Power</a></li>
   <li><a href="http://www.colub.be/" target='_blank' dir='rtl'>Colub</a></li>
-</ul>
+</ul>imgs_dir
 
 <ul class='list-unstyled english text-center' style='border:2px solid white;padding:7px;border-radius:10px'>
     <h4 class='arabic text-center'>أفكارى و مشاريعى الخاصة</h4>
