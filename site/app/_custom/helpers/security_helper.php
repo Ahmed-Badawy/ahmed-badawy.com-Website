@@ -105,7 +105,7 @@ if ( ! function_exists('bad_proxy')){
  * $to @var array/string  :can be single email or array of emails...
  */
 if ( ! function_exists('mass_mail')){    
-        function mass_mail($to,$subject,$body, $headers =null,$sender = "badawika@badawika.com"){
+        function mass_mail($to,$subject,$body, $headers =null,$sender = "admin@ahmed-badawy.com"){
             if($headers == null){
                 $header[]= 'MIME-Version: 1.0';
                 $header[]= 'Content-type: text/html; charset=UTF-8';                
