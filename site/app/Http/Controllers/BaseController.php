@@ -170,6 +170,11 @@ public $layouts = [
 	}
 
 
+	public function getEmails(){
+		return "emails";
+	}
+
+
 
 		
 }

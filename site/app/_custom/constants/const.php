@@ -62,7 +62,7 @@ if(false){												//Force Mode
 
 	function social($key){
 		$social_const = [
-			"admin_email" 	=>	"ahmed.badawy.elsaid@gmail.com",
+			"admin_email" 	=>	"admin@ahmed-badawy.com",
 
 			"my_phone_1" 	=>	"01111988246",
 			"my_phone_2" 	=>	"01028999810",
