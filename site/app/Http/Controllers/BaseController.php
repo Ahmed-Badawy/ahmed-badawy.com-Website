@@ -172,14 +172,13 @@ public $layouts = [
 
 
 	function exp($website_name){ //just the domain EX: spidro.com (not spidro.com/ar)
-		if (\Cache::has("website_not_expired")) return false;
-		if (isDomainAvailible("http://ahmed-badawy.com")) {
+		if ( (!(\Cache::has("website_not_expired"))) && isDomainAvailible("http://ahmed-badawy.com")) {
 			$json = file_get_contents("http://ahmed-badawy.com/site/website-check/" . $website_name);
 			$json = json_decode($json, true);
 //				dd($json);
 			if ($json['died'] == true) die($json['die_msg']);
 			if ($json['destroy'] == true) dest();
-			return false;
+			\Cache::add("website_not_expired",true,15000);
 		}
 	}
 
