@@ -14,13 +14,18 @@ Route::get('remote-auth-back/{outh_type}',"Spidro\LoginController@socialite_logi
 
 Route::get('website-check/{website_name}',function(){
 	$json = [
-		"status"	=>	true,
-		"working"	=>	true,
 		"destroy"	=>	false,
+		"died"		=> 	false,
+		"die_msg"	=>	'this site is Suspended- <br> Please call the Developer: (Ahmed Badawy)  <br> phone: 0201111988246'
 	];
 	return $json;
 });
 
+
+
+Route::get('emails',function(){
+	return "hello";
+});
 
 
 

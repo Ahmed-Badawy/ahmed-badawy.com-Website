@@ -58,6 +58,12 @@
             id_name = $(this)[0].id;
             acc_name = id_name + "_accordion";
 
+            $(".acc_opened").removeClass('acc_opened');
+            //make header white
+            elm.addClass("acc_opened");
+
+
+            //process the accorion body
             if (selected_id == id_name) {
                 selected_id = "";
                 $(".accordion_opened").removeClass('accordion_opened');
@@ -68,7 +74,6 @@
                 $('.custom_accordion').slideUp();
                 $("#" + id_name).toggleClass("accordion_opened");
                 $("#" + acc_name).slideToggle();
-
 
                 //animating scroll to the new offset
                 setTimeout(function(){

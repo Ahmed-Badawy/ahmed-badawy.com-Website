@@ -8,6 +8,23 @@ use Illuminate\Http\Request;
 class PagesController extends BaseController {
 
 
+
+/********************************************************************************
+	All Ideas
+ ********************************************************************************/
+	public function all_Ideas(){
+		$data = [
+			"route_info"=>\sr::pages("cv"),
+			'theme'=>$this->themes[4],
+		];
+		$data['ideas'] = \cv_projects::all();
+//		dd($ideas);
+		return $this->get_view("Pages.ideas",$data);
+	}
+/********************************************************************************/
+
+
+
 /********************************************************************************
 Pages
 ********************************************************************************/
@@ -30,7 +47,7 @@ CV
 			'theme'=>$this->themes[4],
 			'fake'=>false,
 		];
-		return $this->get_view("Pages.cv2",$data);
+		return $this->get_view("Pages.cv-final",$data);
 	}
 	public function cv_application(){
 		$data = [

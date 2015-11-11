@@ -17,11 +17,14 @@ Route::get('/site/{any}',function($any){
 Route::get('ecv','BaseController@test_email_view');
 
 
+
 /********************************************************************************
   					Pages
 ********************************************************************************/
 Route::get('/','PagesController@home');
 Route::get('home','PagesController@home');
+
+Route::get('ideas','PagesController@all_Ideas');
 
 Route::get('cv',['as'=>'cv','uses'=>'PagesController@cv']);
 Route::get('cv-brief',['as'=>'cv','uses'=>'PagesController@cv_application']);
@@ -32,6 +35,7 @@ Route::get ('contact','PagesController@get_contact');
 Route::post('contact','PagesController@post_contact');
 //*******************************************************************************
 
+
 /*********************************************************************
 Registration System
 **********************************************************************/
@@ -41,6 +45,7 @@ Route::group(array('prefix' => 'registration'), function(){
 	Route::post('signup','RegistrationController@request_control');
 });
 /**********************************************************************/
+
 
 Route::get('site-report/{operation}/{site_name}','SiteController@site_report');
 

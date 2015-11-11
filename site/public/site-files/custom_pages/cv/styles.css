@@ -70,13 +70,33 @@ body{
     margin-bottom:15px;
   }
 
-  .acc_header{
+
+
+
+
+
+.acc_header{
+    transition: all .3s ease-out;
+    border:2px solid #666;
     padding:7px;
     border-radius: 5px;
     background-color:rgba(0,0,0,.3);
     color:#fff;
     text-shadow: 0px 0px 6px rgba(255,255,255,0.9);
   }
+
+.acc_header:hover{
+  cursor: pointer;
+  background-color:rgba(0,0,0,.6);
+  border:2px solid #fff;
+  padding:10px;
+}
+.acc_opened{
+  border:2px solid #fff;
+  padding:10px;
+  background-color:rgba(0,0,0,.6)
+}
+
 
   .custom_accordion h3{
     padding:7px;
@@ -87,22 +107,21 @@ body{
     margin-top:0px;
   }
 
-  .custom_accordion{
-    background-color:rgba(255,50,200,.1);
-  }
-
   #ContactModalButton{
     display:none;
   }
 
 
   .custom_accordion{
+    background-color:rgba(255,255,255,.2);
     display:none;
     border-left:2px solid white;
     border-bottom:2px solid white;
     border-right:2px solid white;
     border-radius:0 0 20px 20px;
     padding:10px;
+    padding-top:20px;
+    margin-top:-10px;
   }
 
 .highlight{
@@ -119,16 +138,6 @@ body{
 
 
 
-.acc_header{
-  transition: all .3s ease-out;
-  border:2px solid #666;
-}
-.acc_header:hover{
-  cursor: pointer;
-  background-color:rgba(0,0,0,.6);
-  border:2px solid #fff;
-  padding:10px;
-}
 
 
 

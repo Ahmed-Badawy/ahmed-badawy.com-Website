@@ -6,21 +6,28 @@
 <ul dir='rtl'>
 <li>أحمد بدوى السيد -  مطور و مبرمج</li>
 <li>25 سنة  -  غير مدخن  -  أقود و حامل لرخصة قيادة</li>
-<li>خبرة 3 سنوات فى - برمجة البرمجيات و تطوير مواقع الويب بالـ <span class='english'>PHP , javascript</span></li>
-<li>مبرمج و مطور - خبرة فى تنفيذ الأفكار الجديدة و أيجاد الحلول المستحدثة.</li>
+<li>خبرة خمس سنوات فى تطوير و برمجة مواقع الويب <span class='english'>PHP , javascript</span></li>
+<li>أستطيع التعامل مع مختلف اللغات البرمجية على مختلف المنصات و النظم</li>
+<li>خبرة عالية فى تنفيذ الأفكار الجديدة و حل المشاكل و الصعوبات البرمجية و إيجاد الحلول المستحدثة.</li>
 
 <br>
-<li>خبرات العمل:  </li>
+<li><b>خبرات العمل:  </b></li>
 <ul>
     <li class='english'> HTML - CSS - JavaScript - jQuery - AngularJS </li>
     <li class='english'> PHP - Wordpress </li>
     <li class='english'> CodeIgniter FrameWork => Zend FrameWork => Laravel FrameWork</li>
+    <li class='english'> Chrome Extensions - Firefox Addons - Windows 8 Apps</li>
     <li class='english'> Gulp - Grunt - SASS - LESS - Bower </li>
     <li class='english'> Git Technology - familiar with cpanel & WHM Resellers panel </li>
     <li class='english'> Some Java & Android SDK Development</li>
 </ul>
-<br>
 
+
+    <br>
+    <li><b>ماذا يمكننى أن أصنع لكم ؟</b></li>
+    <ul>
+<li>تطوير مواقع الويب بمختلف أشكالها و أفكارها و تقنياتها</li>
+<li> أستطيع تطوير البرمجيات على المنصات التالية: <span class="english">Google Chrome Extensions , Firefox Addons , Windows 8 Apps</span></li>
 <li>القدرة على تنفيذ البرامج الخدمية مثل ( نظم البيع و الشراء - نظم إدارة الصيدليات - نظم إدارة المقاولات - نظم البيع للمطاعم )</li>
 <li>خبرة فى تأسيس أنظمة للإستضافة للشركات و المواقع المختلفة عن طريق خدمة الـ Reseller.</li>
 <li>معرفة جيدة برفع و تأسيس و تشغيل مواقع الويب و إستمرار تطويرها ضمن فريق عمل متكامل.</li>
@@ -30,6 +37,10 @@
 <li>لدى خلفية بسيطة للتعامل مع لغة الجافا و أستطيع إنجاز البرامج التى تعتمد على الإرتباط بالـ database فيه.</li>
 <li>حصلت على شهادتى الـ <span class='english'>CCNA - CCNP</span> منذ أربع سنوات. مما أعطانى فهم جيد جدا للشبكات و طريقة عملها و كيفية التعامل معها.</li>
 <li>أعمل دوما لتطوير مستوى خبرتى و أتابع كل ما هو جديد لتطوير عملى و مستوايا.</li>
+    </ul>
+
+
+
 
 <br>
   <ul>

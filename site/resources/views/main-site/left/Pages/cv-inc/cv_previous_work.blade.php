@@ -61,19 +61,20 @@ $previous_projects = [
     <li><a href="http://ramaint.net" target='_blank' dir='rtl'>موقع Rama للمقاولات و العقارات</a></li>
     <li><a href="http://time-choice.com" target='_blank' dir='rtl'> متجر time-choice.com للساعات</a></li>
 
-  <li><a href="https://www.egyptcodebase.com" target='_blank' dir='rtl'>موقع بيانات كود مصر</a></li>
-  <li><a href="http://www.elmasriadecoration.com" target='_blank' dir='rtl'>المصرية للديكورات</a></li>
+  <li><a href="https://egyptcodebase.com" target='_blank' dir='rtl'>موقع بيانات كود مصر</a></li>
+  <li><a href="http://elmasriadecoration.com" target='_blank' dir='rtl'>المصرية للديكورات</a></li>
   <li><a href="http://alnourfemtolasercenter.com" target='_blank' dir='rtl'>مركز النور لعمليات للفيمتو ليزيك و الفيمتو سميل</a></li>
   <li><a href="http://guryildiz.com.tr/ar/" target='_blank' dir='rtl'>شركة ملابس غوريلدز</a></li>
-  <li><a href="http://www.gfi-am.ch/ar" target='_blank' dir='rtl'>شركة جريس للإستثمارات المالية</a></li>
-  <li><a href="http://www.al-shia.org" target='_blank' dir='rtl'>موقع مركز آل البيت العالمى للمعلومات</a></li>
-  <li><a href="http://www.inaba-petfood.co.jp/ar/" target='_blank' dir='rtl'>Inaba Petfood</a></li>
+  <li><a href="http://gfi-am.ch/ar" target='_blank' dir='rtl'>شركة جريس للإستثمارات المالية</a></li>
+  <li><a href="http://al-shia.org" target='_blank' dir='rtl'>موقع مركز آل البيت العالمى للمعلومات</a></li>
+  <li><a href="http://inaba-petfood.co.jp/ar/" target='_blank' dir='rtl'>Inaba Petfood</a></li>
   <li><a href="http://fatn.net/" target='_blank' dir='rtl'>فاتن مول</a></li>
-  <li><a href="http://www.trade-ksa.com" target='_blank' dir='rtl'>سوق شيهانة الخير</a></li>
+  <li><a href="http://trade-ksa.com" target='_blank' dir='rtl'>سوق شيهانة الخير</a></li>
   <li><a href="http://matgar.weebly.com/" target='_blank' dir='rtl'>متجر نورا</a></li>
   <li><a href="http://ar.esis.com.tr/" target='_blank' dir='rtl'>ESIS Power</a></li>
-  <li><a href="http://www.colub.be/" target='_blank' dir='rtl'>Colub</a></li>
-</ul>imgs_dir
+  <li><a href="http://colub.be/" target='_blank' dir='rtl'>Colub</a></li>
+</ul>
+
 
 <ul class='list-unstyled english text-center' style='border:2px solid white;padding:7px;border-radius:10px'>
     <h4 class='arabic text-center'>أفكارى و مشاريعى الخاصة</h4>

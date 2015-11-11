@@ -34,6 +34,7 @@ Image Thumb API
 	}
 	public function return_img_thumb($src){
 		$input = \Request::all();
+
 		$width= (isset($input['width'])) ? $input['width'] : 140;
 		$height= (isset($input['height'])) ? $input['height'] : 140;
 		$save= isset($input['save']);
@@ -48,11 +49,12 @@ Image Thumb API
     	}else{      // Create Thumb
     		if(!file_exists(real_imgs_dir.$src)) die("$src --> image doesn't exist.") ;
 	    	else{
-	    		if(!CREATE_THUMBS) $save_dir = false;
-	    		elseif( ($width!=140 || $height!=140) && $save==false) $save_dir = false; //if !=140 don't save
-	    		else $save_dir = real_imgs_dir.$thumb_format;
+//				dd();
+				if(CREATE_THUMBS && $save) $save_dir = real_imgs_dir.$thumb_format;
+				elseif( ($width!=140 || $height!=140) ) $save_dir = false; //if !=140 don't save
 
-	    		create_thumbnail(real_imgs_dir.$src , $save_dir , $width,$height);
+//				dd($save_dir);
+				create_thumbnail(real_imgs_dir.$src , $save_dir , $width,$height);
 		    	$img = imgs_dir.$thumb_format;
 		    }
 		    // die("fuck Get Thumb Didn't work on : $src");

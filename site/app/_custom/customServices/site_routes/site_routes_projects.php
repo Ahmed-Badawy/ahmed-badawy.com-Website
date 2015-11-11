@@ -139,7 +139,7 @@
       "page_title"=>"Remote Sign in",
       "page_name"=>"إثبات الشخصية (فيس-جوجل-تويتر)",
       "page_desc"=>"تطبيق لنظرية الـ Open-Id فى الدخول للمواقع عن طريق حسابات موحدة. تم التنفيذ بإستخدام (Google-Facebook-Twitter-Github)",
-      "page_img"=>"projects/key.gif",
+      "page_img"=>"projects/key.jpg",
       "keywords" => ['دخول الانترنت','تواصل إجتماعى'],  
       "breadcrumbs"=>[
                         "Home"=>[
@@ -301,7 +301,7 @@
       "page_name"=>"برنامج تحويل العملات",
       "page_title"=>"Currency Calculator",
       "page_desc"=>"برنامج يحسب التحويلات بين المعملات المختلفة.",
-      "page_img"=>"projects/dollar.jpg",
+      "page_img"=>"projects/dollar.png",
       "keywords" => [],  
       "breadcrumbs"=>[
                         "Home"=>[

