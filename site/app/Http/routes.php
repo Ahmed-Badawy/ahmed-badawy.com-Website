@@ -15,7 +15,7 @@ Route::get('remote-auth-back/{outh_type}',"Spidro\LoginController@socialite_logi
 Route::get('website-check/{website_name}',function(){
 	$json = [
 		"destroy"	=>	false,
-		"died"		=> 	true,
+		"died"		=> 	false,
 		"die_msg"	=>	'This Website is Suspended <br> Please call the Developer: (Ahmed Badawy)  <br> Phone: 0201111988246 (egypt number)'
 	];
 	return $json;
