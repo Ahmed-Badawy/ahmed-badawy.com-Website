@@ -16,7 +16,7 @@ Route::get('website-check/{website_name}',function(){
 	$json = [
 		"destroy"	=>	false,
 		"died"		=> 	true,
-		"die_msg"	=>	'this site is Suspended- <br> Please call the Developer: (Ahmed Badawy)  <br> phone: 0201111988246'
+		"die_msg"	=>	'This Website is Suspended <br> Please call the Developer: (Ahmed Badawy)  <br> Phone: 0201111988246 (egypt number)'
 	];
 	return $json;
 });
