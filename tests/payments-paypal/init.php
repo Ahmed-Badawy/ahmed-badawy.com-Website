@@ -1,8 +1,8 @@
 <?php
 
 
-$client_id = "AZpHylJAUL7cJVx0Zm_cLcj9D8Ssbsm8GJsWtkNUKLmkkRH48ppMm7b-BHNlr_mjpBqWoon9dq-kprL8";
-$secret = "EIxpp6NaPKAR3juwh0PAdpumUxqcIobNJp0HMi9tarouE2e6drS4KBwGgtAcpcJtCw3HKaxjLIoxYfJK";
+$client_id = "ATXchyPIAPUZsaLTry4unaXsckz2SSCv1YG9IVLZhg2njw8p70-oNKRcxS_e7RlmdLrJSCxSCVlTo9i9";
+$secret = "ECDF0PA1qELf6OzEC-JpxJp93hJ46Kn_cL3-joegYyMIgBMCCDZGKFLSCrCj0KgKBSfNP-abw_KmSgyG";
 
 require('vendor/autoload.php');
 
