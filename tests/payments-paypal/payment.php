@@ -25,7 +25,7 @@ $payer = new Payer();
     $transaction->setAmount($amount)->setDescription("this is the description man");
     $payment->setIntent('sale')->setPayer($payer)->setTransactions([$transaction]);
     $redirectUrls->setReturnUrl($rediren_link.'?approved=true')
-                ->setCancelUrl($rediren_link'?approved=false');
+                ->setCancelUrl($rediren_link.'?approved=false');
     $payment->setRedirectUrls($redirectUrls);
 
 
