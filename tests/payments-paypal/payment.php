@@ -22,10 +22,10 @@ $payer = new Payer();
     $payer->setPaymentMethod('paypal');
     $details->setShipping('1.00')->setTax('0.00')->setSubtotal('3.00');
     $amount->setCurrency('USD')->setTotal('4.00')->setDetails($details);
-    $transaction->setAmount($amount)->setDescription("this is the description");
+    $transaction->setAmount($amount)->setDescription("this is the description man");
     $payment->setIntent('sale')->setPayer($payer)->setTransactions([$transaction]);
-    $redirectUrls->setReturnUrl('http://localhost/payments-paypal/pay.php?approved=true')
-                ->setCancelUrl('http://localhost/payments-paypal/pay.php?approved=false');
+    $redirectUrls->setReturnUrl($rediren_link.'?approved=true')
+                ->setCancelUrl($rediren_link'?approved=false');
     $payment->setRedirectUrls($redirectUrls);
 
 
