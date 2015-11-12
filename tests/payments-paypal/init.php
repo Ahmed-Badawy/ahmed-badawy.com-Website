@@ -3,8 +3,7 @@
 
 $client_id = "ATXchyPIAPUZsaLTry4unaXsckz2SSCv1YG9IVLZhg2njw8p70-oNKRcxS_e7RlmdLrJSCxSCVlTo9i9";
 $secret = "ECDF0PA1qELf6OzEC-JpxJp93hJ46Kn_cL3-joegYyMIgBMCCDZGKFLSCrCj0KgKBSfNP-abw_KmSgyG";
-$rediren_link = "https://ahmed-badawy.com/tests/payments-paypal/pay.php";
-
+$rediren_link = "http://ahmed-badawy.com/tests/payments-paypal/pay.php";
 
 
 require('vendor/autoload.php');
