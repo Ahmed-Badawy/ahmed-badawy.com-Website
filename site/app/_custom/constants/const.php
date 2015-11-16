@@ -35,7 +35,10 @@ if(false){												//Force Mode
 
 
 	$base_url = (Dev) ?  "localhost/_websites/ahmed-badawy.com/site/" : "ahmed-badawy.com/site/";
-	define('base_url', "http://".$base_url );
+
+	if(!Dev) define('base_url', "https://".$base_url );
+	else define('base_url', "http://".$base_url );
+
 	define('base_url_without_http', $base_url );
 
 	$public_dir = base_url."public/";

