@@ -27,6 +27,7 @@ Currency
 			'ng_app'=>"myApp",
 			'ng_controller'=>"googleCurrency",
 		];
+//		die('hi');
 		return $this->get_view('Projects.currency.currency',$data);		
 	}
 	public function google_currency_calc($from,$to,$amount=null){

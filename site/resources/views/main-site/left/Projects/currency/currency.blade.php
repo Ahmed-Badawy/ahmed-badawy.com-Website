@@ -1,6 +1,7 @@
 {!! get_angular('currency') !!}
 
 
+
 <div class='row'> 
 
 
@@ -8,7 +9,9 @@
       <br>
 
 <div class="row col-md-10 col-md-offset-1">
-      <img class="img-circle img deny" style='float:left;margin-right:20px' src='{{get_thumb("projects/dollar.jpg")}}' width='250' height="250" alt="Generic placeholder image">
+
+      <img class="img-circle img deny" style='float:left;margin-right:20px' src='{{imgs_dir.sr::projects("currency")['page_img']}}' width='250' height="250" alt="Generic placeholder image">
+
 	<h1>Currency Rate Calculator !</h1>
 	<p>Calculates Currency Exchange Rates.</p>
 
