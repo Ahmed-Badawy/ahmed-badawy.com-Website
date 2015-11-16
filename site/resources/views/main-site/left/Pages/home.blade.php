@@ -1,6 +1,6 @@
 
 @section('font_section')
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>        
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 @overwrite
 @section("css_section")
         {!! get_it("bootstrap.css") !!}
