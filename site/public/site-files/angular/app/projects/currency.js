@@ -36,10 +36,11 @@ myapp.controller('googleCurrency',function($scope,$http){
 });
 
 function type(n){
-	if (typeof n == 'undefined') out = 0;
-	else if (String.trim(n) == '') out = 0;
-	if (typeof n == 'number') out = 1; //all numbers integers & floats
-	if (typeof n == 'string') out = 2;
-	if (typeof n == 'object') out = 3; //objects & array
+	var type = typeof n;
+	if (type == 'undefined') out = 0;
+	else if (type == 'number') out = 1; //all numbers integers & floats
+	else if (type == 'string') out = 2;
+	else if (type == 'object') out = 3; //objects & array
+	else if ( (type == 'string') && (n.trim() == '') ) out = 0;
 	return out;
 }
