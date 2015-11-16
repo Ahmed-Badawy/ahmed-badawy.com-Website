@@ -50,6 +50,7 @@ Image Thumb API
     		if(!file_exists(real_imgs_dir.$src)) die("$src --> image doesn't exist.") ;
 	    	else{
 //				dd();
+				$save_dir = false;
 				if(CREATE_THUMBS && $save) $save_dir = real_imgs_dir.$thumb_format;
 				elseif( ($width!=140 || $height!=140) ) $save_dir = false; //if !=140 don't save
 
