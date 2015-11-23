@@ -60,17 +60,17 @@ Currency Advanced
 		return $this->get_view('Projects.currency.currency_advanced',$data);		
 	}
 	public function get_exchange_rates(){
-		\Cache::forget('money_exchange_rates');
+//		\Cache::forget('money_exchange_rates');
 		if (\Cache::has('money_exchange_rates')){
 			$data = \Cache::get('money_exchange_rates');
-		}elseif(is_connected("google.com")){		
+		}elseif(is_connected("openexchangerates.org")){
 			$api_key = "bbc128aa6f3645d78b098f0eef3dd533";
 			$json = file_get_contents("http://openexchangerates.org/api/latest.json?app_id=$api_key");
 			$json = json_decode($json,true);
 			$data['rates'] = $json['rates'];
 			$data['base'] = $json['base'];
 			// $data['json_rates'] = json_encode($json['rates']);
-			\Cache::add('money_exchange_rates',$data,60);
+			\Cache::add('money_exchange_rates',$data,360);
 			\Cache::add('money_exchange_rates_default',$data,50000);
 		}else{
 			$data = \Cache::get('money_exchange_rates_default');

@@ -63,7 +63,7 @@ Temporary Items
 /site/public/barcodegen-1
 /site/public/pdf
 /site/public/site-docs
-/site/app/_custom/customServices/lists
+#/site/app/_custom/customServices/lists
 
 /site/config
 /site/backups/db
