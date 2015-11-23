@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RTC Recording</title>
+
+<style type="text/css">
+	.booth{
+		border:5px solid #aaa;
+		height: 300px;
+		width:400px;
+		background: #ccc;
+	}
+
+	#canvas {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#capture{
+		color:blue;
+	}
+	#capture:hover{
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	
+</style>
+
+</head>
+<body class='container'>
+
+
+<h1>Https is required</h1>
+<h4>the getMedia is deprecated in http so you must use https to make it work in all browsers.</h4>
+
+
+<div class="booth">
+	<video id='vid' width='400' height='300' autoplay></video>
+</div>
+
+<hr>
+
+<h3>Video Manipulations:- Black & Wight</h3>
+<div class="booth">
+	<canvas id='canvas' width='400' height='300' ></canvas>
+</div>
+
+
+<hr>
+<h3>Capturing An Image</h3>
+<h4 id='capture'>Click To Take A Photo</h4>
+<div class="booth">
+	<canvas id='canvas_img' width='400' height='300' ></canvas>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+	(function(){
+		var video = document.getElementById('vid');
+		var vendorUrl = window.URL || window.webkitURL;
+		navigator.getMedia = navigator.getUserMedia || navigator.webkitGetUserMedia	
+								|| navigator.mozGetUserMedia || navigator.msGetUserMedia;
+
+		navigator.getMedia({
+			video: true,
+			audio:false
+		}, function(stream){
+			// console.log(stream);
+			video.src = vendorUrl.createObjectURL(stream);
+			video.play();
+			console.log('playing');
+		}, function(error){
+			//an error occured
+			console.log('error has just happend');
+			console.log(error);
+		});
+
+
+
+		// manipulating the video
+
+
+		var canvas = document.getElementById('canvas');
+		var context = canvas.getContext('2d');
+
+		video.addEventListener('play', function () {
+		    var $this = this; //cache
+		    (function loop() {
+		        if (!$this.paused && !$this.ended) {
+		            context.drawImage($this, 0, 0,400,300); //added width & height
+		            setTimeout(loop, 50); // drawing at 30fps
+		            console.log('hello');
+		        }
+		    })();
+		}, false);
+
+
+		//capturing an image
+		var canvas_img = document.getElementById('canvas_img');
+		var context_img = canvas_img.getContext('2d');
+
+		var capture = document.getElementById('capture');
+		capture.addEventListener('click',function(){
+			context_img.drawImage(video,0,0,400,300);
+		});
+
+
+	})();
+</script>
+
+
+
+</body>
+</html>

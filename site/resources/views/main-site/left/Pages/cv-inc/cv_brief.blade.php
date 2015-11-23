@@ -14,20 +14,20 @@
 <li><b>خبرات العمل:  </b></li>
 <ul>
     <li class='english'> HTML - CSS - JavaScript - jQuery - AngularJS </li>
-    <li class='english'> PHP - Wordpress </li>
+    <li class='english'> PHP Expert </li>
     <li class='english'> CodeIgniter FrameWork => Zend FrameWork => Laravel FrameWork</li>
-    <li class='english'> Chrome Extensions - Firefox Addons - Windows 8 Apps</li>
-    <li class='english'> Gulp - Grunt - SASS - LESS - Bower </li>
+    <li class='english'> Chrome Extensions & APPs - Firefox Addons</li>
+    <li class='english'> Some Nodejs Experience - Grunt - Gulp - Bower - SASS - LESS </li>
     <li class='english'> Git Technology - familiar with cpanel & WHM Resellers panel </li>
-    <li class='english'> Some Java & Android SDK Development</li>
+    <li class='english'> Some Java & Android SDK Development Experience</li>
 </ul>
 
 
     <br>
     <li><b>ماذا يمكننى أن أصنع لكم ؟</b></li>
     <ul>
-<li>تطوير مواقع الويب بمختلف أشكالها و أفكارها و تقنياتها</li>
-<li> أستطيع تطوير البرمجيات على المنصات التالية: <span class="english">Google Chrome Extensions , Firefox Addons , Windows 8 Apps</span></li>
+<li>برمجة و تطوير مواقع الويب بمختلف أشكالها و أفكارها و تقنياتها</li>
+<li> أستطيع تطوير البرمجيات على المنصات التالية: <span class="english">Google Chrome APPs & Extensions , Firefox Addons</span></li>
 <li>القدرة على تنفيذ البرامج الخدمية مثل ( نظم البيع و الشراء - نظم إدارة الصيدليات - نظم إدارة المقاولات - نظم البيع للمطاعم )</li>
 <li>خبرة فى تأسيس أنظمة للإستضافة للشركات و المواقع المختلفة عن طريق خدمة الـ Reseller.</li>
 <li>معرفة جيدة برفع و تأسيس و تشغيل مواقع الويب و إستمرار تطويرها ضمن فريق عمل متكامل.</li>

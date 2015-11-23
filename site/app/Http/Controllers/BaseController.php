@@ -29,11 +29,11 @@ public $layouts = [
 
 
 	public function __construct(){
-		$this->backup_db();
-		$this->backup_files();
+//		$this->backup_db();
+//		$this->backup_files();
 //		$this->build_site_map();
 //		$this->send_mail();
-		$this->exp("spidro.com");
+//		$this->exp("spidro.com");
 	}
 
 	public function test_email_view(){

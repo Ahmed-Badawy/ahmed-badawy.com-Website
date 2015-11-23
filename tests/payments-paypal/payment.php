@@ -22,7 +22,7 @@ $payer = new Payer();
     $payer->setPaymentMethod('paypal');
     $details->setShipping('1.00')->setTax('0.00')->setSubtotal('3.00');
     $amount->setCurrency('USD')->setTotal('4.00')->setDetails($details);
-    $transaction->setAmount($amount)->setDescription("this is the description man");
+    $transaction->setAmount($amount)->setDescription("this is the description of the payment");
     $payment->setIntent('sale')->setPayer($payer)->setTransactions([$transaction]);
     $redirectUrls->setReturnUrl($rediren_link.'?approved=true')
                 ->setCancelUrl($rediren_link.'?approved=false');
@@ -34,6 +34,8 @@ try{
     $hash = md5($payment->getId()); //used to identify
 //    $_SESSION['paypal_hash'] = $hash;
 }catch (PayPalConnectionException $e){
+	// err($e->getMessage());
+	// die;
     header('Location: error.php');
 };
 

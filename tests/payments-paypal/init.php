@@ -1,8 +1,7 @@
 <?php
 
-
-$client_id = "AVTm8GWz8urpOtTHqQzTm7YfYn34jFADb7azg3FV6nB9vwdm1LILFODykGpYcpeY009WRAHdVldG2sL4";
-$secret = "EAaubJp8OpPDiCzWKXI-7LoSd1fOLnlSrVAL6jhLd3KCCVnCPGjjs4sv6MVyMCqFz9P4stpWdHLanbcS";
+$client_id = "AZpHylJAUL7cJVx0Zm_cLcj9D8Ssbsm8GJsWtkNUKLmkkRH48ppMm7b-BHNlr_mjpBqWoon9dq-kprL8";
+$secret = "EIxpp6NaPKAR3juwh0PAdpumUxqcIobNJp0HMi9tarouE2e6drS4KBwGgtAcpcJtCw3HKaxjLIoxYfJK";
 $rediren_link = "http://ahmed-badawy.com/tests/payments-paypal/pay.php";
 
 

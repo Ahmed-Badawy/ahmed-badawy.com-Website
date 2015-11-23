@@ -53,6 +53,11 @@ Temporary Items
 /.idea
 /.git
 
+/site/public/video_player
+/tests/payments-paypal-live
+/tests/payments-paypal
+
+
 /site/node_modules
 /site/vendor
 /site/public/barcodegen-1
