@@ -23,7 +23,7 @@
 
 
 @foreach($json_array['rates'] as $key=>$rate)
- <div class="col-xs-6 col-sm-3 col-md-3 pull-right">    
+ <div class="col-xs-12 col-sm-6 col-md-3 pull-right">
    <label class="input-group">{{$rate['name']}}</label>
    <div class="input-group">	
  	  <input type="text" class="form-control input-sm" ng-change="calc2( '{{$rate['short']}}' , {{'currency_rates.'.$rate['short']}} )" ng-model="{{'currency_rates.'.$rate['short']}}" placeholder="{{$rate['short']}}">
