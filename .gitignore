@@ -54,8 +54,8 @@ Temporary Items
 /.git
 
 /site/public/video_player
-/tests/payments-paypal-live
-/tests/payments-paypal
+#/tests/Payments
+
 
 
 /site/node_modules
