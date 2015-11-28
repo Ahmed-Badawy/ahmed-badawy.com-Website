@@ -54,7 +54,7 @@ Temporary Items
 /.git
 
 /site/public/video_player
-#/tests/Payments
+/tests/Payments
 
 
 
