@@ -91,7 +91,13 @@ $index = [
                         </a>
                     </div>
                     <div class="col-xs-9">
-                        <h4 class=""><a href='{{$project["link"]}}' target='_blank'>{{$project_name}}</a></h4>
+                        <h3 class=""><a href='{{$project["link"]}}' target='_blank'>
+<span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-{{$project['logo']}} fa-stack-1x fa-inverse"></i>
+</span>
+{!! $project_name !!}</a>
+                        </h3>
                         <a class='desc arabic' href='{{$project["link"]}}' target='_blank'>{!! $project['page_desc'] !!}</a>
                     </div>
                 </div>
