@@ -82,5 +82,21 @@
 	"under_construction"=>true
 ],
 
+
+		"blank"=>[
+			"logo"=>'',
+			'page_title'=> '',
+			'page_desc'=>"",
+			'page_img' => "",
+			"keywords" => [],
+			"breadcrumbs" => [
+				"Home"=>[
+					'logo'=>'home',
+					'site_routes_subs'=>"home_list",
+					'link'=> url('/')
+				],
+			],
+			"link"=>url('site-tests')
+		],
 	];
 

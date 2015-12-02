@@ -57,6 +57,7 @@
 
 
 
+
 <li>
   <a href="" class="dropdown-toggle" data-toggle="dropdown">{!! fa2('gamepad') !!} Games <b class="caret"></b></a>
   <ul class="dropdown-menu">
@@ -68,12 +69,12 @@
     @endforeach
 
   </ul>
-</li>  
+</li>
 
 
 
 <li>
-  <a href="" class="dropdown-toggle" data-toggle="dropdown">{!! fa2('globe',['size'=>0]) !!} APIs <b class="caret"></b></a>
+  <a href="" class="dropdown-toggle" data-toggle="dropdown">{!! fa2('cloud',['size'=>0]) !!} APIs <b class="caret"></b></a>
   <ul class="dropdown-menu">
     <li><a href="{!! url('apis') !!}">{!! fa2('home') !!} APIs Main Page</a></li>
     <li class="divider"></li>
@@ -83,6 +84,17 @@
   </ul>
 </li>
 
+
+<li>
+  <a href="" class="dropdown-toggle" data-toggle="dropdown">{!! fa2('chrome',['size'=>0]) !!} Chrome APPs <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+      <li><a href="{!! url('chrome-apps') !!}">{!! fa2('home') !!} Chrome APPs Main Page</a></li>
+      <li class="divider"></li>
+      @foreach(sr::external('chrome apps') as $project)
+          <li><a href="{!! $project['link'] !!}" target="_blank">{!! fa2($project['logo'],['size'=>0]) !!} {!! $project['page_title'] !!}</a></li>
+      @endforeach
+  </ul>
+</li>
 
 
 @if(Dev)
@@ -99,8 +111,10 @@
               </ul>
 
 
+
+
 <ul class="nav navbar-nav pull-right">
-    <!-- <li><a href="{!! url('cv') !!}">{!! fa2('suitcase',['size'=>0]) !!}&nbsp;  C.V</a></li> -->
+    <li><a href="{!! url('cv') !!}">{!! fa2('suitcase',['size'=>0]) !!}&nbsp;C.V</a></li>
     <li><a href="{{url('blog')}}" target="_blank">{!!fa2('wordpress',['size'=>0])!!} My Blog</a></li>
     <li><a id='ContactModalButton' class='deny' href="#ContactModal" data-toggle='modal' role='button'>{!! fa2('envelope',['size'=>0]) !!} Contact</a></li> 
     

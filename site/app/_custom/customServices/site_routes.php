@@ -21,7 +21,7 @@ class Site_routes {
         } elseif ($require == 8) {
             require("site_routes/site_routes_sellingManager.php");            
         } elseif ($require == 9) {
-            require("site_routes/site_routes_games.php");                 
+            require("site_routes/site_routes_games.php");
         } else {
             err("not a defined site route");
         }
@@ -65,7 +65,13 @@ class Site_routes {
     public static function games($what = null) {
         return self::get(9, $what);
     }
-    
+
+    public static function external($type,$item=null) {
+        require("site_routes/site_routes_external.php");
+        if($item==null) return $routes_array[$type];
+        elseif($item!=null) return $routes_array[$type][$item];
+    }
+
 /*****************************************************
 **  Build Site Map
 *****************************************************/

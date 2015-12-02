@@ -36,6 +36,7 @@ Route::get('emails',function(){
 	require("Routes/routes_SiteTests.php");
 	require("Routes/routes_spidro.php");
 	require("Routes/routes_games.php");
+	require("Routes/routes_external.php");
 	// require("Routes/routes_.php");
 
 

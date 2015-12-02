@@ -65,7 +65,7 @@ View Generators
 
 
     function th($src,$width=140,$height=140){
-        return url("api/thumb/$src?width=$width&height=$height");
+        return url("api/thumb/$src?width=$width&height=$height&save=true");
     }
 
     function get_thumb($src,$width=140,$height=140){

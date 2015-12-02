@@ -38,6 +38,8 @@ Route::group(array('prefix' => 'projects'), function(){
 	/********************************Domain Search**************************************/
 	Route::get('domain',['as'=>'domain','uses'=>'ProjectsController@domain']);
 	Route::post('domain/search','ProjectsController@domain_search');
+	/********************************Exam Generator**************************************/
+	Route::get('exam-generator/create','ProjectsController@exam_generator_create_view');
 	/********************************remote sign in********************************/
 	Route::get('r-s-in',['as'=>'remote_sign_in','uses'=>'ProjectsController@socialite_access']);
 	/********************************Currency**************************************/

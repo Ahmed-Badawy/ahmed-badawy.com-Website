@@ -12,7 +12,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> url("games/text-image"),
-        ],    
+        ],
         "memory"=>[
             "code"=>"memory",
             "logo"=>'square-o',
@@ -23,7 +23,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> base_url("htmls/games/memory-game.html"),
-        ],   
+        ],
         "chess"=>[
             "code"=>"chess",
             "logo"=>'street-view',
@@ -34,7 +34,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> url("games/chess"),
-        ],                    
+        ],
         "Maze"=>[
             "code"=>"maze",
             "logo"=>'medium',
@@ -45,7 +45,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=>url('games/maze1'),
-        ],        
+        ],
         "DrawingApp"=>[
             "code"=>"DrawingApp",
             "logo"=>'pencil-square',
@@ -56,7 +56,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> base_url("htmls/games/drawing-app/drawing-app.html"),
-        ], 
+        ],
         "DrawingApp2"=>[
             "code"=>"DrawingApp2",
             "logo"=>'pencil',
@@ -67,7 +67,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> base_url("htmls/games/drawing-app-2.html"),
-        ], 
+        ],
         "coloringApp"=>[
             "code"=>"coloringApp",
             "logo"=>'paint-brush',
@@ -78,7 +78,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> base_url("htmls/games/html5-canvas-drawing-app/html5-canvas-drawing-app.html"),
-        ],  
+        ],
         "coloringApp2"=>[
             "code"=>"coloringApp2",
             "logo"=>'paint-brush',
@@ -89,7 +89,7 @@
             "keywords" => [],
             "breadcrumbs"=>[],
             "link"=> base_url("htmls/games/coloring-app-2/coloring-app.html"),
-        ],                          
+        ],
         "dotts_connecting"=>[
             "code"=>"dotts_connecting",
             "logo"=>'dot-circle-o',
@@ -101,7 +101,7 @@
             "breadcrumbs"=>[],
             "link"=> base_url('htmls/games/dott-connecting-app/dott-connecting.html'),
         ],
-                       
+
  	];
 
 

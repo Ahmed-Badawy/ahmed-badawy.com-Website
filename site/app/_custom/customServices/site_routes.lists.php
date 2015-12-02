@@ -3,7 +3,7 @@
 
 	$home_list = [
 		"Home"=>[	
-                  "title"=>"Home",
+            "title"=>"Home",
 			"logo"=>"home",
 			"link"=>url('/')
 		],
@@ -17,11 +17,11 @@
                   "logo"=>"user",
                   "link"=>url('contact')
             ],
-            // "My C.V"=>[ 
-            //       "title"=>"My C.V",
-            //       "logo"=>"suitcase",
-            //       "link"=>url('cv')
-            // ],
+             "My C.V"=>[
+                   "title"=>"My C.V",
+                   "logo"=>"suitcase",
+                   "link"=>url('cv')
+             ],
             [      
                   "title"=>"Projects",
                   "logo"=>"cogs",
@@ -38,3 +38,4 @@
       $projects_list = get_routes_array(\sr::projects());
       $apis_list = get_routes_array(\sr::api());
       $games_list = get_routes_array(\sr::games());
+
