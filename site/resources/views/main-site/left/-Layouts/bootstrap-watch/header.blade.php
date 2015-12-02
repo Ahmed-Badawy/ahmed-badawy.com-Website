@@ -83,7 +83,7 @@
     @endforeach
   </ul>
 </li>
-
+ 
 
 <li>
   <a href="" class="dropdown-toggle" data-toggle="dropdown">{!! fa2('chrome',['size'=>0]) !!} Chrome APPs <b class="caret"></b></a>
