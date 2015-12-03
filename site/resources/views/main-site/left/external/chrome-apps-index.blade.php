@@ -25,9 +25,6 @@ $index = [
     color:inherit;
     text-decoration: none;
     }
-    .arabic{
-    font-size:105%;
-    }
     .grid-elm2{
         {{--background:rgba(0,0,0,.6);--}}
         color:white;
@@ -91,13 +88,13 @@ $index = [
                         </a>
                     </div>
                     <div class="col-xs-9">
-                        <h3 class=""><a href='{{$project["link"]}}' target='_blank'>
-<span class="fa-stack fa-lg">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-{{$project['logo']}} fa-stack-1x fa-inverse"></i>
+                        <h4 class=""><a href='{{$project["link"]}}' target='_blank'>
+<span class="fa-stack">
+    <i class="fa fa-square-o fa-stack-2x"></i>
+    <i class="fa fa-{{$project['logo']}} fa-stack-1x"></i>
 </span>
 {!! $project_name !!}</a>
-                        </h3>
+                        </h4>
                         <a class='desc arabic' href='{{$project["link"]}}' target='_blank'>{!! $project['page_desc'] !!}</a>
                     </div>
                 </div>
