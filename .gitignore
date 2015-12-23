@@ -66,14 +66,12 @@ Temporary Items
 #/site/app/_custom/customServices/lists
 
 /site/config
-/site/backups/db
-/site/backups/files
+/site/backups
 /site/database
-/site/outsite
 /site/storage
 /site/bootstrap
-/site/_gsdata_
 /site/.env
+/site/*.env - remote
 
 
 *._gs
@@ -81,4 +79,4 @@ Temporary Items
 *.sublime-project
 
 
-*.env - remote
+
