@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        HTML5 Messaging Template File (One)
+    </title>
+    <style>
+        #frameTwo {
+            width: 500px;
+            height: 400px;
+            margin: 0 5px;
+            padding: 3px;
+            border: 2px solid #3c6b92;
+            display: block;
+            clear:both;
+        }
+        #content { height: 500px; }
+        #explain{
+            background-color: #222;
+            color:white;
+            padding:15px;
+            font-family: arial;
+            font-size: 110%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="content">
+
+    <h1> 
+        HTML5 Messaging Template File (One)
+    </h1>
+
+    <iframe id='frameTwo' src='http://tests2.ahmed-badawy.com/messaging-api/two.html'></iframe>
+
+    <button onclick='send_message()'>Send Message To Two</button>
+
+    <hr>
+    <p id='msg_box' style='background-color:#ccc'>Messages:<br>
+    </p>
+    <hr>
+
+
+<div id='explain'>
+- The HTML5 Messaging API enables HTML5 pages to send messages to each other, even if the pages are not loaded from the same domain (e.g. www.jenkov.com and www.scriptdraw.com).
+<br><br>
+- In order to send messages from one page to another, the page sending the message must have a reference to the window of the other page. The sending page then calls the postMessage() function on the window object of the receiving page.
+<br><br>
+- The value of the origin parameter passed to the postMessage() function must match the domain from which the page in the iframe was loaded. If the origins do not match, this will not work. You do not need the full address of the page as origin. The domain is enough, for instance http://localhost or http://tutorials.jenkov.com
+<br><br>
+- The event object received contains the following properties:<br>
+data : contains the message sent from the sending page<br>
+origin : contains the origin (domain) of the page that sent the message<br>
+source : property contains a reference to the window object of the sending page. This window object reference can be used to send messages back to the sender page, using the postMessage() function.
+<br><br>
+- Sending JSON
+The messaging API only allows you to send string messages. If you need to send a JavaScript object, you will need to turn it into a JSON string using JSON.stringify(), and parse it again using JSON.parse().
+
+</div>
+
+
+</div>
+
+
+    <script type="text/javascript">
+        var windowTwo = null;
+        var originTwo = "http://tests2.ahmed-badawy.com/messaging-api/two.html";
+        var msg_box = document.getElementById("msg_box");
+
+        msg_box.innerHTML += location.host+"<br>";
+
+        window.addEventListener("message", handleMessage, false);
+
+        function handleMessage(event) {
+            console.log(event);
+            if(!windowTwo) windowTwo = event.source;
+            // alert(event.data);
+            msg_box.innerHTML += event.data+"<br>";
+        }
+        function send_message(){
+            // windowTwo.postMessage('this is from windowOne man!', originTwo);
+            //or: 
+            document.getElementById("frameTwo").contentWindow.postMessage('this is from windowOne man!', originTwo);
+        }
+    </script>
+
+</body>
+</html>

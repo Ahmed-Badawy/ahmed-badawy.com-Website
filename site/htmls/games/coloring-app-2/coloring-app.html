@@ -9,8 +9,14 @@
 	.button{
 		border:1px solid black;
 		border-radius: 10px;
-		padding:2px;
+		padding:4px;
 		text-decoration: none;
+		margin: 5px;
+		background-color:#444;
+		color:white;
+	}
+	#canvas:hover{
+		cursor: move;
 	}
 	</style>
 </head>
@@ -18,21 +24,21 @@
 
 
 Controllers: 
-<button id='clear_canvas'>Clear Canvas</button>
-<a id='open' class='button' href='' target="_blank">Open it</a>
-<a id='download' class='button' href='' download="new_image_name_here.png" target="_blank">Download</a>
+<button id='clear_canvas'>Clear Canvas (Delete All)</button>
+<a id='open' class='button' href='' target="_blank">Open Image</a>
+<a id='download' class='button' href='' download="new_image_name_here.png" target="_blank">Download Image</a>
 <br>
 Colors: 
 <!-- <button id='colorPurple' color="rgba(0,0,0,.3)">fuck</button> -->
-<button id='colorPurple' color="#cb3594">color Purple</button>
-<button id='colorGreen' color="#659b41">color Green</button>
-<button id='colorYellow' color="#ffcf33">color Yellow</button>
-<button id='colorBrown' color="#986928">color Brown</button>
+<button id='colorPurple' color="#cb3594" style='background-color:#cb3594'>color Purple</button>
+<button id='colorGreen' color="#659b41"  style='background-color:#659b41'>color Green</button>
+<button id='colorYellow' color="#ffcf33"  style='background-color:#ffcf33'>color Yellow</button>
+<button id='colorBrown' color="#986928"  style='background-color:#986928'>color Brown</button>
 <br>
 Font Sizes: 
-<button id='font_small' radius="4">Small</button>
-<button id='font_normal' radius="8">Normal</button>
-<button id='font_big' radius="15">Big</button>
+<button id='font_small' radius="4">Small Font</button>
+<button id='font_normal' radius="8">Normal Font</button>
+<button id='font_big' radius="15">Big Font</button>
 <br>
 Tools: 
 <button id='tool_eraser' color="#fff">Eraser</button>

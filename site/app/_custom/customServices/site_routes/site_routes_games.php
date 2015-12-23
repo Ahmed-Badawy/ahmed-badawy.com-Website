@@ -101,7 +101,17 @@
             "breadcrumbs"=>[],
             "link"=> base_url('htmls/games/dott-connecting-app/dott-connecting.html'),
         ],
-
+        "iceman"=>[
+            "code"=>"iceman",
+            "logo"=>'location-arrow',
+            "page_title"=>"Create Ice Man",
+            "page_name"=>"لعبة صنع رجل الجليد",
+            "page_desc"=>"لعبتنا لصنع رجل الجليد",
+            "page_img"=>"games/iceman.jpg",
+            "keywords" => [],
+            "breadcrumbs"=>[],
+            "link"=> base_url('htmls/games/drak_drop/iceman.html'),
+        ],
  	];
 
 

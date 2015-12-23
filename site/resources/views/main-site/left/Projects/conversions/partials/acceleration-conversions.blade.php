@@ -29,6 +29,7 @@
       $itiration = $acceleration;
 ?>
 
+{{--        {!! dd($acceleration) !!}--}}
 
 @include(get_location("Projects.conversions.partials._common"))
 

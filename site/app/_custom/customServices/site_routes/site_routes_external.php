@@ -109,6 +109,37 @@ Facebook , Twitter , Google+ , Linked-In , Pinterest , Tumblr , StumbleUpOn , VK
             "link" => "https://chrome.google.com/webstore/detail/share-it/ighbcekeolbcaimlofkjjmnkejlnelaf"
         ],
 
+        "Units Converter"=>[
+            "code"=>"Units Converter",
+            "logo"=>'cubes',
+            "page_title"=>"Units Converter",
+            "page_name"=>"Units Converter - برنامج تحويل الوحدات",
+            "page_desc"=>"
+برنامج مهمته التحويل بين الوحدات المختلفة
+- وحدات الطول - وحدات الضغط - وحدات الوزن - وحدات الكثافة - و وحدات المساحة - وحدات الحجم - وحدات الحرارة - وحدات الطاقة - وحدات السرعة
+<br>
+<span class='english'>convertes between different units.</span>
+            ",
+            "page_img"=>"external/chrome/units-converter.png",
+            "keywords" => [],
+            "breadcrumbs"=>[],
+            "link" => "https://chrome.google.com/webstore/detail/units-converter/nmjgjihebpbkoclkpnbfjblgbhdnbgag"
+        ],
+
+        "Egyptian Social ID Analyzer"=>[
+            "code"=>"Egyptian Social ID Analyzer",
+            "logo"=>'credit-card',
+            "page_title"=>"Egyptian Social ID Analyzer",
+            "page_name"=>"Egyptian Social ID Analyzer - محلل البطاقة المصرية",
+            "page_desc"=>"
+يحلل لك بيانات البطاقة المصرية
+            ",
+            "page_img"=>"external/chrome/social-id.png",
+            "keywords" => [],
+            "breadcrumbs"=>[],
+            "link" => "https://chrome.google.com/webstore/detail/تحليل-البطاقة-المصرية/cbfdcgeeokgfhcbknlbnbllfjechjffe"
+        ],
+
     ],
 
     "firefox apps" => [

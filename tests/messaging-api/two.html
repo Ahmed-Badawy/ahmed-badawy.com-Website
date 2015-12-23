@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        HTML5 Messaging Template File (Two)
+    </title>
+</head>
+
+<body>
+
+<div id="content">
+
+    <h1> 
+        HTML5 Messaging Template File (Two)
+    </h1>
+
+    <button onclick='send_message()'>Send Message</button>
+
+    <hr>
+    <p id='msg_box' style='background-color:#ccc'>Messages:<br>
+    </p>
+    <hr>
+
+
+</div>
+
+
+
+    <script type="text/javascript">
+        var originOne = 'http://tests1.ahmed-badawy.com';
+        var msg_box = document.getElementById("msg_box");
+
+        var windowOne = parent;
+        window.addEventListener("message", handleMessage, false);
+
+        msg_box.innerHTML += location.host+"<br>";
+
+        function handleMessage(event) {
+            // var msg = 'message from origin: ' + event.origin+"said: "+event.data;
+            msg_box.innerHTML += event.data+"<br>";
+            // console.log(msg);
+            // alert(msg)
+        }
+
+        function send_message(){
+            windowOne.postMessage('this is from windowTwo man!', originOne);
+        }
+    </script>
+</body>
+</html>
