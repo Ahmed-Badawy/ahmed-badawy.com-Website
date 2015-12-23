@@ -71,7 +71,7 @@ Temporary Items
 /site/storage
 /site/bootstrap
 /site/.env
-/site/*.env - remote
+/site/.env-remote
 
 
 *._gs
