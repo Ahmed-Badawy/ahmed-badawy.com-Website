@@ -40,6 +40,54 @@
 	}
 @overwrite
 
+
+
+
+
+<div class="well container" id="project_desc">
+	<div>
+		<img class="img-thumbnail img-responsive" src='{!! imgs_dir.$page_img !!}'>
+	</div>
+	<h3> {!!fa2($logo)!!} Video Book !</h3>
+	<div>
+		<p>Video Book is a story telling project with some effort to enhance language skills in the user.</p>
+		<p class='arabic' dir='rtl' >هذا هو الشكل المبدئى لمشروع يمكن إستخدامه لعرض القصص أو الفيديوهات بأشكال و ترجمات بين اللغات المختلفة. وهو محاولة مبدأية لتجاه التحسين اللغوى للمستخدم بين العربية و الإنجليزية</p>
+
+		<button class="btn btn-primary" data-toggle="modal" data-target="#short_info">
+			{!! fa2('question-circle') !!} <b>What is This App ?</b>
+		</button>
+
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="short_info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3  class="modal-title" id="myModalLabel"> {!!fa2($logo)!!} Video Book !</h3>
+			</div>
+			<div class="modal-body">
+				<p>Video Book is a story telling project with some effort to enhance language skills in the user.</p>
+				<hr>
+				<p class='arabic' dir='rtl' >هذا هو الشكل المبدئى لمشروع يمكن إستخدامه لعرض القصص أو الفيديوهات بأشكال و ترجمات بين اللغات المختلفة. وهو محاولة مبدأية لتجاه التحسين اللغوى للمستخدم بين العربية و الإنجليزية</p>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
 <div ng-controller='main'>
 		<h1 class='bright text-center bright-background'>Video Book Project</h1>
 <?php 
@@ -427,7 +475,33 @@
 
 
 
-<div class='col-xs-12 col-sm-6'>
+
+	<div class='col-xs-12 col-sm-6 arabic'>
+		@foreach($lines as $key=>$line)
+			<?php
+			$start = calc_subtitle_time($line['start']);
+			$end = (isset($lines[$key+1]['start'])) ?  calc_subtitle_time($lines[$key+1]['start']) : $start+3;
+			?>
+			<h1 dir='rtl' ng-show='current_time >= {{$start}} && current_time < {{$end}}' class='current-text'> {!! $line['ar_txt'] !!} </h1>
+		@endforeach
+	</div>
+
+
+	<div class='col-xs-12 col-sm-6'>
+		@foreach($lines as $key=>$line)
+			<?php
+			$start = calc_subtitle_time($line['start']);
+			$end = (isset($lines[$key+1]['start'])) ?  calc_subtitle_time($lines[$key+1]['start']) : $start+3;
+			?>
+			<h1 ng-show='current_time >= {{$start}} && current_time < {{$end}}' class='current-text'> {!! $line['en_txt'] !!} </h1>
+		@endforeach
+	</div>
+
+
+
+
+
+	<div class='col-xs-12 col-sm-6'>
 <div align="center" class="embed-responsive embed-responsive-16by9">
     <video id='vid' controls preload='none' loop='true'
     	poster='{{ public_dir."site-docs/video-book-files/video-book.jpg" }}'>
@@ -479,28 +553,18 @@
 </div>
 
 
-<div class='col-xs-12 col-sm-6'>
-	@foreach($lines as $key=>$line)
-<?php 
-	$start = calc_subtitle_time($line['start']); 
-	$end = (isset($lines[$key+1]['start'])) ?  calc_subtitle_time($lines[$key+1]['start']) : $start+3;  
-?>
-		<h1 ng-show='current_time >= {{$start}} && current_time < {{$end}}' class='current-text'> {!! $line['en_txt'] !!} </h1>	
-	@endforeach
-</div>
 
 
-<div class='col-xs-12 col-sm-6 arabic'>
-	@foreach($lines as $key=>$line)
-<?php 
-	$start = calc_subtitle_time($line['start']); 
-	$end = (isset($lines[$key+1]['start'])) ?  calc_subtitle_time($lines[$key+1]['start']) : $start+3;  
-?>
-		<h1 dir='rtl' ng-show='current_time >= {{$start}} && current_time < {{$end}}' class='current-text'> {!! $line['ar_txt'] !!} </h1>	
-	@endforeach
-</div>
+
+
+
 
 
 
 
 </div>
+
+
+
+<div class="clearfix"></div>
+{{br(5)}}

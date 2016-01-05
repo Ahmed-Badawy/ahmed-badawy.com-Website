@@ -17,10 +17,10 @@
 		<div>
 			<img class="img-thumbnail img-responsive" src='{!! imgs_dir.$page_img !!}'>
 		</div>
-		<h3> {!!fa2($logo)!!} Book Sharing System !</h3>
+		<h3> {!!fa2($logo)!!} Dynamic Text !</h3>
 		<div>
-			<p>Read books online. Aslo you can download them.</p>
-			<p class='arabic' dir='rtl' >ﻫﻮ ﻋﺒﺎﺭﺓ ﻋﻦ ﻧﻈﺎﻡ ﻟﻤﺸﺎﺭﻛﺔ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ. ﻭ ﻳﻤﻜﻨﻚ ﻗﺮاءﺓ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ ﻣﺒﺎﺷﺮﺓ ﻋﻠﻰ اﻷﻧﺘﺮﻧﺖ ﺃﻭ ﺗﻨﺰﻳﻠﻬﺎ ﻋﻠﻰ ﺟﻬﺎﺯﻙ.</p>
+			<p>A New way to edit documents & pages instead of the normal Wysiwyg to edit content.</p>
+			<p class='arabic' dir='rtl' >طريقة جديدة و مبتكرة لتعديل و إنشاء النصوص بدلا من إستخدام طريقة الـ Wysiwyg المعهودة . كل ما عليك فعله هو تحديد الجزء المراد تحديده من النص و بدء الكتابة.</p>
 
 			<button class="btn btn-primary" data-toggle="modal" data-target="#short_info">
 				{!! fa2('question-circle') !!} <b>What is This App ?</b>
@@ -36,13 +36,12 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h3 class="modal-title" id="myModalLabel">What Does This APP Do ?</h3>
+					<h3  class="modal-title" id="myModalLabel"> {!!fa2($logo)!!} &nbsp; Dynamic Text !</h3>
 				</div>
 				<div class="modal-body">
-					<h3 class="bold">Book Sharing System!</h3>
-					<p>It's a system to share books & documents. you can read or download the books & documents & share books with other people. or you can ban/report/delete/categorize books.</p>
+					<p>A New way to edit documents & pages instead of the normal Wysiwyg to edit content.</p>
 					<hr>
-					<p class='arabic' dir='rtl'>ﻫﻮ ﻋﺒﺎﺭﺓ ﻋﻦ ﻧﻈﺎﻡ ﻟﻤﺸﺎﺭﻛﺔ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ اﻟﻬﺎﻣﺔ. ﻭ ﻳﻤﻜﻨﻚ ﻗﺮاءﺓ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ ﻣﺒﺎﺷﺮﺓ ﻋﻠﻰ اﻷﻧﺘﺮﻧﺖ ﺃﻭ ﺗﻨﺰﻳﻠﻬﺎ ﻋﻠﻰ ﺟﻬﺎﺯﻙ. ﻫﺬا اﻟﻨﻈﺎﻡ ﻳﺴﺎﻋﺪﻙ ﻋﻠﻰ ﻣﺸﺎﺭﻛﺔ اﻟﻜﺘﺐ ﻭ اﻟﻮﺛﺎﺋﻖ ﻭ ﺗﺼﻨﻴﻔﻬﺎ ﺗﺒﻌﺎ ﻟﻠﻤﺤﺘﻮﻯ. ﻭ ﻳﻤﻜﻨﻚ ﻋﻤﻞ ( ﺣﻈﺮ \ ﺣﺬﻑ \ ﺇﺑﻼﻍ \ ﺗﺼﻨﻴﻒ ) ﻟﻠﻮﺛﺎﺋﻖ ﻭ اﻟﻜﺘﺐ اﻟﻤﺨﺘﻠﻔﺔ.</p>
+					<p class='arabic' dir='rtl' >طريقة جديدة و مبتكرة لتعديل و إنشاء النصوص بدلا من إستخدام طريقة الـ Wysiwyg المعهودة . كل ما عليك فعله هو تحديد الجزء المراد تحديده من النص و بدء الكتابة.</p>
 
 				</div>
 				<div class="modal-footer">
@@ -51,6 +50,7 @@
 			</div>
 		</div>
 	</div>
+
 
 
 

@@ -1,4 +1,44 @@
 
+<div class="well container" id="project_desc" dir='ltr'>
+    <div>
+        <img class="img-thumbnail img-responsive col-sm-2" src='{!! imgs_dir.$page_img !!}'  style="float:left;margin-right:10px">
+    </div>
+    <h3> {!!fa2($logo)!!} Selling Manager - <span class="arabic">نظام إدارة متجر أو سوبرماركت </span>!</h3>
+    <div>
+        <p>A great Small APP to manager a medium size store or supermarket.</p>
+        <p class='arabic' dir='rtl' >برنامج صغير و ممتاز لإدارة متجر أو سوبرماركت متوسط أو صغير الحجم.</p>
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#short_info">
+            {!! fa2('question-circle') !!} <b>What is This App ?</b>
+        </button>
+
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="short_info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" dir="ltr">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3  class="modal-title" id="myModalLabel"> {!!fa2($logo)!!} Selling Manager - <span class="arabic">نظام إدارة متجر أو سوبرماركت </span>!</h3>
+            </div>
+            <div class="modal-body">
+                <p>A great Small APP to manager a medium size store or supermarket.</p>
+                <hr>
+                <p class='arabic' dir='rtl' >برنامج صغير و ممتاز لإدارة متجر أو سوبرماركت متوسط أو صغير الحجم.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 
         <div ng-controller="view_products">
 

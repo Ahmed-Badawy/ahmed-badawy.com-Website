@@ -1,8 +1,8 @@
-
-
 <!-- <div ng-mouseup="close_panel()" class='row'> -->
 <div id="dimScreen" class="cover" ng-class="{dimScreen:show_style=='partial'}" ng-click="close_panel()"></div>
 <!-- Main -->
+
+
 
 
 <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 page2" ng-show="show_style=='partial'">
