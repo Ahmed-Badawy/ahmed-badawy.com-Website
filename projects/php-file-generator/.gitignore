@@ -31,9 +31,13 @@ $RECYCLE.BIN/
 # Thumbnails
 ._*
 
-# Files that might appear on external disk
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
 .Spotlight-V100
+.TemporaryItems
 .Trashes
+.VolumeIcon.icns
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -41,41 +45,3 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-
-
-
-
-
-
-
-
-/.idea
-/.git
-
-
-/blog
-/downloads
-
-/site/public/video_player
-/tests/Payments
-
-/site/node_modules
-/site/vendor
-/site/public/barcodegen-1
-/site/public/pdf
-/site/public/site-docs
-#/site/app/_custom/customServices/lists
-
-/site/backups
-/site/storage
-/site/bootstrap
-/site/.env
-/site/.env-remote
-
-
-*._gs
-*.sublime-workspace
-*.sublime-project
-
-
-
