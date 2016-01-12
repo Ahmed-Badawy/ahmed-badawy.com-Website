@@ -38,6 +38,7 @@
 <body class='container'>
 <br>
 
+<h2>File Generator</h2>
 <form action="#" method='post'>
 	<label>File Name</label>
 	<input type='text' name='file_name' class='form-control' value='orders.php'>
@@ -48,7 +49,7 @@
 </form>
 
 
-
+<h2>File Uploader</h2>
 <form action="#" method='post' enctype="multipart/form-data">
 	<label>File Name</label>
 	<input type='text' name='file_name' class='form-control' value='orders.php'>
