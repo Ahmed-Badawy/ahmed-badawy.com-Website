@@ -15,7 +15,7 @@
 <head>
 	<title>File Generator</title>
 
-<link rel="stylesheet" href="http://ahmed-badawy.com/-assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://ahmed-badawy.com/_assets/css/bootstrap.min.css">
 
 	<style type="text/css">
 		input,textarea,button{
