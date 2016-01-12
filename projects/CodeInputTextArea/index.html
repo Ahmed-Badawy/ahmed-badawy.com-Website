@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Code Textarea</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src='clipboard.min.js'></script>
+</head>
+<body class='container'>
+
+<br>
+<br>
+
+<form action='#' enctype="multipart/form-data">
+	<textarea class='form-control' rows='8' ng-model='txts.mytxt1' id='mytxt1'></textarea>
+	<input type='file' id='upload_input' class='hidden'>
+	<span class='fa fa-file-code-o btn' id='file_btn' title='Import a File'></span>
+	<span class='fa fa-copy btn' id='copy_btn' title='Copy'></span>
+	<span class='fa fa-cut btn' id='cut_btn' title='Cut'></span>
+	<span class='fa fa-th-list btn' id='selectAll' title='Select All Text'></span>
+	<span class='fa fa-trash btn' id='emptyAll' title='Empty All Text'></span>
+
+	<span class='fa fa-hand-peace-o fa-lg pull-right'></span>
+	<span class='pull-right' id='txtlength_area' style='color:#aaa;font-weight:bolder'></span>
+</form>
+
+
+
+
+     <script type="text/javascript">
+
+	    mytxt1 = window.document.getElementById('mytxt1');
+
+/********************************Copy TextArea Value**************************************/
+	var clipboard_copy = new Clipboard('#copy_btn', {
+        text: function() {
+        	count_chars();
+            return mytxt1.value;
+        }
+    });
+    clipboard_copy.on('success', function(e) { console.log(e); });
+    clipboard_copy.on('error', function(e) { console.log(e); });
+
+/********************************Cut TextArea Value**************************************/
+	var clipboard_cut = new Clipboard('#cut_btn', {
+        text: function() {
+            var return_text = mytxt1.value;
+            mytxt1.value = "";
+            count_chars();
+            return return_text;
+        }
+    });
+    clipboard_cut.on('success', function(e) { console.log(e); });
+    clipboard_cut.on('error', function(e) { console.log(e); });
+/********************************Select All TextArea Value**************************************/
+	document.getElementById('selectAll').addEventListener('click',(function(){
+		mytxt1.setSelectionRange(0,mytxt1.value.length);
+	}),false);
+/********************************Empty All**************************************/
+	document.getElementById('emptyAll').addEventListener('click',(function(){
+		mytxt1.value = "";
+		count_chars();
+	}),false);
+/*********************************Read Text File*************************************/	
+	function read_text_file(file){
+		if(file.type != "text/plain"){ //stop if it'sn't a text file
+			alert("No Text File Inputed.");
+			// return;
+			// console.log(file);
+		}
+		var reader = new FileReader(); //call the FileReader class.
+		reader.readAsText(file); //then call the readAsText functnion
+		reader.onload = function(evt){ //what happens on loading the textfile.
+			// console.log(evt);
+			res = evt.target.result;
+			handle_onread(res);
+		}
+	}
+	function read_file_actions(evt){
+		evt.stopPropagation();
+		evt.preventDefault();
+
+		console.log(evt);
+
+		files = (evt.srcElement) ? evt.srcElement.files : evt.originalTarget.files;
+		var total_size= 0;
+		for(i=0; i<files.length ;i++){
+			total_size += files[i].size;
+		}
+		console.log("Total Size is: "+total_size+" Bytes...");
+		console.log("Files Count is: "+files.length+" Files...");
+
+		read_text_file(files[0]);
+	}
+	function handle_onread(file_text){
+		mytxt1.value = file_text;
+		count_chars();
+		notifyUser('File Imported','1.jpg');
+	}
+	document.getElementById("upload_input").addEventListener('change',read_file_actions,false);
+	document.getElementById("file_btn").addEventListener('click',function(){ document.getElementById("upload_input").click(); },false);
+/********************************Count Number Of Chars**************************************/
+	mytxt1.addEventListener('keyup',function(){ count_chars()},false);
+	function count_chars(){
+		var txtlength = mytxt1.value.length;
+		document.getElementById("txtlength_area").innerHTML = txtlength;		
+	}
+	count_chars();
+/**********************************************************************/
+
+
+/********************************Notify me**************************************/
+	function notifyUser(msg,img){
+		if(Notification.permission=='default'){
+			alert('please allow notification for our website...')
+		}else{
+			// alert("hi");
+			notify = new Notification('New Message from Ahmed-Badawy.com',{
+				body: msg,
+				icon: img,
+				tag: Math.floor((Math.random() * 100) + 1)
+			});
+			notify.onclick = function(){
+				// console.log(this);
+				window.location = 'http://ahmed-badawy.com';
+			}
+		}
+	}
+/**********************************************************************/		
+
+
+    </script>
+</body>
+</html>

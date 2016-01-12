@@ -140,6 +140,20 @@ Facebook , Twitter , Google+ , Linked-In , Pinterest , Tumblr , StumbleUpOn , VK
             "link" => "https://chrome.google.com/webstore/detail/تحليل-البطاقة-المصرية/cbfdcgeeokgfhcbknlbnbllfjechjffe"
         ],
 
+        "Snowman Game"=>[
+            "code"=>"SnowMan Game",
+            "logo"=>'credit-card',
+            "page_title"=>"SnowMan",
+            "page_name"=>"SnowMan Game",
+            "page_desc"=>"
+Build Your Own SnowMan
+            ",
+            "page_img"=>"external/chrome/snowman.png",
+            "keywords" => [],
+            "breadcrumbs"=>[],
+            "link" => "https://chrome.google.com/webstore/detail/snowman-game/heibcnhfbgplijjflkgfcdhfidneikeb"
+        ],
+
     ],
 
     "firefox apps" => [

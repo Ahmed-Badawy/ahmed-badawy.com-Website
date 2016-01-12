@@ -110,7 +110,7 @@
             "page_img"=>"games/iceman.jpg",
             "keywords" => [],
             "breadcrumbs"=>[],
-            "link"=> base_url('htmls/games/drak_drop/iceman.html'),
+            "link"=> base_url('htmls/games/drag_drop/iceman.html'),
         ],
  	];
 
