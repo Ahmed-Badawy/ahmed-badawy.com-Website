@@ -7,6 +7,7 @@ myapp.controller('main',function($scope){
 	$scope.height = 75;
 	$scope.width = 120;
 
+	//console.log(all_fonts);
 	all_fonts = JSON.parse(all_fonts);
 	// $scope.link = "";
 	$scope.showen_imgs = [];

@@ -53,8 +53,10 @@ Temporary Items
 /.git
 
 
+/projects
 /blog
 /downloads
+/demos
 
 /site/public/video_player
 /tests/Payments

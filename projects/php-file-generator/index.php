@@ -82,7 +82,7 @@
 <form action="#" method='post' class='col-sm-6'>
 	<legend>File Generator</legend>
 	<label>File Name</label>
-	<input type='text' name='file_name' class='form-control' value='orders.php'>
+	<input type='text' name='file_name' class='form-control' value='orders/order1.php'>
 	<label>File Contents</label>
 	<textarea name='file_contents' class='form-control' rows='8'><?php echo htmlspecialchars("<?php\n        echo 'hello world'; \n?>"); ?></textarea>
 	<button type='submit' name='file-generator-submit' class='btn btn-primary col-sm-6 btn-lg'>Submit</button>

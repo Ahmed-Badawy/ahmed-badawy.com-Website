@@ -49,7 +49,7 @@ Route::group(array('prefix' => 'registration'), function(){
 
 Route::get('site-report/{operation}/{site_name}','SiteController@site_report');
 
-Route::get("json-test/{get_what?}",function($get_what=null){
+Route::any("json-test/{get_what?}",function($get_what=null){
 	$persons = [
 		"persons"=>[
 			[
@@ -57,7 +57,7 @@ Route::get("json-test/{get_what?}",function($get_what=null){
           "name"=>"ahmed",    
           "age"=>12,
           "height"=>190,
-          "phone"=>01111988246,
+          "phone"=>01111,
           "img"=>"1.png"
       ],[
           "id"=>2,
@@ -130,6 +130,37 @@ Route::get("json-test/{get_what?}",function($get_what=null){
 });
 
 
+
+
+
+
+Route::any("xml-test/persons",function(){
+  $output = '
+<?xml version="1.0"?>
+<persons>
+
+  <person>
+    <id>1</id>
+    <name>person 1 name</name>
+    <age>12</age>
+    <height>150</height>
+    <phone>01111</phone>
+    <img>1.png</img>
+  </person>
+  <person>
+    <id>5</id>
+    <name>perons 2 name</name>
+    <age>40</age>
+    <height>190</height>
+    <phone>01440</phone>
+    <img>2.png</img>
+  </person>
+
+</persons>
+  ';
+  echo $output;
+  return;
+});
 
 
 

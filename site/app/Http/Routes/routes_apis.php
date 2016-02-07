@@ -19,6 +19,12 @@ Route::group(array('prefix' => 'api'), function(){
 	Route::get('captcha-view','ApiController@captcha_generator_view');
 	Route::get('upc-view','ApiController@upc_generator_view');
 
+
+
+	Route::any('send-post','ApiController@send_post_request');
+
+	Route::post('data-types-converter','ApiController@data_type_converter');
+
 	
 });
 

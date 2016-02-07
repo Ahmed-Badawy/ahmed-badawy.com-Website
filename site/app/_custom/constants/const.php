@@ -6,7 +6,7 @@ $whitelist = array(
     '127.0.0.1',
     '::1'
 );
-if(false){												//Force Mode
+if(false){	//Force Mode
 	define('Dev', true);
 	define('DB', "courtaks_mainDB");
 	define('DB_USER', "root");

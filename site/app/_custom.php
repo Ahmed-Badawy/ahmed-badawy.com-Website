@@ -13,7 +13,7 @@ $allowed_macros = "none";
 
 $libs_path = app_path()."/_custom/libs";
 // $allowed_libs = "none";
-$allowed_libs = ['ZipperClass','Mobile_Detect'];
+$allowed_libs = ['ZipperClass','Mobile_Detect','xml','Spyc'];
 
 
 

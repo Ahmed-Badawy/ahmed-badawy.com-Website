@@ -83,6 +83,9 @@
 
 <button class='btn btn-primary btn-lg pull-right col-sm-6' ng-click='gene_click()'>Generate - ولد الأكواد</button>
 
+
+
+
 <label>
 <input type='radio' value='true' ng-model='font_name_view'> أظهر أسم الخط
 </label>

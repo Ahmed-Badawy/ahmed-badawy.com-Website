@@ -43,6 +43,7 @@
   <option value="BCGothercode">Other Barcode</option>
 </select> -->
 
+
 <form ng-submit='render_img()' name='myform'>
 
   <table class='table table-striped table-hover table-condensed table-bordered'>
