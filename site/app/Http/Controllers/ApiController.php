@@ -214,8 +214,6 @@ class ApiController extends BaseController{
 $php_data = $from;
 
 //echo "<pre>";var_export($from);die;
-
-//dd($php_data);
 //dd($php_data);
 
 
@@ -231,10 +229,11 @@ $php_data = $from;
             $output_data = $lines;
         }
         elseif($input['to-type'] == "xml"){
-            $xml = new \SimpleXMLElement('<root/>');
-            array_walk_recursive($php_data,array($xml,'addChild'));
-            $output_data = $xml->asXML();
-
+//            $xml = new \SimpleXMLElement('<root/>');
+//            array_walk_recursive($php_data,array($xml,'addChild'));
+//            $output_data = $xml->asXML();
+            $output_data = array2xml($php_data);
+            dd($output_data);
         }elseif($input['to-type']=="php_array"){
             $output_data = var_export($php_data,true);
         }
@@ -244,8 +243,9 @@ $php_data = $from;
         }
 
 //        dd($output_data);
-        echo "<pre>";
-        echo $output_data;
+//        echo "<pre>";
+        if($output_data && $output_data!= null) echo $output_data;
+        else http_response_code(500);
         die;
     }
 
