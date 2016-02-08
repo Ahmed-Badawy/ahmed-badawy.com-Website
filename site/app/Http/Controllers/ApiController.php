@@ -231,13 +231,6 @@ $php_data = $from;
             $output_data = $lines;
         }
         elseif($input['to-type'] == "xml"){
-//            $output_data = new \xml($php_data);
-//            $output_data->declaration = 'xml version="1.0" encoding="UTF-8"';
-//            dd($output_data->__toString());
-//            $data = $output_data->traverse($output_data->data);
-//            dd($data);
-//            die;
-//            dd($output_data);
             $xml = new \SimpleXMLElement('<root/>');
             array_walk_recursive($php_data,array($xml,'addChild'));
             $output_data = $xml->asXML();
