@@ -209,6 +209,11 @@ class ApiController extends BaseController{
                 $current_input = $input['data-content'];
                 eval("\$from = $current_input;");
                 break;
+            case "php_object":
+                $current_input = $input['data-content'];
+                eval("\$from = $current_input;");
+                $from = json_decode(json_encode($from),true);
+                break;
         }
 
 $php_data = $from;
@@ -225,6 +230,7 @@ $php_data = $from;
         }
         elseif($input['to-type'] == "csv"){
             $lines = "";
+            $lines .= implode(",",array_keys($php_data[0]))."\n";
             foreach($php_data as $array) $lines .= implode(",",$array)."\n";
             $output_data = $lines;
         }
@@ -238,8 +244,10 @@ $php_data = $from;
             $output_data = var_export($php_data,true);
         }
         elseif($input['to-type']=="php_object"){
-            $object = json_decode(json_encode($php_data),FALSE);
-            $output_data = str_replace("stdClass::__set_state","(object)", var_export($object,true));
+            $object_array = json_decode(json_encode($php_data),false);
+//            dd($object_array[0]->name);
+//            dd($object_array);
+            $output_data = str_replace("stdClass::__set_state","(object)", var_export($object_array,true));
         }
 
 //        dd($output_data);
