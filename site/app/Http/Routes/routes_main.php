@@ -50,6 +50,7 @@ Route::group(array('prefix' => 'registration'), function(){
 Route::get('site-report/{operation}/{site_name}','SiteController@site_report');
 
 Route::post('post-test',function(){
+    die("hello world");
     $input = \Request::all();
     dd($input);
 });
