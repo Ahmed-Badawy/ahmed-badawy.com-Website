@@ -49,6 +49,11 @@ Route::group(array('prefix' => 'registration'), function(){
 
 Route::get('site-report/{operation}/{site_name}','SiteController@site_report');
 
+Route::post('post-test',function(){
+    $input = \Request::all();
+    dd($input);
+});
+
 Route::any("json-test/{get_what?}",function($get_what=null){
 	$persons = [
 		"persons"=>[
