@@ -225,6 +225,14 @@ $php_data = $from;
         if($input['to-type'] == "json"){
             $output_data = json_encode($php_data,JSON_PRETTY_PRINT);
         }
+        elseif($input['to-type'] == "sql"){
+            $output_data = '';
+            foreach($php_data as $line){
+                $fields = implode(",",array_keys($line));
+                $prams = implode("','",array_values($line));
+                $output_data .= "INSERT INTO table_name ($fields) VALUES ('$prams');\n";
+            }
+        }
         elseif($input['to-type'] == "yaml"){
             $output_data = \Spyc::YAMLDump($php_data);;
         }
@@ -248,6 +256,10 @@ $php_data = $from;
 //            dd($object_array[0]->name);
 //            dd($object_array);
             $output_data = str_replace("stdClass::__set_state","(object)", var_export($object_array,true));
+        }
+        elseif($input['to-type']=="html_table"){
+            html_show_array($php_data);
+            die;
         }
 
 //        dd($output_data);
