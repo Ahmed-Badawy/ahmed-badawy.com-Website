@@ -9,13 +9,13 @@
 
 
 @section('head_add')
-        {!! get_it('custom_css/cv/styles.css') !!}
+        {!! get_it('custom_css/cv/styles_en.css') !!}
 @overwrite
 
 
 
 
-@include(get_location("Pages.cv-inc.cv_header"))
+@include(get_location("Pages.cv-inc.cv_header_en"))
 
 
 
@@ -28,21 +28,27 @@
 
 
 
-                @include(get_location("Pages.cv-inc.cv_brief"))
-                @include(get_location("Pages.cv-inc.cv_personal_info"))
-                @include(get_location("Pages.cv-inc.cv_previous_work"))
-                @include(get_location("Pages.cv-inc.cv_summery"))
-                @include(get_location("Pages.cv-inc.cv_web_development_skills"))
-                @include(get_location("Pages.cv-inc.cv_programing"))
-                @include(get_location("Pages.cv-inc.cv_other_tech"))
-                @include(get_location("Pages.cv-inc.cv_strength_points"))
-                @include(get_location("Pages.cv-inc.cv_programing_languages"))
-                @include(get_location("Pages.cv-inc.cv_general_work_skills"))
-                @include(get_location("Pages.cv-inc.cv_currently_learning"))
-                @include(get_location("Pages.cv-inc.cv_certifications"))
-                @include(get_location("Pages.cv-inc.cv_education"))
-                @include(get_location("Pages.cv-inc.cv_langus"))
-                @include(get_location("Pages.cv-inc.cv_tools_used"))
+                @include(get_location("Pages.cv-inc.cv_brief_en"))
+
+{{--                @include(get_location("Pages.cv-inc.cv_brief"))--}}
+
+                @include(get_location("Pages.cv-inc.cv_personal_info_en"))
+
+                @include(get_location("Pages.cv-inc.cv_previous_work_en"))
+                @include(get_location("Pages.cv-inc.cv_summery_en"))
+                @include(get_location("Pages.cv-inc.cv_web_development_skills_en"))
+                @include(get_location("Pages.cv-inc.cv_programing_en"))
+                @include(get_location("Pages.cv-inc.cv_other_tech_en"))
+                @include(get_location("Pages.cv-inc.cv_strength_points_en"))
+                @include(get_location("Pages.cv-inc.cv_programing_languages_en"))
+                @include(get_location("Pages.cv-inc.cv_general_work_skills_en"))
+                @include(get_location("Pages.cv-inc.cv_currently_learning_en"))
+
+                @include(get_location("Pages.cv-inc.cv_certifications_en"))
+
+                @include(get_location("Pages.cv-inc.cv_education_en"))
+                @include(get_location("Pages.cv-inc.cv_langus_en"))
+{{--                @include(get_location("Pages.cv-inc.cv_tools_used"))--}}
 
                 @include(get_location("Pages.cv-inc.cv_contact"))
 

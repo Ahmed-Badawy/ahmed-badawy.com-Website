@@ -164,8 +164,7 @@ class ApiController extends BaseController{
     /*********************************************************************
      * Send a Post Request
      **********************************************************************/
-    public function send_post_request()
-    {
+    public function send_post_request(){
         $url = \Request::get('url');
         $post_array = \Request::all();
 
@@ -181,6 +180,14 @@ class ApiController extends BaseController{
 
         return $query;
     }
+
+    public function send_get_request(){
+        $output = file_get_contents("https://raw.githubusercontent.com/Ahmed-Badawy/Avgrund-Modal-for-Bootstrap/master/index.html");
+        echo $output;
+        die;
+        dd($output);
+    }
+
 
     /**********************************************************************/
 
@@ -257,8 +264,12 @@ $php_data = $from;
 //            dd($object_array);
             $output_data = str_replace("stdClass::__set_state","(object)", var_export($object_array,true));
         }
-        elseif($input['to-type']=="html_table"){
+        elseif($input['to-type']=="html_table_multi"){
             html_show_array($php_data);
+            die;
+        }
+        elseif($input['to-type']=="html_table_single"){
+            phpArray_to_htmlTable_single($php_data);
             die;
         }
 
@@ -268,6 +279,8 @@ $php_data = $from;
         else http_response_code(500);
         die;
     }
+
+
 
 
 }

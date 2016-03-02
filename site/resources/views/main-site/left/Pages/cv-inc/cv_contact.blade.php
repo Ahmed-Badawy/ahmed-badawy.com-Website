@@ -13,7 +13,7 @@
 	</div>
 
 <div class="col-sm-6">
-	<h3 id='sec7' dir='rtl'>أرسل لى رسالة</h3>
+	<h3 id='sec7' dir='rtl'>Send Me A Message</h3>
 	<form action="{!! url('contact') !!}" method='post'>
           <div class="form-group">
 <input name='email' type="email" class='form-control' style='width:100%' placeholder="Your Email" required>

@@ -23,6 +23,8 @@ Route::group(array('prefix' => 'api'), function(){
 
 	Route::any('send-post','ApiController@send_post_request');
 
+	Route::any('send-get','ApiController@send_get_request');
+
 	Route::post('data-types-converter','ApiController@data_type_converter');
 
 	

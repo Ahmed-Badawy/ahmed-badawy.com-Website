@@ -48,6 +48,31 @@ function html_show_array($array){
 
 
 
+function phpArray_to_htmlTable_single($array){
+ if (count($array) > 0): ?>
+    <table>
+        <thead>
+        <tr>
+            <th><?php echo implode('</th><th>', array_keys(current($array))); ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($array as $row): array_map('htmlentities', $row); ?>
+            <tr>
+                <td><?php echo implode('</td><td>', $row); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif;
+}
+
+
+
+
+
+
+
 
 
 

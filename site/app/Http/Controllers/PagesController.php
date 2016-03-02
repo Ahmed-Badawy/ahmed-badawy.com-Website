@@ -47,7 +47,7 @@ CV
 			'theme'=>$this->themes[4],
 			'fake'=>false,
 		];
-		return $this->get_view("Pages.cv-final",$data);
+		return $this->get_view("Pages.cv-final_en",$data);
 	}
 	public function cv_application(){
 		$data = [

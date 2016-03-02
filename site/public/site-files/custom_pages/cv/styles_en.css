@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans','Lato', Helvetica, sans-serif;
+
+  background: url('../../../site-imgs/site/covers/img1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+  #page_container {
+      font-size:110%;
+      margin-bottom:200px;
+  }
+  
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+      font-size: 1.5em;
+  }
+
+  @media screen and (min-width: 768px) {
+    #page_header{
+      font-size: 6em;
+    }
+  }
+.professional_link{
+  font-size:110%;
+  color:black;
+  transition:all .5s ease;
+}
+.professional_link:hover{
+  font-size:100%;
+  color:#05BBFE;
+}
+
+
+
+
+  #previous_work_accordion li{
+    color:#ccc;
+    background-color:rgba(0,0,0,.5);
+    padding:2px;
+    border:2px solid #333;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:all .3s ease-out; 
+  }
+  #previous_work_accordion li:hover{
+    color:#fff;
+    background-color:rgba(0,0,0,.8);
+    border:2px solid white;
+    cursor:pointer;
+  }
+  #previous_work_accordion a{
+    text-decoration:none;
+    color:white;
+  }
+
+
+
+
+  img{
+    margin-bottom:15px;
+  }
+
+
+
+
+
+
+.acc_header{
+    transition: all .3s ease-out;
+    border:2px solid #666;
+    padding:7px;
+    border-radius: 5px;
+    background-color:rgba(0,0,0,.3);
+    color:#fff;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.9);
+  }
+
+.acc_header:hover{
+  cursor: pointer;
+  background-color:rgba(0,0,0,.6);
+  border:2px solid #fff;
+  padding:10px;
+}
+.acc_opened{
+  border:2px solid #fff;
+  padding:10px;
+  background-color:rgba(0,0,0,.6)
+}
+
+
+  .custom_accordion h3{
+    padding:7px;
+    border-radius: 5px;
+    background-color:rgba(0,0,0,.2);
+    color:#fff;
+    text-shadow: 0px 0px 2px rgba(255,255,255,0.9);
+    margin-top:0px;
+  }
+
+  #ContactModalButton{
+    display:none;
+  }
+
+
+  .custom_accordion{
+    background-color:rgba(255,255,255,.2);
+    display:none;
+    border-left:2px solid white;
+    border-bottom:2px solid white;
+    border-right:2px solid white;
+    border-radius:0 0 20px 20px;
+    padding:10px;
+    padding-top:20px;
+    margin-top:-10px;
+  }
+
+.highlight{
+    color:#111;
+    font-weight:bold;
+    background-color:rgba(255,255,255,.2);
+    border-radius:5px;
+    padding:0 5px 0 5px;
+}
+
+.english{
+    font-family: "Open Sans","tahoma";
+}
+
+
+
+
+
+

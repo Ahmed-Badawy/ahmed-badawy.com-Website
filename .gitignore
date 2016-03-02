@@ -52,7 +52,6 @@ Temporary Items
 /.idea
 /.git
 
-
 /projects
 /blog
 /downloads
@@ -63,6 +62,9 @@ Temporary Items
 
 /site/node_modules
 /site/vendor
+
+/site/config
+
 /site/public/barcodegen-1
 /site/public/pdf
 /site/public/site-docs

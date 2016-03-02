@@ -4,7 +4,7 @@ class ProjectsController extends BaseController {
 
 
 /********************************************************************************
-Projects	  					
+Projects
 ********************************************************************************/
 	public function index(){
 		$data = [
@@ -12,12 +12,12 @@ Projects
 			'theme'=>$this->themes[0],
 		];
 		return $this->get_view("Projects.index",$data);
-	}	
-//*******************************************************************************	
+	}
+//*******************************************************************************
 
 
 /********************************************************************************
-Currency  					
+Currency
 ********************************************************************************/
 	public function currency(){
 		$data = [
@@ -28,22 +28,22 @@ Currency
 			'ng_controller'=>"googleCurrency",
 		];
 //		die('hi');
-		return $this->get_view('Projects.currency.currency',$data);		
+		return $this->get_view('Projects.currency.currency',$data);
 	}
 	public function google_currency_calc($from,$to,$amount=null){
 		$from_Currency = $from;
-		$to_Currency = $to; 
+		$to_Currency = $to;
 
 		$one = file_get_contents("https://www.google.com/finance/converter?a=1&from=$from_Currency&to=$to_Currency");
 		$one = explode("<span class=bld>",$one);
-		$one = explode("</span>",$one[1]);  
+		$one = explode("</span>",$one[1]);
 
 		$rate = preg_replace("/[^0-9\.]/", null, $one[0]);
 		$res = ['site'=>'ahmed-badawy.com','from'=>$from,'to'=>$to,'rate'=>$rate];
 		if($amount!=null){ $res['result']=$rate*$amount; $res['amount']=$amount;}
 		return $res ;
 	}
-/**********************************************************************/	
+/**********************************************************************/
 
 /*********************************************************************
 Currency Advanced
@@ -56,8 +56,8 @@ Currency Advanced
 			// "currency_list"=> lists::common("currency"),
 		];
 		// err($data);
-		// return $this->get_view('Projects.currency2',$data);	
-		return $this->get_view('Projects.currency.currency_advanced',$data);		
+		// return $this->get_view('Projects.currency2',$data);
+		return $this->get_view('Projects.currency.currency_advanced',$data);
 	}
 	public function get_exchange_rates(){
 //		\Cache::forget('money_exchange_rates');
@@ -163,7 +163,7 @@ Social ID
 //*******************************************************************************
 
 /*********************************************************************
-Persentage			
+Persentage
 **********************************************************************/
 	public function persentage(){
 		$data = [
@@ -201,7 +201,7 @@ Persentage
 			}
 			return $new_array;
 		}
-	}		
+	}
 /**********************************************************************/
 
 /********************************************************************************
@@ -213,13 +213,13 @@ Postal Codes
 			'theme'=>$this->themes[0],
 			'ng_app'=>"myApp",
 		];
-		return $this->get_view('Projects.postal.index',$data);	
+		return $this->get_view('Projects.postal.index',$data);
 	}
 
 	public function postal_codes_array(){
 		$array = \Lst::common('postal_codes');
 		return $array;
-	}	
+	}
 	public function postal_offices_query_info(){
 		$q = \Request::Input('q');
 		$query = regexp_query_ready($q);
@@ -243,7 +243,7 @@ Movie Actors
 			"ng_app"=>"myApp",
 			'theme'=>$this->themes[0],
 		];
-		return $this->get_view("Projects/actors/index",$data); 
+		return $this->get_view("Projects/actors/index",$data);
 	}
 	public function actors_get($page,$q=null){
 		$items_per_page = 10;
@@ -281,7 +281,7 @@ Movie Actors
 		// \Session::push( 'actor_rate.'.$prams['id'] , $prams['rate'] );
 		// return $actor;
 		// $actor->rate = $actor->rate
-		// $actor->rate_count = 
+		// $actor->rate_count =
 		// $user->rate = 'john@foo.com';
 		// $user->save();
 	}
@@ -328,7 +328,7 @@ Count Down
 		$db_info = [
 			"title"=>$input['title'],
 			"text"=>$input['text'],
-			"time"=>$dateTime->getTimestamp(),		
+			"time"=>$dateTime->getTimestamp(),
 		];
 		// dd($db_info);
 		$count_down_info = \countdown_model::create($db_info);
@@ -353,19 +353,19 @@ Count Down
 			'theme'=>$this->themes[0],
 			'list'=>\countdown_model::all()
 		];
-		return $this->get_view('Projects.countDown.list',$data);			
-	}		
+		return $this->get_view('Projects.countDown.list',$data);
+	}
 //*******************************************************************************
 
 /********************************************************************************
-Favorite Websites Manager					
+Favorite Websites Manager
 ********************************************************************************/
 	public function favorite_index(){
 		$data = [
 			'route_info'=>\sr::projects("favorite"),
 			'theme'=>$this->themes[0],
 		];
-		return $this->get_view('Projects.favorite.index',$data);	
+		return $this->get_view('Projects.favorite.index',$data);
 	}
 	public function get_favorite($get_what){
 		$real_cates = \fav_websites_model::lists('list')->unique()->toArray();
@@ -375,7 +375,7 @@ Favorite Websites Manager
 		$new_sites = [];
 		foreach($sites as $site){
 			$subs = \fav_websites_model::where('sub',$site->id)->get();
-			if(!empty($subs)) $site->subs=$subs;			
+			if(!empty($subs)) $site->subs=$subs;
 			if(!empty($site->url) && $site->sub==null) $new_sites[] = $site;
 		}
 		$data = [
@@ -448,22 +448,22 @@ Favorite Websites Manager
 			// die($url);
 			save_img($url,$save_place);
 			return $title.".jpg";
-	}		
+	}
 /************************************************************************/
 
 /********************************************************************************
-ToDo List 				
+ToDo List
 ********************************************************************************/
 	public function todo_index(){
 		$data = [
 			'route_info'=>\sr::projects("todo"),
 			'theme'=>$this->themes[0],
 		];
-		return $this->get_view('Projects.todo.index',$data);	
+		return $this->get_view('Projects.todo.index',$data);
 	}
 	public function get_todos($get_what){
 		$tasks_after_filtering = [ ];
-		
+
 		$real_lists = \todo_model::lists('list')->unique();
 		$lists = $real_lists;
 		$real_lists = $real_lists->toArray();
@@ -502,7 +502,7 @@ ToDo List
 		$obj = \todo_model::find($input['id']);
 		$obj->done = $input['done'];
 		$obj->save();
-	}	
+	}
 	public function create_list(){
 		$list = \Request::input('list');
 		\todo_model::create(['list'=>$list]);
@@ -537,8 +537,8 @@ Website Thumbnail Generator
 			'ng_app'=>"myApp",
 			'theme'=>$this->themes[0]
 		];
-		return $this->get_view("Projects.site_thumbnail",$data); 
-	}	
+		return $this->get_view("Projects.site_thumbnail",$data);
+	}
 	public function site_thumbnail_generator($link){
 		// dd("hello");
 		$sizes = ["xlg","lg","sm","vsm","tny","mcr"];
@@ -560,14 +560,14 @@ Dynamic Page
 			"ng_app"=>"myApp",
 			'theme'=>$this->themes[0]
 		];
-		return $this->get_view("Projects/dynamic_text/index",$data); 
+		return $this->get_view("Projects/dynamic_text/index",$data);
 	}
 	public function dynamic_get(){
 		$data = [
 			'dynamic_text'=> \Cache::get('dynamic_text')
 		];
-		return view(get_location("Projects/dynamic_text/normal"),$data); 
-	}	
+		return view(get_location("Projects/dynamic_text/normal"),$data);
+	}
 	public function dynamic_save(){
 		if(\Request::has('reset')){
 			$text = \Cache::get('normal_dynamic_text');
@@ -577,8 +577,8 @@ Dynamic Page
 			$text = \Request::Input('text');
 			\Cache::put('dynamic_text',$text,600000);
 		}
-	}	
-/**********************************************************************/	
+	}
+/**********************************************************************/
 
 /*********************************************************************
 Dynamic Page 2
@@ -591,21 +591,21 @@ Dynamic Page 2
 			'theme'=>$this->themes[0],
 			'text'=>$text,
 		];
-		return $this->get_view("Projects/dynamic_text_2/index",$data); 
+		return $this->get_view("Projects/dynamic_text_2/index",$data);
 	}
 	// public function dynamic_get(){
 	// 	$data = [
 	// 		'dynamic_text'=> \Cache::get('dynamic_text')
 	// 	];
-	// 	return view(get_location("Projects/dynamic_text/normal"),$data); 
-	// }	
+	// 	return view(get_location("Projects/dynamic_text/normal"),$data);
+	// }
 	public function dynamic2_save(){
 		$input = \Request::all();
 		// dd($input);
 		$text = $input['editor'];
 		\Cache::put('dynamic_text_2',$text,600000);
 		return redirect("projects/dynamic2");
-	}	
+	}
 /**********************************************************************/
 
 
@@ -629,7 +629,7 @@ Dynamic Page 2
 
 
 /********************************************************************************
-One Method Apps  					
+One Method Apps
 ********************************************************************************/
 /********************************Oil Calculator********************************************/
 	public function oil(){
@@ -637,7 +637,7 @@ One Method Apps
 			"route_info"=>\sr::projects("oil"),
 			'theme'=>$this->themes[0],
 		];
-		return $this->get_view('Projects.oil',$data);		
+		return $this->get_view('Projects.oil',$data);
 	}
 /********************************Bank Profit Calculator*************************/
 	public function bank_profit_calc(){
@@ -645,7 +645,7 @@ One Method Apps
 			"route_info"=>\sr::projects("bank"),
 			'theme'=>$this->themes[0],
 		];
-		return $this->get_view('Projects.bank_profit',$data);	
+		return $this->get_view('Projects.bank_profit',$data);
 	}
 /********************************Money Calculator*******************************/
 	public function money_calc(){
@@ -653,7 +653,7 @@ One Method Apps
 			"route_info"=>\sr::projects("money-calc"),
 			'theme'=>$this->themes[4],
 		];
-		return $this->get_view("Projects/money_count_calc",$data); 
+		return $this->get_view("Projects/money_count_calc",$data);
 	}
 /********************************Number Conversions******************************/
 	public function converter(){
@@ -661,7 +661,7 @@ One Method Apps
 			'route_info'=>\sr::projects("conversions"),
 			'theme'=>$this->themes[0]
 		];
-		return $this->get_view("Projects.conversions.index",$data); 
+		return $this->get_view("Projects.conversions.index",$data);
 	}
 /********************************Number Conversions******************************/
 	public function socialite_access(){
@@ -669,7 +669,7 @@ One Method Apps
 			'route_info'=>\sr::projects("socialite"),
 			'theme'=>$this->themes[0]
 		];
-		return $this->get_view("Projects.remote_signin.index",$data); 
+		return $this->get_view("Projects.remote_signin.index",$data);
 	}
 /********************************Video Book******************************/
 	public function video_book(){
@@ -678,7 +678,7 @@ One Method Apps
 			'ng_app'=>"myApp",
 			'theme'=>$this->themes[0]
 		];
-		return $this->get_view("Projects.video_book.index",$data); 
+		return $this->get_view("Projects.video_book.index",$data);
 	}
 /********************************Quran Files******************************/
 	public function quran(){
@@ -687,8 +687,8 @@ One Method Apps
 			'ng_app'=>"myApp",
 			'theme'=>$this->themes[0]
 		];
-		return $this->get_view("Projects.quran.index",$data); 
-	}		
+		return $this->get_view("Projects.quran.index",$data);
+	}
 //*******************************************************************************
 
 
@@ -704,7 +704,7 @@ Book Sharing System
 			'books' => $books,
 			'categories' => $categories,
 		];
-		return $this->get_view("Projects.books.books_view",$data); 
+		return $this->get_view("Projects.books.books_view",$data);
 	}
 	public function download_book($id){
 		$book = \book_model::find($id);
@@ -717,9 +717,9 @@ Book Sharing System
 	public function new_book(){
 		$input = \Request::all();
 
-		$img_file = \Request::file('upload_img');	
+		$img_file = \Request::file('upload_img');
 		$img_save_path = real_imgs_dir."projects/pdf_book_imgs";
-		$pdf_file = \Request::file('upload_file');	
+		$pdf_file = \Request::file('upload_file');
 		$pdf_save_path = public_path()."/pdf/books";
 
 		$pdf_name = $this->upload_file($pdf_file,$pdf_save_path);
@@ -739,7 +739,7 @@ Book Sharing System
 	public function upload_file($file,$destinationPath){
 		// $filename = $file->getClientOriginalName();
 		$filename = str_random(12);
-		$extension =$file->getClientOriginalExtension(); 
+		$extension =$file->getClientOriginalExtension();
 		$final_name =  $filename.".".$extension;
 		$upload_success = $file->move($destinationPath,$final_name);
 		if( $upload_success ) {
@@ -748,7 +748,7 @@ Book Sharing System
 		} else {
 		   // return Response::json('error', 400);
 			return "error";
-		}	
+		}
 	}
 	public function delete_book($id){
 		die("<h1>Your Can't Delete Books</h1>");
@@ -780,11 +780,11 @@ Dictionary
 			'page_img' => imgs_dir."met/1.jpg",
 			'theme'=>$this->themes[4],
 		];
-		return $this->get_view('Projects.dictionary.index',$data);	
-	}	
+		return $this->get_view('Projects.dictionary.index',$data);
+	}
 	public function dictionary_get(){
 		// return \Request::all();
-		// if($what == "all") 
+		// if($what == "all")
 		return [
 			'name'=>'ahmed_badawy',
 			'input'=>Input::all(),
@@ -803,13 +803,13 @@ Recipes Sharing System
 			'theme'=>$this->themes[0],
 			'ng_app'=>"myApp",
 		];
-		return $this->get_view('Projects.recipes.index',$data);		
+		return $this->get_view('Projects.recipes.index',$data);
 	}
 	public function recipes_create(){
 		dd(Input::file());
 		die;
 		$input = Input::get('info');
-		// if($return1 == 'error' || $return2 == 'error') die('there was an error');		
+		// if($return1 == 'error' || $return2 == 'error') die('there was an error');
 		// return $input;
 		$img = $this->recipes_upload_img();
 		$create_info = [
@@ -834,20 +834,20 @@ Recipes Sharing System
 		$destinationPath = imgs_dir."recipes";
 		$filename = str_random(12);
 		//$filename = $file->getClientOriginalName();
-		$extension =$file->getClientOriginalExtension(); 
+		$extension =$file->getClientOriginalExtension();
 		$final_name =  $filename.".".$extension;
 		$upload_success = Input::file('img')->move($destinationPath,$final_name);
 		if( $upload_success ) {
 			return $final_name;
 		} else {
 			return "error";
-		}	
-	}	
+		}
+	}
 	// public function recipes_main(){ return View::make("main-site/left/projects/recipes/main"); }
 	// public function recipes_create(){ return View::make("main-site/left/projects/recipes/create"); }
 	// public function recipes_partials_search(){ return View::make("main-site/left/projects/recipes/recipes_partials_search"); }
 
-	
+
 /****************************************************************/
 
 
