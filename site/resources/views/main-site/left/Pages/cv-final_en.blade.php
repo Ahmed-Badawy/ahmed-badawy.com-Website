@@ -55,7 +55,18 @@
 
 
 <script type="text/javascript">
+    function goto(id_name){
+        console.log(id_name);
+        document.getElementById(id_name).click();
+        return false;
+    }
+
     $(document).ready(function() {
+
+        setTimeout(function(){
+            goto('brief');
+        },1000);
+
 
         var selected_id = "";
         $(".acc_header").on("click", function () {
