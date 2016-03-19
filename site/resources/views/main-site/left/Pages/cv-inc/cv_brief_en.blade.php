@@ -52,6 +52,7 @@
   <ul>
     <li style='font-weight:bold'> C.V Link : {{sp(12)}}  <a target='_blank' class='english btn btn-xs btn-default ' href="http://ahmed-badawy.com/site/cv">http://ahmed-badawy.com/site/cv</a></li>
       <li style='font-weight:bold'> My Masterpiece : {{sp(12)}}  <a target='_blank' class='english btn btn-xs btn-default ' href="http://ahmed-badawy.com/projects/D-Faster">D-Faster For Developers/Designers</a></li>
+      <li style='font-weight:bold'> Github : {{sp(12)}}  <a target='_blank' class='english btn btn-xs btn-default ' href="http://github.com/Ahmed-Badawy">github.com/Ahmed-Badawy</a></li>
     <li style='font-weight:bold'> Previous Work : {{sp(12)}} <a target='_blank' class='english btn btn-xs btn-default ' onclick="goto('previous_work')">Open Tap</a></li>
     <li style='font-weight:bold'> Ideas i have Excuted: {{sp(2)}} <a target='_blank' class='english btn btn-xs btn-default ' href="http://ahmed-badawy.com/site/projects">http://ahmed-badawy.com/site/projects</a></li>
     <li style='font-weight:bold'> Personal Website : {{sp(6)}} <a target='_blank' class='english btn btn-xs btn-default ' href="http://ahmed-badawy.com">http://ahmed-badawy.com</a></li>
