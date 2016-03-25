@@ -4,12 +4,31 @@
 
 <div id="brief_accordion" class='custom_accordion'>
 <ul>
-<li>Ahmed Badawy El-Said (Developer/Programmer & Expert Fullstack web developer)</li>
-<li>25 Years Old - Non-smoker - can drive & have driving licence</li>
-<li>5 Years Experience in all web development aspects especially <span class="highlight">PHP , javascript</span></li>
-    <li>1 year Experience in <span class="highlight">JAVA & Android SDK</span> Development</li>
-<li>I can deal with different platforms & different programing languages</li>
-<li>Experienced in executing new ideas & solving programmatic problems</li>
+
+
+    <li><b>Personal Info:</b></li>
+    <ul>
+        <li>Ahmed Badawy El-Said (Developer/Programmer & Expert Fullstack web developer)</li>
+        <li>25 Years Old - Non-smoker - can drive & have driving licence</li>
+        <li>5 Years Experience in all web development aspects especially <span class="highlight">PHP , javascript</span></li>
+        <li>1 year Experience in <span class="highlight">JAVA & Android SDK</span> Development</li>
+        <li>I can deal with different platforms & different programing languages</li>
+        <li>Experienced in executing new ideas & solving programmatic problems</li>
+    </ul>
+
+
+
+    <br>
+    <li><b>Excepert AT:</b></li>
+    <ul>
+        <li>PHP & JavaScript (mastery level)  [7 years] </li>
+        <li>Laravel: php framework [4 years]</li>
+        <li>AngularJS: javascript framework [3 years]</li>
+        <li>I am in-love with my work so i am extremely motivated to learn new technologies every day</li>
+        <li>Very interested in programing new ideas & invention. (what ever you can think, i can code it)</li>
+    </ul>
+
+
 
 
 <br>
@@ -19,7 +38,8 @@
     <li> PHP & JavaScript Expert </li>
     <li> CodeIgniter FrameWork => Zend FrameWork => Laravel FrameWork</li>
     <li> Chrome Extensions & APPs Development - Firefox Addons Development</li>
-    <li> Some Nodejs Experience with some Express & Mean Stack Experience</li>
+    <li> I worked with Ruby & ROR:(Ruby on Rails) for 6 month</li>
+    <li> Some Nodejs Experience with Mean Stack</li>
     <li> Grunt - Gulp - Bower - SASS - LESS </li>
     <li> Git Technology - familiar with cpanel & WHM Resellers panel </li>
     <li> Some Java & Android SDK Development Experience</li>
