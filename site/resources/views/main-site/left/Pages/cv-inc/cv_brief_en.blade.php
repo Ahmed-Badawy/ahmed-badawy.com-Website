@@ -36,10 +36,10 @@
 <ul>
     <li> HTML - CSS - JavaScript - jQuery - AngularJS - Some AngularJs2</li>
     <li> PHP & JavaScript Expert </li>
-    <li> CodeIgniter FrameWork => Zend FrameWork => Laravel FrameWork</li>
+    <li> Web Frameworks: CodeIgniter , Zend , Laravel , RoR (Ruby on Rails) , ExpressJs</li>
     <li> Chrome Extensions & APPs Development - Firefox Addons Development</li>
-    <li> I worked with Ruby & ROR:(Ruby on Rails) for 6 month</li>
-    <li> Some Nodejs Experience with Mean Stack</li>
+    {{--<li> I worked with Ruby & ROR:(Ruby on Rails) for 6 month</li>--}}
+    <li> Nodejs Experience with Mean Stack</li>
     <li> Grunt - Gulp - Bower - SASS - LESS </li>
     <li> Git Technology - familiar with cpanel & WHM Resellers panel </li>
     <li> Some Java & Android SDK Development Experience</li>
