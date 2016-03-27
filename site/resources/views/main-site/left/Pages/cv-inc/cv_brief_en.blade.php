@@ -10,7 +10,7 @@
     <ul>
         <li>Ahmed Badawy El-Said (Developer/Programmer & Expert Fullstack web developer)</li>
         <li>25 Years Old - Non-smoker - can drive & have driving licence</li>
-        <li>5 Years Experience in all web development aspects especially <span class="highlight">PHP , javascript</span></li>
+        <li>7 Years Experience in all web development aspects especially <span class="highlight">PHP , javascript</span></li>
         <li>1 year Experience in <span class="highlight">JAVA & Android SDK</span> Development</li>
         <li>I can deal with different platforms & different programing languages</li>
         <li>Experienced in executing new ideas & solving programmatic problems</li>
