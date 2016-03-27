@@ -12,6 +12,9 @@
     color:inherit;
     text-decoration: none;
   }
+  .arabic{
+    font-size:90%;
+  }
 @overwrite
 
 
@@ -26,7 +29,7 @@
 <div class='col-md-10'>
       <h1>{!! $index['title'] !!}</h1>
       <p>{!! $index['desc'] !!}</p>
-      <p class='h6' style='font-size:1.2em'>{!! $index['desc2'] !!}</p>
+      <p dir='rtl' class='arabic h6' style='font-size:1.2em'>{!! $index['desc2'] !!}</p>
 </div>
 
       </div>
@@ -36,7 +39,7 @@
 
     <div class="container">
 
-<div class="row">
+<div class="row arabic">
 
 @foreach($index['itiration'] as $project)
 <?php $project_name = $project['page_name']; ?>
@@ -46,8 +49,8 @@
             <img class="img-circle" src='{{th($project["page_img"])}}' width='160' height="160" alt="Generic placeholder image" >
           </a>
           <br>
-          <h4 class='btn'><a href='{{$project["link"]}}' target='_blank'>{{$project_name}}</a></h4>
-          <p class='desc'><b class='desc'>{{$project['page_desc']}}<br> &nbsp; </b></p>
+          <h4 class='btn' dir='rtl'><a href='{{$project["link"]}}' target='_blank'>{{$project_name}}</a></h4>
+          <p class='desc'><b dir='rtl' class='desc'>{{$project['page_desc']}}<br> &nbsp; </b></p>
           <!-- <p><a class='btn btn-default btn-block btn-sm' href="{{$project['link']}}" target="_blank" role="button">أفتح &raquo;</a></p> -->
         </section><!-- /.col-md-4 text-center -->  
   @else
@@ -55,8 +58,8 @@
           <a href='{{$project["link"]}}' target="_blank">
             <img class="img-circle" src='{{get_thumb($project["page_img"])}}' width='140' height="140" alt="Generic placeholder image" >
           </a>          <br>
-          <h4 class='btn'><a href='{{$project["link"]}}' target='_blank'>{{$project_name}}</a></h4>
-          <p class='desc'><b class='desc'>{{$project['page_desc']}}<br> &nbsp; </b></p>
+          <h4 class='btn' dir='rtl'><a href='{{$project["link"]}}' target='_blank'>{{$project_name}}</a></h4>
+          <p class='desc'><b dir='rtl' class='desc'>{{$project['page_desc']}}<br> &nbsp; </b></p>
           <p><a class='btn btn-warning btn-block btn-md' href="{{$project['link']}}" target="_blank" role="button">Under Construction &raquo;</a></p>
         </section><!-- /.col-md-4 text-center -->    
   @endif

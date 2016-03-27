@@ -50,7 +50,7 @@
 	</div>
 	<h3> {!!fa2($logo)!!} Video Book !</h3>
 	<div>
-		<p>Video Book is a story telling project with some effort to enhance language skills in the user.</p>
+		<p>Video Book is a story telling application with some effort to enhance language skills.</p>
 		<p class='arabic' dir='rtl' >هذا هو الشكل المبدئى لمشروع يمكن إستخدامه لعرض القصص أو الفيديوهات بأشكال و ترجمات بين اللغات المختلفة. وهو محاولة مبدأية لتجاه التحسين اللغوى للمستخدم بين العربية و الإنجليزية</p>
 
 		<button class="btn btn-primary" data-toggle="modal" data-target="#short_info">
@@ -70,7 +70,7 @@
 				<h3  class="modal-title" id="myModalLabel"> {!!fa2($logo)!!} Video Book !</h3>
 			</div>
 			<div class="modal-body">
-				<p>Video Book is a story telling project with some effort to enhance language skills in the user.</p>
+				<p>Video Book is a story telling project with some effort to enhance language skills.</p>
 				<hr>
 				<p class='arabic' dir='rtl' >هذا هو الشكل المبدئى لمشروع يمكن إستخدامه لعرض القصص أو الفيديوهات بأشكال و ترجمات بين اللغات المختلفة. وهو محاولة مبدأية لتجاه التحسين اللغوى للمستخدم بين العربية و الإنجليزية</p>
 
@@ -476,15 +476,7 @@
 
 
 
-	<div class='col-xs-12 col-sm-6 arabic'>
-		@foreach($lines as $key=>$line)
-			<?php
-			$start = calc_subtitle_time($line['start']);
-			$end = (isset($lines[$key+1]['start'])) ?  calc_subtitle_time($lines[$key+1]['start']) : $start+3;
-			?>
-			<h1 dir='rtl' ng-show='current_time >= {{$start}} && current_time < {{$end}}' class='current-text'> {!! $line['ar_txt'] !!} </h1>
-		@endforeach
-	</div>
+
 
 
 	<div class='col-xs-12 col-sm-6'>
@@ -497,6 +489,16 @@
 		@endforeach
 	</div>
 
+
+	<div class='col-xs-12 col-sm-6 arabic'>
+		@foreach($lines as $key=>$line)
+			<?php
+			$start = calc_subtitle_time($line['start']);
+			$end = (isset($lines[$key+1]['start'])) ?  calc_subtitle_time($lines[$key+1]['start']) : $start+3;
+			?>
+			<h1 dir='rtl' ng-show='current_time >= {{$start}} && current_time < {{$end}}' class='current-text'> {!! $line['ar_txt'] !!} </h1>
+		@endforeach
+	</div>
 
 
 

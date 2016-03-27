@@ -66,7 +66,7 @@
 ],    
 "regist"=>[
 	"logo"=>'user',
-	"page_name" => "نظام تسجيل دخول محدث",
+	"page_name" => "Advanced Login & Registration System",
 	"page_title" => "Registration Area",
 	"page_desc" => "This is a Highly effective Registration System ready to be implemented on any site.",
 	"page_img" => "projects/register.jpg",
