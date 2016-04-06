@@ -78,7 +78,7 @@ if(false){	//Force Mode
 			"google-plus"	=>	"https://plus.google.com/u/0/112617558420458089489/about",
 			"github"		=>	"https://github.com/ahmed-badawy",
 			"pinterest"		=>	"http://www.pinterest.com/ahmedbadawyelsa/",
-			"linkedin"		=>	"https://www.linkedin.com/profile/view?id=317402952",
+			"linkedin"		=>	"https://www.linkedin.com/in/ahmedbadawyelsaid",
 			"instagram"		=>	"http://instagram.com/a7med.badawy",
 			"xing"			=>	"https://www.xing.com/profile/ahmed_badawy7",
 			"vk"			=>	"http://vk.com/id312885906",
