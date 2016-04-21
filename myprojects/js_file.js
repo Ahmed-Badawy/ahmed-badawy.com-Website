@@ -54,7 +54,7 @@ I built agreat Billing Managment System for them. Also created lots of auto bots
 {
     q1:"Osoul Chicken Manufacturers",         
     q2:`Chicken Manufacturer at Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Osoul.sa Chicken Manufacturers','osoul.sa'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -64,7 +64,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Alaryafest for Constructions",         
     q2:`Constructions Managment company at Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Alaryafest.sa for Constructions','alaryafest.sa'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -74,7 +74,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Basaffar Medical Establishment (BME)",         
     q2:`Medical Group Managment company at Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Basaffar Medical Establishment (BME)','basaffar-gp.com'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -84,7 +84,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Mostasharak (LTD)",         
     q2:`Constructions Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Mostasharak (LTD)','mostasharak.co'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -95,7 +95,7 @@ I developed their website & Backend panels to control the website's.`,
     q1:"Derby Coffee International",         
     q2:`A Coffe that have 85 branches all over the Middle East. 
     list of their branches: <a href='http://derbycof.com/ar/page/branches' target='_blank'>http://derbycof.com/ar/page/branches</a>
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Derby Coffee International','derbycof.com'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -105,7 +105,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"New-Line Constructions",         
     q2:`Constructions Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['New-Line Constructions','newline-sa.net'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -115,7 +115,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Ramaint Constructions",       
     q2:`Constructions Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['ramaint Constructions','ramaint.net'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -125,7 +125,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Alhada Perfume",       
     q2:`Perfume Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Alhada Perfume','alhadaperfume.com'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -146,7 +146,7 @@ A develpment module for fast deployment store with brands & products.`,
     q1:"Distinction Diamond for Contracting (DDC)",       
     q2:`Distinction Diamond for Contracting (DDC)
 Construction- Maintenance – Air-conditioning Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['DDC Website','didco.co'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -156,7 +156,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"My Pleasure",       
     q2:`Cultural Events Organizer in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['My Pleasure','mypleasure1.com'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -166,7 +166,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"a-low.net",       
     q2:`Legal Consultants Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Ahmed Al-Owaid','a-low.net'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -176,7 +176,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"alshargawi.com",       
     q2:`lawyers & Legal Consultants Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     // link:['Ahmed Al-Owaid','alshargawi.com'],
     link:['Ahmed Al-Owaid','alsharqawilawfirm.com'],
     cate:"Websites",            
@@ -187,7 +187,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Enjaz Public Services",       
     q2:`Public Services Facilitators in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Enjaz Public Services','enjazoffice.com.sa'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -197,7 +197,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Alhabrdy For Shipment",       
     q2:`Shipment Services provider in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Alhabrdy Shipment Services','alhabrdy.com'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -207,7 +207,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"EngineeringMagic",       
     q2:`EngineeringMagic Creative Marketing Solutions in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Engineering Magic','engineering-magic.com'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -217,7 +217,7 @@ I developed their website & Backend panels to control the website's.`,
 {
     q1:"Hayat El-Omran",       
     q2:`Constructions Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
+I developed their website & Backend admin control panels to control the website's.`,         
     link:['Hayat El-Omran','b5t.info'],
     cate:"Websites",            
     tags: ["Websites"],
@@ -225,21 +225,34 @@ I developed their website & Backend panels to control the website's.`,
 },
 
 {
-    q1:"Alsahary.com",  
-
-
+    q1:"Alsahary Realstate",  
     q2:`Constructions Company in Saudi Arabia.
-I developed their website & Backend panels to control the website's.`,         
-    link:['Hayat El-Omran','b5t.info'],
+I developed their website & Backend admin control panels to control the website's.`,         
+    link:['Alsahary Realstate','alsahary.com/realstate'],
     cate:"Websites",            
     tags: ["Websites"],
-    priority: 21
+    priority: 23
 },
 
+{
+    q1:"Alsahary Security",  
+    q2:`Security Services Company in Saudi Arabia.
+I developed their website & Backend admin control panels to control the website's.`,         
+    link:['Alsahary Security','alsahary.com/security'],
+    cate:"Websites",            
+    tags: ["Websites"],
+    priority: 24
+},
 
-
-
-
+{
+    q1:"Alsahary Cars",  
+    q2:`Rental Car Services Company in Saudi Arabia.
+I developed their website & Backend admin control panels to control the website's.`,         
+    link:['Rental Cars','alsahary.com/cars/'],
+    cate:"Websites",            
+    tags: ["Websites"],
+    priority: 25
+},
 
 
 
