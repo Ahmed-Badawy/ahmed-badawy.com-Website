@@ -54,6 +54,7 @@ Primary use:	CV / Resume
 body {
   font-family: 'Open Sans', sans-serif;
   background-image: url('../img/background3.jpg');
+  /*background-image: url('../img/background3.jpg');*/
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-color: #3b658a;

@@ -21,9 +21,9 @@
     <br>
     <li><b>Excepert AT:</b></li>
     <ul>
-        <li>PHP & JavaScript (mastery level)  [7 years] </li>
-        <li>Laravel: php framework [4 years]</li>
-        <li>AngularJS: javascript framework [3 years]</li>
+        <li>PHP & JavaScript (mastery level)  [5 years] </li>
+        <li>Laravel: php framework [3 years]</li>
+        <li>AngularJS: javascript framework [2 years]</li>
         <li>I am in-love with my work so i am extremely motivated to learn new technologies every day</li>
         <li>Very interested in programing new ideas & invention. (what ever you can think, i can code it)</li>
     </ul>
