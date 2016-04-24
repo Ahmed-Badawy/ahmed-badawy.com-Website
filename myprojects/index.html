@@ -2,27 +2,17 @@
 <html ng-app='myApp'>
 <head>
 	<title>Angular Filtering System</title>
-	<link rel="stylesheet" href="assets/yeti.css">
+	<link rel="stylesheet" href="assets/cyborg.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
 
 
-
-<!-- these are the format data. include just one of them & comment-out the other one -->
-<script type="text/javascript" src='js_file.js'></script> 
-<!-- <script type="text/javascript" src='json_file.js'></script> -->
-
-<!-- this is the application js code-->
-<script type="text/javascript" src='assets/app.js'></script>
-
-
-
 	<style type="text/css">
 	body{
 		font-family: tahoma;
-		font-weight: bold;
+		/*font-weight: bold;*/
 	}
 	.panel-heading{
 		transition: all .2s linear;
@@ -114,7 +104,7 @@
       <h4 class="panel-title">
           <div>
           		<span class='pull-left label label-default'>
-          			<span class="fa fa-thumbs-o-up"></span> {{qes.priority}}
+          			<span class="fa fa-thumbs-o-up"></span> {{$index+1}}
           		</span>
           		&nbsp; 
           		<span ng-bind-html="html(qes.q1)"></span> 
@@ -150,6 +140,13 @@
 
 <div class="clearfix"></div><br>
 
+
+<!-- these are the format data. include just one of them & comment-out the other one -->
+<script type="text/javascript" src='js_file.js'></script> 
+<!-- <script type="text/javascript" src='json_file.js'></script> -->
+
+<!-- this is the application js code-->
+<script type="text/javascript" src='assets/app.js'></script>
 
 
 </body>

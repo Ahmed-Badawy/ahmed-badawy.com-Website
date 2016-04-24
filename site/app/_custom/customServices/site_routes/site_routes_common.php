@@ -63,7 +63,8 @@
                         ],
     ],
 	"link"=>url('hidden')
-],    
+],   
+ 
 "regist"=>[
 	"logo"=>'user',
 	"page_name" => "Advanced Login & Registration System",
