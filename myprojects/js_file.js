@@ -218,6 +218,21 @@ I developed their website & Backend admin control panels to control the website'
 
 
 {
+
+      "code":"new-invoice",
+      "logo":'cc-visa',
+      q1:"Spidro Selling Manager",
+      "page_name":"برنامج إدارة المخازن و المحلات",
+      q2:`
+       this is a selling manager that can be used inside small & medium stores to sell & bill the clients. 
+      `,
+      "ar_desc":"هو عبارة عن برنامج يمكنك من البيع و التحكم فى محلك عن طريق قاعدة بيانات إلكترونية. يتم الآن العمل على ربطه بآلة قراءة الليبل و طابعة الفواتير و الإيصالات.",
+      "page_img":"selling-manager/icon-imgs/selling-manager.png",
+    link:['Selling Manager','ahmed-badawy.com/site/selling-manager/new-invoice'],    
+    cate:"Web APP",            
+    tags: ["Applications","web Apps"],  
+    priority: 26         
+},{
     "logo":'text-height',
     q1:"Improved Text Editor",
     "page_name_ar":"التحكم النصى",
@@ -562,21 +577,6 @@ I developed their website & Backend admin control panels to control the website'
     tags: ["Applications","web Apps"],  
     priority: 50         
 },{
-
-      "code":"new-invoice",
-      "logo":'cc-visa',
-      q1:"Spidro Selling Manager",
-      "page_name":"برنامج إدارة المخازن و المحلات",
-      q2:`
-       this is a selling manager that can be used inside small & medium stores to sell & bill the clients. 
-      `,
-      "ar_desc":"هو عبارة عن برنامج يمكنك من البيع و التحكم فى محلك عن طريق قاعدة بيانات إلكترونية. يتم الآن العمل على ربطه بآلة قراءة الليبل و طابعة الفواتير و الإيصالات.",
-      "page_img":"selling-manager/icon-imgs/selling-manager.png",
-    link:['Selling Manager','ahmed-badawy.com/site/selling-manager/new-invoice'],    
-    cate:"Web APP",            
-    tags: ["Applications","web Apps"],  
-    priority: 51         
-},{
   "logo":'user',
   q1 : "Advanced Login & Registration System",
   "page_title" : "Registration Area",
@@ -587,10 +587,7 @@ I developed their website & Backend admin control panels to control the website'
     cate:"Web APP",            
     tags: ["Applications","web Apps"],  
     priority: 52     
-}
-
-
-
+},
 
 
 
@@ -600,38 +597,54 @@ I developed their website & Backend admin control panels to control the website'
 {
       "code":"thumb-gene",
       "logo":'camera',
-      "page_title":"Thumb Generator",
+      q1:"Thumb Generator",
       "page_name":"مولد الصور المصغرة",
-      "page_desc":"تحجيم الصور المختلفة. يصلح للتصغير أو التكبير. صمم خصيصا ليعمل كـ Thumb Generator API.",
+      q2:"تحجيم الصور المختلفة. يصلح للتصغير أو التكبير. صمم خصيصا ليعمل كـ Thumb Generator API.",
+      q2:`Creates Thumbs of images. just input the image name & sizes & it will resize it for you.`,
       "page_img":"api/thumb.png",
-      "link":url('api/thumb-view'),
+    link:['API','ahmed-badawy.com/site/api/thumb-view'],    
+    cate:"Web APP",            
+    tags: ["API"],  
+    priority: 53     
 },    
 {
       "code":"captcha-gene",
       "logo":'minus-square',
-      "page_title":"Captcha Generator",
+      q1:"Captcha Generator",
       "page_name":"مولد صور الـ Captcha",
-      "page_desc":"توليد جمل الكابتشا بالخطوط و الطرق المختلفة. يمتاز بسهولة إستخدامه و سرعته و مرونته فى توليد الأكود. تم تصميم API كامل لتوليد الأكواد لأى موقع على الويب.",
+      q2:"توليد جمل الكابتشا بالخطوط و الطرق المختلفة. يمتاز بسهولة إستخدامه و سرعته و مرونته فى توليد الأكود. تم تصميم API كامل لتوليد الأكواد لأى موقع على الويب.",
+      q2:"Captcha Generator API. define the captcha text & we will generate the image for you.",
       "page_img":"api/captcha.png",
-      "link":url('api/captcha-view'),
+    link:['API','ahmed-badawy.com/site/api/captcha-view'],    
+    cate:"Web APP",            
+    tags: ["API"],  
+    priority: 54     
 },   
 {
       "code":"qr-gene",
       "logo":'qrcode',
-      "page_title":"QR Generator",
+      q1:"QR Generator",
       "page_name":"مولد كود الـ QR",
-      "page_desc":"يولد كود QR. يمتاز بسهولة إستخدامة و التحكم فيه. تم تصميم API كامل للتحكم بكيفية رسم الكود.",
+      q2:"يولد كود QR. يمتاز بسهولة إستخدامة و التحكم فيه. تم تصميم API كامل للتحكم بكيفية رسم الكود.",
+      q2:`Generates QR code for you. pass the text & we will generate the image`,
       "page_img":"api/qr.png",
-      "link":url('api/qr-gene-view'),
+    link:['API','ahmed-badawy.com/site/api/qr-gene-view'],    
+    cate:"Web APP",            
+    tags: ["API"],  
+    priority: 55     
 },
 {
       "code":"upc-gene",
       "logo":'barcode',
-      "page_title":"BarCode Generator",
+      q1:"BarCode Generator",
       "page_name":"مولد كود الـ UPC باركود",
-      "page_desc":"تم تصميم API كامل ليعمل مولد لـأكواد الـ UPC/BarCode المختلفة بأنواعها.",
+      q2:"تم تصميم API كامل ليعمل مولد لـأكواد الـ UPC/BarCode المختلفة بأنواعها.",
+      q2:`UPC generator, pass the text & we will return the image.`,
       "page_img":"api/upc.png",
-      "link":url('api/upc-view'),
+    link:['API','ahmed-badawy.com/site/api/upc-view'],    
+    cate:"Web APP",            
+    tags: ["API"],  
+    priority: 56     
 }, 
 
 
@@ -644,68 +657,79 @@ I developed their website & Backend admin control panels to control the website'
 
 
 
-
-
-
-
 {
+            "code":"porn preventer",
+            "logo":'venus-mars',
+            q1:"Stop Porn Flood",
+            "page_name":"برنامج منع المواقع الإباحية - Porn Preventer",
+            q2:`Pervents the Browser of opening porn sites, stop the porn flood. 
+Save Your Child. 
+Save Your Marriage. 
+
+--- Stop The Porn ---
+
+يمكنك من منع فتح المواقع الإباحية على متصفح الكروم. - يمنع فتح الموقع و يحولك لموقع إسلامى
+            `,
+            "page_img":"external/chrome/porn-preventer.png",
+
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/porn-preventer/kjakednfpkbgpmifghjchpiekadckjad'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 60              
+},{
             "code":"Rip Page",
             "logo":'file-code-o',
-            "page_title":"Rip Page",
+            q1:"Rip Page",
             "page_name":"برنامج نزع المحتوى  - Rip Page ",
-            "page_desc":`
+            q2:`A chrome extension that enables you to download web site's images & links.
 يمكنك هذا البرنامج من نسخ روابط و صور أى صفحة مفتوحة فى المتصفح و يمكنك أيضا من تحميل روابطهم<br>
-<span class='english'>Select images & links on a page and download them.</span>
 `,
-            "page_img":"external/chrome/rip-page.png",
-            "link" : "https://chrome.google.com/webstore/detail/rip-page/gddceihbefbhkgjfbfodkmfchbfnbpho"
+        "page_img":"external/chrome/rip-page.png",
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/rip-page/gddceihbefbhkgjfbfodkmfchbfnbpho'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 57                
 },{
             "code":"Search It",
             "logo":'search',
-            "page_title":"Search It",
+            q1:"Search It",
             "page_name":"برنامج البحث على الأنترنت - Search It",
-            "page_desc":`
+            q2:`Search Any Thing & Every Thing in seconds. 
+Now you can seach any website you want in matter of seconds. 
 يمكنك هذا البرنامج من البحث عن أى عنصر على الأنترنت بدون أى عناء -
 يمكنك إضافة جميع المواقع التى تريد إستخدامها و من ثم البحث بها بدون أى عناء.
 الآن يكنك البحث فى أكثر من الف موقع بضغطة واحدة.
 أبحث عن كلمة-صورة-رابط-برنامج-أو أى شىء فى الوجود بضغطة واحدة.
-<br>
-<span class='english'>Search Any Thing & Every Thing in seconds.
-Now you can seach any website you want in matter of seconds.</span>
             `,
             "page_img":"external/chrome/search-it.png",
-            "link" : "https://chrome.google.com/webstore/detail/search-it/ohgeojakicmbfeimcnfmmdolgaiokfoa"
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/search-it/ohgeojakicmbfeimcnfmmdolgaiokfoa'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 58              
 },{
             "code":"Currency Converter",
             "logo":'dollar',
-            "page_title":"Currency Converter",
+            q1:"Currency Converter",
             "page_name":"برنامج تحويل العملات النقدية - Currency Converter",
-            "page_desc":`
-الآن يمكنك معرفة سعر العملات من المنزل بضغطة واحدة <br>
+            q2:`A fast way to convert between different currencies.
+الآن يمكنك معرفة سعر العملات من المنزل بضغطة واحدة
  بأقل من ثانيتين يمكنك التحويل لكل العملات المعروفة
-    <br>
-    <span class='english'>Converts Between all Currencies with one second</span>
+
             `,
             "page_img":"external/chrome/currency-converter.png",
-            "link" : "https://chrome.google.com/webstore/detail/currency-converter/denbpnajoaoppcacfhopcgfjokliemgk"
-},{
-            "code":"porn preventer",
-            "logo":'venus-mars',
-            "page_title":"Porn Preventer",
-            "page_name":"برنامج منع المواقع الإباحية - Porn Preventer",
-            "page_desc":`
-يمكنك من منع فتح المواقع الإباحية على متصفح الكروم. - يمنع فتح الموقع و يحولك لموقع إسلامى
-<br>
-<span class='english'>Preventes your brwoser from opening any porn website.</span>
-            `,
-            "page_img":"external/chrome/porn-preventer.png",
-            "link" : "https://chrome.google.com/webstore/detail/porn-preventer/kjakednfpkbgpmifghjchpiekadckjad"
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/currency-converter/denbpnajoaoppcacfhopcgfjokliemgk'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 59              
 },{
             "code":"Share It",
             "logo":'share-alt',
-            "page_title":"Share It",
+            q1:"Share It",
             "page_name":"Share It - برنامج المشاركة لأى محتوى على مواقع السوشيال كلها",
-            "page_desc":`
+            q2:`Share Every Thing Every Where.
+Share Any Text Selection, Web Page, Image, Link, or Even video & audio Elements to all known social media websites:-
+Facebook , Twitter , Google+ , Linked-In , Pinterest , Tumblr , StumbleUpOn , VK , Xing , Reddit , Or enven Send An Email
+
 البرنامج عبارة عن لستة تم إضافتها على قائمة المهام (الزر الأيمن) أثناء إستخدام المتصفح تسمى Share it. وتمكنك من مشاركة أى محتوى من أى صفحة على الأنترنت لكل مواقع التواصل الإجتماعية المعروفة.
 كيف يمكننى أستخدامة:
 أدخل البرنامج من الرابط المحدد بالأعلى ثم أدخل لأى موقع يمكنك مشاركة أى شىئ تريده (رابط الصفحة الحالية-صورة-نص محدد-فيديو-صوت) بالضغط زر قائمة المهام بالموس(الفأرة) على العنصر المارد مشاركته ستجد زر share it.
@@ -714,45 +738,57 @@ Now you can seach any website you want in matter of seconds.</span>
 
 المواقع المدمجة بالبرنامج:
 Facebook , Twitter , Google+ , Linked-In , Pinterest , Tumblr , StumbleUpOn , VK , Xing , Reddit , Or enven Send An Email
-<br>
-<span class='english'>Know You can share every thing & any thing to all known social media websites.</span>
             `,
             "page_img":"external/chrome/share-it.png",
-            "link" : "https://chrome.google.com/webstore/detail/share-it/ighbcekeolbcaimlofkjjmnkejlnelaf"
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/share-it/ighbcekeolbcaimlofkjjmnkejlnelaf'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 60                
 },{
             "code":"Units Converter",
             "logo":'cubes',
-            "page_title":"Units Converter",
+            q1:"Units Converter",
             "page_name":"Units Converter - برنامج تحويل الوحدات",
-            "page_desc":`
+            q2:`Converts Between different units
 برنامج مهمته التحويل بين الوحدات المختلفة
 - وحدات الطول - وحدات الضغط - وحدات الوزن - وحدات الكثافة - و وحدات المساحة - وحدات الحجم - وحدات الحرارة - وحدات الطاقة - وحدات السرعة
-<br>
-<span class='english'>convertes between different units.</span>
             `,
             "page_img":"external/chrome/units-converter.png",
-            "link" : "https://chrome.google.com/webstore/detail/units-converter/nmjgjihebpbkoclkpnbfjblgbhdnbgag"
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/units-converter/nmjgjihebpbkoclkpnbfjblgbhdnbgag'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 61                
 },{
             "code":"Egyptian Social ID Analyzer",
             "logo":'credit-card',
-            "page_title":"Egyptian Social ID Analyzer",
+            q1:"Egyptian Social ID Analyzer",
             "page_name":"Egyptian Social ID Analyzer - محلل البطاقة المصرية",
-            "page_desc":`
+            q2:`Egyptian Social ID Analyzer
 يحلل لك بيانات البطاقة المصرية
             `,
             "page_img":"external/chrome/social-id.png",
-            "link" : "https://chrome.google.com/webstore/detail/تحليل-البطاقة-المصرية/cbfdcgeeokgfhcbknlbnbllfjechjffe"
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/تحليل-البطاقة-المصرية/cbfdcgeeokgfhcbknlbnbllfjechjffe'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 62                
 },{
             "code":"SnowMan Game",
             "logo":'credit-card',
-            "page_title":"SnowMan",
+            q1:"SnowMan",
             "page_name":"SnowMan Game",
-            "page_desc":`
-Build Your Own SnowMan
+            q2:`Build Your Own SnowMan
             `,
             "page_img":"external/chrome/snowman.png",
-            "link" : "https://chrome.google.com/webstore/detail/snowman-game/heibcnhfbgplijjflkgfcdhfidneikeb"
+    link:['Chrome Store Link','chrome.google.com/webstore/detail/snowman-game/heibcnhfbgplijjflkgfcdhfidneikeb'],    
+    cate:"Browser",            
+    tags: ["Browser APP","chrome extension"],  
+    priority: 63                
 },
+
+
+
+
+
 
 
 
@@ -766,96 +802,135 @@ Build Your Own SnowMan
             "code":"text_img",
             "logo":'image',
             "page_title":"Text on Image Generator",
-            "page_name":"Text Image Constructor",
+            q1:"Text Image Constructor",
             "page_name_ar":"برنامج الكلام على الصور",
-            "page_desc":"generates a text of your choice over a predefined image",
+            q2:"generates a text of your choice over a predefined image",
             "page_desc_ar":"يولد نص فوق صورة",
             "page_img":"games/text-img.jpg",            
-            "link": url("games/text-image"),
+    link:['Open Game','ahmed-badawy.com/site/games/text-image'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 64              
 },{
             "code":"memory",
             "logo":'square-o',
             "page_title":"Memory Game",
-            "page_name":"Memory Game",
+            q1:"Memory Game",
             "page_name_ar":"لعبة الذاكرة",
-            "page_desc":"test your memory",
+            q2:"Game that tests your memory",
             "page_desc_ar":"أمتحن ذاكرتك مع لعبة الذاكرة",
             "page_img":"games/memory.jpg",            
-            "link": base_url("htmls/games/memory-game.html"),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/memory-game.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 65              
 },{
             "code":"chess",
             "logo":'street-view',
             "page_title":"Chess Game",
-            "page_name":"Play Chess",
+            q1:"Play Chess",
             "page_name_ar":"لعبة الشطرنج",
-            "page_desc":"simple chess game",
+            q2:"Simple Chess Game",
             "page_desc_ar":"ألعب شطرنج ليل نهار اونلين.",
             "page_img":"games/chess.jpg",            
-            "link": url("games/chess"),
+    link:['Open Game','ahmed-badawy.com/site/games/chess'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 66              
 },{
             "code":"maze",
             "logo":'medium',
             "page_title":"Maze",
-            "page_name":"لعبة المتاهة البسيطة",
-            "page_desc":"وصل النحلة لبيتها.",
+            q1:"Simple Maze",
+            q2:`Move the Bee to it's nest
+            وصل النحلة لبيتها.`,
             "page_img":"games/bee.jpg",            
-            "link":url('games/maze1'),
-},{
+    link:['Open Game','ahmed-badawy.com/site/games/maze1'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 67              
+},
+
+
+{
             "code":"DrawingApp",
             "logo":'pencil-square',
             "page_title":"Drawing App",
-            "page_name":"Drawing App",
+            q1:"Drawing App",
             "page_name_ar":"برنامج الرسام",
-            "page_desc":"draw with the drawing app",
+            q2:`draw with the drawing app`,
             "page_desc_ar":"برنامج الرسام لرسم الأشكال المختلفة",
             "page_img":"games/drawing.png",            
-            "link": base_url("htmls/games/drawing-app/drawing-app.html"),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/drawing-app/drawing-app.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 68              
 },{
             "code":"DrawingApp2",
             "logo":'pencil',
             "page_title":"Drawing APP 2",
-            "page_name":"Drawing APP 2",
+            q1:"Drawing APP 2",
             "page_name_ar":"برنامج الرسام 2",
-            "page_desc":"برنامج الرسام لرسم الأشكال المختلفة",
+            q2:`Basic sketch of a drawing APP 
+            برنامج الرسام لرسم الأشكال المختلفة`,
             "page_desc_ar":"برنامج الرسام لرسم الأشكال المختلفة",
             "page_img":"games/drawing.png",            
-            "link": base_url("htmls/games/drawing-app-2.html"),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/drawing-app-2.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 69              
 },{
             "code":"coloringApp",
             "logo":'paint-brush',
             "page_title":"Coloring App",
-            "page_name":"Coloring App",
+            q1:"Coloring App",
             "page_name_ar":"برنامج التلوين",
-            "page_desc":"برنامج يسمح للأطفال بتلوين صورة ما.",
+            q2:`Color the drawing
+            برنامج يسمح للأطفال بتلوين صورة ما.`,
             "page_img":"games/duck.png",            
-            "link": base_url("htmls/games/html5-canvas-drawing-app/html5-canvas-drawing-app.html"),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/html5-canvas-drawing-app/html5-canvas-drawing-app.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 70              
 },{
             "code":"coloringApp2",
             "logo":'paint-brush',
             "page_title":"Coloring APP 2",
-            "page_name":"Coloring APP 2",
+            q1:"Coloring APP 2",
             "page_name_ar":"برنامج التلوين 2",
-            "page_desc":"برنامج يسمح للأطفال بتلوين صورة ما.",
+            q2:`color the drawing 2
+            برنامج يسمح للأطفال بتلوين صورة ما.`,
             "page_img":"games/coloring.png",            
-            "link": base_url("htmls/games/coloring-app-2/coloring-app.html"),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/coloring-app-2/coloring-app.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 71              
 },{
             "code":"dotts_connecting",
             "logo":'dot-circle-o',
             "page_title":"Dottes Connection Game",
-            "page_name":"Dottes Connection Game",
+            q1:"Dottes Connection Game",
             "page_name_ar":"لعبة توصيل النقاط",
-            "page_desc":"لعبة توصيل النقاط",
+            q2:`Connect the dottes game
+            لعبة توصيل النقاط`,
             "page_img":"games/dottes.jpg",            
-            "link": base_url('htmls/games/dott-connecting-app/dott-connecting.html'),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/dott-connecting-app/dott-connecting.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 72              
 },{
             "code":"iceman",
             "logo":'location-arrow',
             "page_title":"Create Ice Man",
-            "page_name":"Build Your ICEMan",
+            q1:"Build Your ICEMan",
             "page_name_ar":"لعبة صنع رجل الجليد",
-            "page_desc":"لعبتنا لصنع رجل الجليد",
+            q2:`Practise of drag & drop api in js. Build your own snowman
+            لعبتنا لصنع رجل الجليد`,
             "page_img":"games/iceman.jpg",            
-            "link": base_url('htmls/games/drag_drop/iceman.html'),
+    link:['Open Game','ahmed-badawy.com/site/htmls/games/drag_drop/iceman.html'],    
+    cate:"Games",            
+    tags: ["web game"],  
+    priority: 73              
 }
 
 

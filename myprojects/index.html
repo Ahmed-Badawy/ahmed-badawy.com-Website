@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app='myApp'>
 <head>
+	<meta charset='utf-8' />
 	<title>Angular Filtering System</title>
 	<link rel="stylesheet" href="assets/cyborg.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -23,7 +24,11 @@
 		color:white;
 		font-weight: bold !important;
 	}
-
+	pre{
+		white-space: -moz-pre-wrap;
+		white-space: -o-pre-wrap;
+		white-space: pre-wrap;
+	}
 	</style>
 
 </head>
@@ -37,7 +42,56 @@
 	<li>- PS: tags & categories names are case-sensitive. so take care of what you write.</li>
 </ul> -->
 
+<div class="clearfix"></div><br><br>
 <h1 class='page-header'>My Projects</h1>
+
+
+
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button data-target="#bs-example-navbar-collapse-2" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">Brand</a>
+    </div>
+
+    <div id="bs-example-navbar-collapse-2" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://ahmed-badawy.com/site/cv"> <span class='fa fa-suitcase'></span> My C.V</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
 
 
 <div class="row">
@@ -104,7 +158,7 @@
       <h4 class="panel-title">
           <div>
           		<span class='pull-left label label-default'>
-          			<span class="fa fa-thumbs-o-up"></span> {{$index+1}}
+          			<span class="fa fa-arrow-right"></span> {{$index+1}}
           		</span>
           		&nbsp; 
           		<span ng-bind-html="html(qes.q1)"></span> 
@@ -123,7 +177,7 @@
     </div>
     <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}">
       <div class="panel-body">
-      	<pre ng-bind-html="html(qes.q2)"></pre>
+      	<pre ng-bind-html="html(qes.q2)" dir='rtl' class='text-left'></pre>
 
       	<a href='http://{{qes.link[1]}}' target='_blank' class='btn btn-primary btn-block'>{{qes.link[0]}}</a>
 

@@ -82,12 +82,12 @@ $(document).ready(function(){
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
-        url: "../php/contact-form.php",
+        url: "http://ahmed-badawy.com/site/contact",
         data: {
           "name": $("#contactForm #name").val(),
           "email": $("#contactForm #email").val(),
           "subject": $("#contactForm #subject").val(),
-          "message": $("#contactForm #message").val()
+          "msg": $("#contactForm #message").val()
         },
         dataType: "json",
         success: function (data) {

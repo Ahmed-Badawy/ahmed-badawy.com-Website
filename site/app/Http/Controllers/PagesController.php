@@ -42,6 +42,7 @@ Pages
 CV
 **********************************************************************/
 	public function cv(){
+		return redirect("http://ahmed-badawy.com/cv");
 		$data = [
 			"route_info"=>\sr::pages("cv"),
 			'theme'=>$this->themes[4],
