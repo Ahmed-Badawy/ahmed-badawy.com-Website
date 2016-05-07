@@ -602,8 +602,8 @@ I developed their website & Backend admin control panels to control the website'
       q2:"تحجيم الصور المختلفة. يصلح للتصغير أو التكبير. صمم خصيصا ليعمل كـ Thumb Generator API.",
       q2:`Creates Thumbs of images. just input the image name & sizes & it will resize it for you.`,
       "page_img":"api/thumb.png",
-    link:['API','ahmed-badawy.com/site/api/thumb-view'],    
-    cate:"Web APP",            
+    link:['Open the API page','ahmed-badawy.com/site/api/thumb-view'],    
+    cate:"API",            
     tags: ["API"],  
     priority: 53     
 },    
@@ -615,8 +615,8 @@ I developed their website & Backend admin control panels to control the website'
       q2:"توليد جمل الكابتشا بالخطوط و الطرق المختلفة. يمتاز بسهولة إستخدامه و سرعته و مرونته فى توليد الأكود. تم تصميم API كامل لتوليد الأكواد لأى موقع على الويب.",
       q2:"Captcha Generator API. define the captcha text & we will generate the image for you.",
       "page_img":"api/captcha.png",
-    link:['API','ahmed-badawy.com/site/api/captcha-view'],    
-    cate:"Web APP",            
+    link:['Open the API page','ahmed-badawy.com/site/api/captcha-view'],    
+    cate:"API",            
     tags: ["API"],  
     priority: 54     
 },   
@@ -628,8 +628,8 @@ I developed their website & Backend admin control panels to control the website'
       q2:"يولد كود QR. يمتاز بسهولة إستخدامة و التحكم فيه. تم تصميم API كامل للتحكم بكيفية رسم الكود.",
       q2:`Generates QR code for you. pass the text & we will generate the image`,
       "page_img":"api/qr.png",
-    link:['API','ahmed-badawy.com/site/api/qr-gene-view'],    
-    cate:"Web APP",            
+    link:['Open the API page','ahmed-badawy.com/site/api/qr-gene-view'],    
+    cate:"API",            
     tags: ["API"],  
     priority: 55     
 },
@@ -641,8 +641,8 @@ I developed their website & Backend admin control panels to control the website'
       q2:"تم تصميم API كامل ليعمل مولد لـأكواد الـ UPC/BarCode المختلفة بأنواعها.",
       q2:`UPC generator, pass the text & we will return the image.`,
       "page_img":"api/upc.png",
-    link:['API','ahmed-badawy.com/site/api/upc-view'],    
-    cate:"Web APP",            
+    link:['Open the API page','ahmed-badawy.com/site/api/upc-view'],    
+    cate:"API",            
     tags: ["API"],  
     priority: 56     
 }, 

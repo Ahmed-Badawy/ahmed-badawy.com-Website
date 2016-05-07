@@ -5,6 +5,10 @@
 //Run on Document Ready
 $(document).ready(function(){  
 
+  $("a").attr('target','_blank');
+
+
+
   //Smooth scrool
   $("html").niceScroll({styler:"fb",cursorcolor:"#000"});
 

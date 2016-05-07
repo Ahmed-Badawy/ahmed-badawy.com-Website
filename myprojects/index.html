@@ -15,6 +15,7 @@
 		font-family: tahoma;
 		/*font-weight: bold;*/
 	}
+	
 	.panel-heading{
 		transition: all .2s linear;
 		cursor: pointer;
@@ -28,6 +29,13 @@
 		white-space: -moz-pre-wrap;
 		white-space: -o-pre-wrap;
 		white-space: pre-wrap;
+		font-family: Courier, monospace;
+		font-size:110%;
+		font-weight: bold;
+	}
+	.panel-title{
+		/*font-family: "Arial Black", Gadget, sans-serif;*/
+		font-weight: bold;
 	}
 	</style>
 
@@ -50,7 +58,7 @@
 
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" style='font-size:120%;'>
   <div class="container-fluid">
     <div class="navbar-header">
       <button data-target="#bs-example-navbar-collapse-2" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -59,25 +67,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand">Brand</a>
+      <a href="http://ahmed-badawy.com/site" class="navbar-brand">Ahmed Badawy</a>
     </div>
 
     <div id="bs-example-navbar-collapse-2" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <span class="caret"></span></a>
-          <ul role="menu" class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="?">All <span class="sr-only">(current)</span></a></li>
+        <li><a href="?cate=Websites">Websites</a></li>
+        <li><a href="?cate=Web APP">Web APPs</a></li>
+        <li><a href="?cate=Browser">Browser Extensions & APPs</a></li>
+        <li><a href="?cate=Games">Games</a></li>
+        <li><a href="?cate=API">APIs</a></li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://ahmed-badawy.com/site/cv"> <span class='fa fa-suitcase'></span> My C.V</a></li>
@@ -177,7 +178,7 @@
     </div>
     <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}">
       <div class="panel-body">
-      	<pre ng-bind-html="html(qes.q2)" dir='rtl' class='text-left'></pre>
+      	<pre ng-bind-html="html(qes.q2)" class='text-left'></pre>
 
       	<a href='http://{{qes.link[1]}}' target='_blank' class='btn btn-primary btn-block'>{{qes.link[0]}}</a>
 
